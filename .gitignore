@@ -1,10 +1,12 @@
-# FOLDERS
-
-docs/
-pubs/
 poster/
+pubs/
 
-# FILES
+*.pdf
+*.od*
 
-*.odt
-*.ods
+*~
+
+output
+outputs
+filename
+
