@@ -1,0 +1,131 @@
+Partlist
+
+Exported from v2-rf-frontend-board.sch at 12/2/13 9:04 PM
+
+EAGLE Version 6.4.0 Copyright (c) 1988-2013 CadSoft
+
+Assembly variant: 
+
+Part      Value                         Device                   Package         Library               Sheet
+
+25MHZ                                   CRYSTALCTS406            CTS406          crystal               1
+C1        10u                           CAP0603-CAP              0603-CAP        SparkFun-Passives     3
+C2        0.047uF                       CAP0603-CAP              0603-CAP        SparkFun-Passives     2
+C3        27pF                          CAP0402-CAP              0402-CAP        SparkFun-Passives     2
+C4        470pF                         CAP0402-CAP              0402-CAP        SparkFun-Passives     2
+C5        100nF                         CAP0402-CAP              0402-CAP        SparkFun-Passives     2
+C6        100pF                         CAP0402-CAP              0402-CAP        SparkFun-Passives     2
+C7        100nF                         CAP0402-CAP              0402-CAP        SparkFun-Passives     2
+C8        100pF                         CAP0402-CAP              0402-CAP        SparkFun-Passives     2
+C9        100nF                         CAP0402-CAP              0402-CAP        SparkFun-Passives     2
+C10       10nF                          CAP0402-CAP              0402-CAP        SparkFun-Passives     2
+C11       0.1uF                         CAP0402-CAP              0402-CAP        SparkFun-Passives     2
+C12       100pF                         CAP0402-CAP              0402-CAP        SparkFun-Passives     2
+C13       100nF                         CAP0402-CAP              0402-CAP        SparkFun-Passives     2
+C14       100pF                         CAP0402-CAP              0402-CAP        SparkFun-Passives     2
+C15       100nF                         CAP0402-CAP              0402-CAP        SparkFun-Passives     2
+C16       100pF                         CAP0402-CAP              0402-CAP        SparkFun-Passives     2
+C17       100pF                         CAP0402-CAP              0402-CAP        SparkFun-Passives     2
+C18       100nF                         CAP0402-CAP              0402-CAP        SparkFun-Passives     2
+C19       100pF                         CAP0402-CAP              0402-CAP        SparkFun-Passives     2
+C20       2.2uF                         CAP0603-CAP              0603-CAP        SparkFun-Passives     1
+C21       10u                           CAP0603-CAP              0603-CAP        SparkFun-Passives     3
+C22       100pF                         CAP0402-CAP              0402-CAP        SparkFun-Passives     2
+C23       22uF/6.3V                     CAP0603-CAP              0603-CAP        SparkFun-Passives     4
+C24       0.47uF                        CAP0402-CAP              0402-CAP        SparkFun-Passives     2
+C25       100pF                         CAP0402-CAP              0402-CAP        SparkFun-Passives     2
+C26       22p                           CAP0402-CAP              0402-CAP        SparkFun-Passives     3
+C27       22uF/6.3V                     CAP0603-CAP              0603-CAP        SparkFun-Passives     4
+C28       22uF/6.3V                     CAP0603-CAP              0603-CAP        SparkFun-Passives     4
+C29       16pF                          CAP0402-CAP              0402-CAP        SparkFun-Passives     1
+C30       16pF                          CAP0402-CAP              0402-CAP        SparkFun-Passives     1
+C31       100nF                         CAP0402-CAP              0402-CAP        SparkFun-Passives     4
+C32       100nF                         CAP0402-CAP              0402-CAP        SparkFun-Passives     4
+C33       100u                          CAP0805                  0805            SparkFun-Passives     3
+C34       100nF                         CAP0402-CAP              0402-CAP        SparkFun-Passives     4
+C35       100nF                         CAP0402-CAP              0402-CAP        SparkFun-Passives     4
+C36       10uF/6.3V                     CAP0402-CAP              0402-CAP        SparkFun-Passives     4
+C37       100nF                         CAP0402-CAP              0402-CAP        SparkFun-Passives     4
+C38       0.1u                          CAP0402-CAP              0402-CAP        SparkFun-Passives     3
+C39       22p                           CAP0402-CAP              0402-CAP        SparkFun-Passives     3
+C40       100u                          CAP0805                  0805            SparkFun-Passives     3
+C41       0.1u                          CAP0402-CAP              0402-CAP        SparkFun-Passives     3
+C42       0.1u                          CAP0402-CAP              0402-CAP        SparkFun-Passives     3
+C43       0.1u                          CAP0402-CAP              0402-CAP        SparkFun-Passives     3
+C44       1nF                           CAP0402-CAP              0402-CAP        SparkFun-Passives     4
+C45       100nF                         CAP0402-CAP              0402-CAP        SparkFun-Passives     1
+C46       100nF                         CAP0402-CAP              0402-CAP        SparkFun-Passives     1
+C47       100nF                         CAP0402-CAP              0402-CAP        SparkFun-Passives     1
+C48       100nF                         CAP0402-CAP              0402-CAP        SparkFun-Passives     1
+C49       100nF                         CAP0402-CAP              0402-CAP        SparkFun-Passives     1
+C50       100nF                         CAP0402-CAP              0402-CAP        SparkFun-Passives     1
+C51       2.2uF                         CAP0402-CAP              0402-CAP        SparkFun-Passives     1
+C52       2.2uF                         CAP0402-CAP              0402-CAP        SparkFun-Passives     1
+C53       100nF                         CAP0402-CAP              0402-CAP        SparkFun-Passives     4
+C54       0.47uF                        CAP0402-CAP              0402-CAP        SparkFun-Passives     2
+C55       100pF                         CAP0402-CAP              0402-CAP        SparkFun-Passives     2
+C56       100pF                         CAP0402-CAP              0402-CAP        SparkFun-Passives     2
+C57       0.047uF                       CAP0402-CAP              0402-CAP        SparkFun-Passives     2
+C58       0.47uF                        CAP0402-CAP              0402-CAP        SparkFun-Passives     2
+D1                                      DIODESMA-ALT             SMA-DIODE_ALT   SparkFun-DiscreteSemi 1
+J3        ROCKETNET-CONNECTOR-16M       ROCKETNET-CONNECTOR-16M  ROCKETNET-M-16  rocketnet-connector   4
+JP1       AUX HDR                       M04LOCK                  1X04_LOCK       SparkFun-Connectors   4
+JTAG1                                   JTAG-CORTEXM3            2X05_1.27MM_SMT microbuilder          1
+L1        ACM2012                       ACM2012                  TDK-ACM2012     magnetics             4
+L2        3.3nH                         INDUCTOR0402             C0402           SparkFun-Passives     2
+L3        FB0805/600R/200mA(201209-601) INDUCTOR0805             0805            SparkFun-Passives     4
+L4        ACM2012                       ACM2012                  TDK-ACM2012     magnetics             4
+LED1                                    LEDCHIP-LED0603          CHIP-LED0603    led                   3
+LED2                                    LEDCHIP-LED0603          CHIP-LED0603    led                   3
+LED37     RGB                           LED_RGB_PLCC-6           PLCC-6          LED_RGB_PLCC6         1
+R1        11.5k                         RESISTOR0402-RES         0402-RES        SparkFun-Passives     3
+R2        20k                           RESISTOR0402-RES         0402-RES        SparkFun-Passives     2
+R3        19.1k                         RESISTOR0402-RES         0402-RES        SparkFun-Passives     3
+R4        20k                           RESISTOR0402-RES         0402-RES        SparkFun-Passives     2
+R5        20k                           RESISTOR0402-RES         0402-RES        SparkFun-Passives     2
+R6        500                           RESISTOR0402-RES         0402-RES        SparkFun-Passives     3
+R7        1.5k                          RESISTOR0402-RES         0402-RES        SparkFun-Passives     1
+R8        100k                          RESISTOR0402-RES         0402-RES        SparkFun-Passives     3
+R9        500                           RESISTOR0402-RES         0402-RES        SparkFun-Passives     3
+R10       75                            RESISTOR0402-RES         0402-RES        SparkFun-Passives     4
+R11       75                            RESISTOR0402-RES         0402-RES        SparkFun-Passives     4
+R15       150                           RESISTOR0402-RES         0402-RES        SparkFun-Passives     4
+R16       2.2k                          RESISTOR0402-RES         0402-RES        SparkFun-Passives     4
+R17       100                           RESISTOR0402-RES         0402-RES        SparkFun-Passives     1
+R18       10k                           RESISTOR0402-RES         0402-RES        SparkFun-Passives     1
+R19       10k                           RESISTOR0402-RES         0402-RES        SparkFun-Passives     1
+R20       0R(board_mounted)             RESISTOR0402-RES         0402-RES        SparkFun-Passives     4
+R22       49.9R/1%                      RESISTOR0402-RES         0402-RES        SparkFun-Passives     4
+R23       49.9R/1%                      RESISTOR0402-RES         0402-RES        SparkFun-Passives     4
+R24       49.9R/1%                      RESISTOR0402-RES         0402-RES        SparkFun-Passives     4
+R25       49.9R/1%                      RESISTOR0402-RES         0402-RES        SparkFun-Passives     4
+R26       10k                           RESISTOR0402-RES         0402-RES        SparkFun-Passives     1
+R27       4.7k                          RESISTOR0402-RES         0402-RES        SparkFun-Passives     4
+R28       10k                           RESISTOR0402-RES         0402-RES        SparkFun-Passives     4
+R29       12.1k/1%                      RESISTOR0402-RES         0402-RES        SparkFun-Passives     4
+R30       10k                           RESISTOR0402-RES         0402-RES        SparkFun-Passives     1
+R37       10k                           RESISTOR0402-RES         0402-RES        SparkFun-Passives     1
+R38       10k                           RESISTOR0402-RES         0402-RES        SparkFun-Passives     1
+R39       10k                           RESISTOR0402-RES         0402-RES        SparkFun-Passives     1
+R40       10k                           RESISTOR0402-RES         0402-RES        SparkFun-Passives     1
+R42       4.7k                          RESISTOR0402-RES         0402-RES        SparkFun-Passives     4
+R43       4.7k                          RESISTOR0402-RES         0402-RES        SparkFun-Passives     4
+R44       4.7k                          RESISTOR0402-RES         0402-RES        SparkFun-Passives     4
+R45       4.7k                          RESISTOR0402-RES         0402-RES        SparkFun-Passives     4
+R46       4.7k                          RESISTOR0402-RES         0402-RES        SparkFun-Passives     4
+R47       4.7k                          RESISTOR0402-RES         0402-RES        SparkFun-Passives     4
+R48       4.7k                          RESISTOR0402-RES         0402-RES        SparkFun-Passives     4
+T1        ALT4532                       ALT4532                  TDK-ALT4532     magnetics             4
+T2        ALT4532                       ALT4532                  TDK-ALT4532     magnetics             4
+U$1       LT4619_REDUCED                LT4619_REDUCED           LT4619          LT4619                3
+U$3       STM32F4V_100PIN_GPSBOARD      STM32F4V_100PIN_GPSBOARD LQFP100         stm32f4               1
+U$5       MICROSD                       MICROSD                  MICROSD         adafruit              1
+U1        MAX2769                       MAX2769                  90-0023         wicker                2
+U2        SAW_1.4X1.1                   SAW_1.4X1.1              SAW_1.4X1.1     swift-nav             2
+U3        LAN8710A-EZC                  LAN8710A-EZC             QFN-32(DRILLS)  OLIMEX_IC             4	
+U4        7Q-16.368MBG-T                7Q-16.368MBG-T           TCX_7Q          swift-nav             2	887-1548-1-ND
+U5        XC2401                        XC2401                   XC2401          swift-nav             2	893-1155-1-ND	
+U6        SAW_1.4X1.1                   SAW_1.4X1.1              SAW_1.4X1.1     swift-nav             2	583-1182-1-ND	$0.86
+U11       LM3480IM4                     LM3480IM4                SOT23-3         SparkFun-PowerIC      3	
+USB_MICRO USB_MICROB                    USB_MICROB_PLUG-PTH      MICRO-B-RA-TH   SparkFun              1
+X3        BU-SMA-H                      BU-SMA-H                 BU-SMA-H        con-coax              2
