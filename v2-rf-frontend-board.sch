@@ -16407,7 +16407,7 @@ http://www.maxim-ic.com/datasheet/index.mvp/id/5241</description>
 <part name="3.3VD3" library="SparkFun-Aesthetics" deviceset="3.3VD" device=""/>
 <part name="U$7" library="SparkFun-Aesthetics" deviceset="3.3VD" device=""/>
 <part name="U$10" library="SparkFun-Aesthetics" deviceset="3.3VD" device=""/>
-<part name="TP26" library="testpad" deviceset="TP" device="TP06R"/>
+<part name="TP26" library="testpad" deviceset="TP" device="TP06R" value=""/>
 <part name="GND3" library="supply1" deviceset="GND" device="" value=""/>
 <part name="R42" library="rcl" deviceset="R-US_" device="R0402" value="4.7k"/>
 <part name="R43" library="rcl" deviceset="R-US_" device="R0402" value="4.7k"/>
@@ -16466,7 +16466,7 @@ http://www.maxim-ic.com/datasheet/index.mvp/id/5241</description>
 <part name="C53" library="rcl" deviceset="C-EU" device="C0402" value="100nF"/>
 <part name="U1" library="max2769" deviceset="MAX2769" device=""/>
 <part name="C11" library="rcl" deviceset="C-EU" device="C0402" value="DNP"/>
-<part name="U2" library="swift-nav" deviceset="SAW_1.4X1.1" device=""/>
+<part name="U2" library="swift-nav" deviceset="SAW_1.4X1.1" device="" value="SAW"/>
 <part name="BAR_GND1" library="supply" deviceset="GND_BAR" device="" value="GND"/>
 <part name="U4" library="swift-nav" deviceset="7Q-16.368MBG-T" device=""/>
 <part name="C2" library="rcl" deviceset="C-EU" device="C0402" value="100n"/>
@@ -16476,7 +16476,7 @@ http://www.maxim-ic.com/datasheet/index.mvp/id/5241</description>
 <part name="C55" library="rcl" deviceset="C-EU" device="C0402" value="100pF"/>
 <part name="DIG_GND19" library="supply" deviceset="GND_BAR" device="" value="GND"/>
 <part name="U5" library="swift-nav" deviceset="XC2401" device=""/>
-<part name="U6" library="swift-nav" deviceset="SAW_1.4X1.1" device=""/>
+<part name="L6" library="swift-nav" deviceset="SAW_1.4X1.1" device="" value="SAW"/>
 <part name="BAR_GND2" library="supply" deviceset="GND_BAR" device="" value="GND"/>
 <part name="C56" library="rcl" deviceset="C-EU" device="C0402" value="100pF"/>
 <part name="C57" library="rcl" deviceset="C-EU" device="C0402" value="0.047uF"/>
@@ -16515,7 +16515,7 @@ http://www.maxim-ic.com/datasheet/index.mvp/id/5241</description>
 <part name="TP42" library="testpad" deviceset="TP" device="TP06R"/>
 <part name="BAR_GND3" library="supply" deviceset="GND_BAR" device="" value="GND"/>
 <part name="U$15" library="SparkFun-Aesthetics" deviceset="3.3VD" device=""/>
-<part name="TP23" library="testpad" deviceset="TP" device="TP06R"/>
+<part name="TP23" library="testpad" deviceset="TP" device="TP06R" value=""/>
 <part name="DIG_GND8" library="supply" deviceset="GND_BAR" device="" value="GND"/>
 <part name="R4" library="rcl" deviceset="R-US_" device="R0402" value="0"/>
 <part name="R8" library="rcl" deviceset="R-US_" device="R0402" value="10k"/>
@@ -16836,6 +16836,11 @@ to MAX2769</text>
 <pinref part="U8" gate="G$1" pin="PDR_ON"/>
 <wire x1="167.64" y1="175.26" x2="162.56" y2="175.26" width="0.15" layer="91"/>
 <pinref part="DIG_GND24" gate="1" pin="BAR_GND"/>
+</segment>
+<segment>
+<pinref part="C10" gate="G$1" pin="1"/>
+<pinref part="DIG_GND17" gate="1" pin="BAR_GND"/>
+<wire x1="86.36" y1="99.06" x2="86.36" y2="100.33" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LD" class="0">
@@ -17406,13 +17411,6 @@ to MAX2769</text>
 <wire x1="121.92" y1="93.98" x2="121.92" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="BAR_GND" class="0">
-<segment>
-<pinref part="C10" gate="G$1" pin="1"/>
-<pinref part="DIG_GND17" gate="1" pin="BAR_GND"/>
-<wire x1="86.36" y1="99.06" x2="86.36" y2="100.33" width="0.1524" layer="91"/>
-</segment>
-</net>
 </nets>
 </sheet>
 <sheet>
@@ -17506,7 +17504,7 @@ to MAX2769</text>
 <attribute name="NAME" x="106.68" y="109.22" size="2.54" layer="95"/>
 <attribute name="VALUE" x="106.68" y="96.52" size="2.54" layer="96"/>
 </instance>
-<instance part="U6" gate="U1" x="69.85" y="99.06"/>
+<instance part="L6" gate="U1" x="69.85" y="99.06"/>
 <instance part="BAR_GND2" gate="1" x="71.12" y="86.36"/>
 <instance part="C56" gate="G$1" x="85.09" y="121.92"/>
 <instance part="C57" gate="G$1" x="69.85" y="121.92"/>
@@ -17663,11 +17661,11 @@ to MAX2769</text>
 <junction x="189.23" y="114.3"/>
 </segment>
 <segment>
-<pinref part="U6" gate="U1" pin="GND1"/>
+<pinref part="L6" gate="U1" pin="GND1"/>
 <wire x1="66.04" y1="88.9" x2="71.12" y2="88.9" width="0.15" layer="91"/>
 <wire x1="71.12" y1="88.9" x2="76.2" y2="88.9" width="0.15" layer="91"/>
-<pinref part="U6" gate="U1" pin="GND2"/>
-<pinref part="U6" gate="U1" pin="GND3"/>
+<pinref part="L6" gate="U1" pin="GND2"/>
+<pinref part="L6" gate="U1" pin="GND3"/>
 <junction x="71.12" y="88.9"/>
 <pinref part="BAR_GND2" gate="1" pin="BAR_GND"/>
 </segment>
@@ -17686,6 +17684,41 @@ to MAX2769</text>
 <segment>
 <pinref part="C58" gate="G$1" pin="2"/>
 <pinref part="DIG_GND28" gate="1" pin="BAR_GND"/>
+</segment>
+<segment>
+<pinref part="C9" gate="G$1" pin="2"/>
+<pinref part="DIG_GND9" gate="1" pin="BAR_GND"/>
+</segment>
+<segment>
+<pinref part="C17" gate="G$1" pin="2"/>
+<pinref part="DIG_GND15" gate="1" pin="BAR_GND"/>
+</segment>
+<segment>
+<pinref part="X2" gate="G$1" pin="GND"/>
+<pinref part="BAR_GND3" gate="1" pin="BAR_GND"/>
+<wire x1="45.72" y1="63.5" x2="45.72" y2="66.04" width="0.1524" layer="91"/>
+<junction x="45.72" y="71.12"/>
+<wire x1="45.72" y1="66.04" x2="45.72" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="68.58" x2="45.72" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="71.12" x2="45.72" y2="76.2" width="0.1524" layer="91"/>
+<junction x="45.72" y="68.58"/>
+<junction x="45.72" y="66.04"/>
+<pinref part="X2" gate="G3" pin="GND"/>
+<pinref part="X2" gate="G2" pin="GND"/>
+<pinref part="X2" gate="G4" pin="GND"/>
+</segment>
+<segment>
+<pinref part="DIG_GND8" gate="1" pin="BAR_GND"/>
+<pinref part="R4" gate="G$1" pin="2"/>
+<wire x1="210.82" y1="134.62" x2="210.82" y2="129.54" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R8" gate="G$1" pin="1"/>
+<pinref part="DIG_GND30" gate="1" pin="BAR_GND"/>
+<wire x1="137.16" y1="124.46" x2="139.7" y2="124.46" width="0.1524" layer="91"/>
+<pinref part="R9" gate="G$1" pin="1"/>
+<wire x1="139.7" y1="124.46" x2="142.24" y2="124.46" width="0.1524" layer="91"/>
+<junction x="139.7" y="124.46"/>
 </segment>
 </net>
 <net name="CLKOUT" class="0">
@@ -17816,7 +17849,7 @@ to MAX2769</text>
 <pinref part="U$15" gate="3.3VD" pin="3.3VD"/>
 </segment>
 </net>
-<net name="LNA2" class="0">
+<net name="LNA2CHIP" class="0">
 <segment>
 <wire x1="223.52" y1="93.98" x2="213.36" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="C22" gate="G$1" pin="2"/>
@@ -17855,7 +17888,7 @@ to MAX2769</text>
 <pinref part="R4" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="N$21" class="0">
+<net name="XTAL" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="XTAL"/>
 <pinref part="C11" gate="G$1" pin="2"/>
@@ -17876,7 +17909,7 @@ to MAX2769</text>
 <label x="190.5" y="129.54" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="N$13" class="0">
+<net name="LNAOUT" class="0">
 <segment>
 <pinref part="U2" gate="U1" pin="RFIN"/>
 <pinref part="U1" gate="G$1" pin="LNAOUT"/>
@@ -17884,7 +17917,7 @@ to MAX2769</text>
 <wire x1="195.58" y1="88.9" x2="223.52" y2="88.9" width="0.15" layer="91"/>
 </segment>
 </net>
-<net name="N$22" class="0">
+<net name="MIXIN" class="0">
 <segment>
 <pinref part="U2" gate="U1" pin="RFOUT"/>
 <pinref part="U1" gate="G$1" pin="MIXIN"/>
@@ -17900,53 +17933,16 @@ to MAX2769</text>
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="U6" gate="U1" pin="RFOUT"/>
+<pinref part="L6" gate="U1" pin="RFOUT"/>
 <pinref part="U5" gate="U1" pin="RFIN"/>
 <wire x1="85.09" y1="104.14" x2="86.36" y2="104.14" width="0.15" layer="91"/>
 </segment>
 </net>
-<net name="N$37" class="0">
+<net name="LNA1CHIP" class="0">
 <segment>
 <pinref part="C19" gate="G$1" pin="1"/>
 <wire x1="213.36" y1="104.14" x2="223.52" y2="104.14" width="0.15" layer="91"/>
 <pinref part="U1" gate="G$1" pin="LNA1"/>
-</segment>
-</net>
-<net name="BAR_GND" class="0">
-<segment>
-<pinref part="C9" gate="G$1" pin="2"/>
-<pinref part="DIG_GND9" gate="1" pin="BAR_GND"/>
-</segment>
-<segment>
-<pinref part="C17" gate="G$1" pin="2"/>
-<pinref part="DIG_GND15" gate="1" pin="BAR_GND"/>
-</segment>
-<segment>
-<pinref part="X2" gate="G$1" pin="GND"/>
-<pinref part="BAR_GND3" gate="1" pin="BAR_GND"/>
-<wire x1="45.72" y1="63.5" x2="45.72" y2="66.04" width="0.1524" layer="91"/>
-<junction x="45.72" y="71.12"/>
-<wire x1="45.72" y1="66.04" x2="45.72" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="68.58" x2="45.72" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="71.12" x2="45.72" y2="76.2" width="0.1524" layer="91"/>
-<junction x="45.72" y="68.58"/>
-<junction x="45.72" y="66.04"/>
-<pinref part="X2" gate="G3" pin="GND"/>
-<pinref part="X2" gate="G2" pin="GND"/>
-<pinref part="X2" gate="G4" pin="GND"/>
-</segment>
-<segment>
-<pinref part="DIG_GND8" gate="1" pin="BAR_GND"/>
-<pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="210.82" y1="134.62" x2="210.82" y2="129.54" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="R8" gate="G$1" pin="1"/>
-<pinref part="DIG_GND30" gate="1" pin="BAR_GND"/>
-<wire x1="137.16" y1="124.46" x2="139.7" y2="124.46" width="0.1524" layer="91"/>
-<pinref part="R9" gate="G$1" pin="1"/>
-<wire x1="139.7" y1="124.46" x2="142.24" y2="124.46" width="0.1524" layer="91"/>
-<junction x="139.7" y="124.46"/>
 </segment>
 </net>
 <net name="ANTFLAG" class="0">
@@ -17991,7 +17987,7 @@ to MAX2769</text>
 <label x="294.64" y="129.54" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="LNA2" class="0">
 <segment>
 <pinref part="C22" gate="G$1" pin="1"/>
 <wire x1="193.04" y1="78.74" x2="193.04" y2="93.98" width="0.1524" layer="91"/>
@@ -17999,7 +17995,7 @@ to MAX2769</text>
 <pinref part="L2" gate="G$1" pin="1"/>
 <wire x1="129.54" y1="81.28" x2="129.54" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="78.74" x2="193.04" y2="78.74" width="0.1524" layer="91"/>
-<pinref part="U6" gate="U1" pin="RFIN"/>
+<pinref part="L6" gate="U1" pin="RFIN"/>
 <wire x1="57.15" y1="104.14" x2="55.88" y2="104.14" width="0.15" layer="91"/>
 <wire x1="55.88" y1="104.14" x2="55.88" y2="78.74" width="0.15" layer="91"/>
 <wire x1="55.88" y1="78.74" x2="45.72" y2="78.74" width="0.15" layer="91"/>
