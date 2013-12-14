@@ -16407,7 +16407,6 @@ http://www.maxim-ic.com/datasheet/index.mvp/id/5241</description>
 <part name="3.3VD3" library="SparkFun-Aesthetics" deviceset="3.3VD" device=""/>
 <part name="U$7" library="SparkFun-Aesthetics" deviceset="3.3VD" device=""/>
 <part name="U$10" library="SparkFun-Aesthetics" deviceset="3.3VD" device=""/>
-<part name="TP22" library="testpad" deviceset="TP" device="TP06R"/>
 <part name="TP26" library="testpad" deviceset="TP" device="TP06R"/>
 <part name="GND3" library="supply1" deviceset="GND" device="" value=""/>
 <part name="R42" library="rcl" deviceset="R-US_" device="R0402" value="4.7k"/>
@@ -17483,7 +17482,6 @@ to MAX2769</text>
 <instance part="U$26" gate="3.3VA" x="236.22" y="193.04"/>
 <instance part="BAR_GND" gate="1" x="248.92" y="71.12"/>
 <instance part="U$32" gate="3.3VD" x="287.02" y="195.58"/>
-<instance part="TP22" gate="G$1" x="220.98" y="220.98" rot="MR0"/>
 <instance part="TP26" gate="G$1" x="153.67" y="101.6"/>
 <instance part="U1" gate="G$1" x="248.92" y="116.84" smashed="yes">
 <attribute name="NAME" x="228.6" y="76.2" size="2.54" layer="95" font="vector"/>
@@ -17744,8 +17742,6 @@ to MAX2769</text>
 <wire x1="233.68" y1="218.44" x2="220.98" y2="218.44" width="0.1524" layer="91"/>
 <wire x1="220.98" y1="218.44" x2="220.98" y2="215.9" width="0.1524" layer="91"/>
 <junction x="233.68" y="218.44"/>
-<pinref part="TP22" gate="G$1" pin="TP"/>
-<junction x="220.98" y="218.44"/>
 <pinref part="U1" gate="G$1" pin="VCCVCO"/>
 </segment>
 <segment>
