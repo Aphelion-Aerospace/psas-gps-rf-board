@@ -16400,7 +16400,7 @@ http://www.maxim-ic.com/datasheet/index.mvp/id/5241</description>
 <part name="3.3VD" library="SparkFun-Aesthetics" deviceset="3.3VD" device=""/>
 <part name="DIG_GND10" library="supply" deviceset="GND_BAR" device="" value="GND"/>
 <part name="R18" library="rcl" deviceset="R-US_" device="R0402" value="10k"/>
-<part name="TP2" library="testpad" deviceset="TP" device="TP06R"/>
+<part name="TP2" library="testpad" deviceset="TP" device="TP06R" value=""/>
 <part name="R38" library="rcl" deviceset="R-US_" device="R0402" value="750"/>
 <part name="R39" library="rcl" deviceset="R-US_" device="R0402" value="750"/>
 <part name="R40" library="rcl" deviceset="R-US_" device="R0402" value="300"/>
@@ -16524,7 +16524,7 @@ http://www.maxim-ic.com/datasheet/index.mvp/id/5241</description>
 <part name="U$16" library="SparkFun-Aesthetics" deviceset="3.3VA" device=""/>
 <part name="U$17" library="SparkFun-Aesthetics" deviceset="3.3VD" device=""/>
 <part name="3.3VD1" library="SparkFun-Aesthetics" deviceset="3.3VD" device=""/>
-<part name="TP1" library="testpad" deviceset="TP" device="TP06R"/>
+<part name="TP1" library="testpad" deviceset="TP" device="TP06R" value=""/>
 <part name="TP4" library="Tova" deviceset="TEST-POINT" device=""/>
 <part name="TP5" library="Tova" deviceset="TEST-POINT" device=""/>
 <part name="TP6" library="Tova" deviceset="TEST-POINT" device=""/>
@@ -17186,7 +17186,7 @@ to MAX2769</text>
 <pinref part="LED4" gate="G$1" pin="C"/>
 </segment>
 </net>
-<net name="N$23" class="0">
+<net name="LED4" class="0">
 <segment>
 <pinref part="U8" gate="G$1" pin="PD14"/>
 <wire x1="255.27" y1="99.06" x2="276.86" y2="99.06" width="0.1524" layer="91"/>
@@ -17194,7 +17194,7 @@ to MAX2769</text>
 <wire x1="276.86" y1="99.06" x2="280.67" y2="99.06" width="0.15" layer="91"/>
 </segment>
 </net>
-<net name="N$24" class="0">
+<net name="LED3" class="0">
 <segment>
 <pinref part="U8" gate="G$1" pin="PD13"/>
 <wire x1="255.27" y1="101.6" x2="274.32" y2="101.6" width="0.1524" layer="91"/>
@@ -17203,7 +17203,7 @@ to MAX2769</text>
 <wire x1="280.67" y1="110.49" x2="274.32" y2="110.49" width="0.15" layer="91"/>
 </segment>
 </net>
-<net name="N$25" class="0">
+<net name="LED2" class="0">
 <segment>
 <pinref part="U8" gate="G$1" pin="PD11"/>
 <wire x1="255.27" y1="104.14" x2="271.78" y2="104.14" width="0.1524" layer="91"/>
