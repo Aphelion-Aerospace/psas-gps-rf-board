@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1.27" unitdist="mm" unit="mm" style="lines" multiple="2" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.0125" unitdist="inch" unit="inch" style="dots" multiple="2" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -16391,7 +16391,7 @@ http://www.maxim-ic.com/datasheet/index.mvp/id/5241</description>
 <part name="C27" library="rcl" deviceset="C-EU" device="C1206" value="22uF/6.3V"/>
 <part name="C28" library="rcl" deviceset="C-EU" device="C1206" value="22uF/6.3V"/>
 <part name="GND20" library="supply1" deviceset="GND" device="" value=""/>
-<part name="R20" library="rcl" deviceset="R-US_" device="R0402" value="0R(board_mounted)"/>
+<part name="R20" library="rcl" deviceset="R-US_" device="R0402" value="0R"/>
 <part name="GND131" library="supply1" deviceset="GND" device="" value=""/>
 <part name="C35" library="rcl" deviceset="C-EU" device="C0402" value="100nF"/>
 <part name="R28" library="rcl" deviceset="R-US_" device="R0402" value="10k"/>
@@ -18911,7 +18911,7 @@ Transformers</text>
 <pinref part="C53" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="N$59" class="0">
+<net name="VDDA" class="0">
 <segment>
 <wire x1="193.04" y1="152.4" x2="185.42" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="185.42" y1="152.4" x2="167.64" y2="152.4" width="0.1524" layer="91"/>
