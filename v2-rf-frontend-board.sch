@@ -17398,7 +17398,7 @@ to MAX2769</text>
 <junction x="86.36" y="107.95"/>
 </segment>
 </net>
-<net name="N$34" class="0">
+<net name="PE0" class="0">
 <segment>
 <pinref part="Q1" gate="G$1" pin="G"/>
 <pinref part="R12" gate="G$1" pin="1"/>
