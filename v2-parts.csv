@@ -54,13 +54,3 @@ Qty,Name,Manufacturer,Part Number,Package,Unit Cost,Total Cost
 2,"Choke, Common Mode, 360 ohms, 220mA",TDK ,ACM2012-900-2P-T002,SMD,0.5,1
 2,"Transformer, Pulse, LAN, 1:1, 200uH",TDK,ALT4532-201-T001,,1.49,2.98
 ,,,,,SUM,51.39
-,,,,,,
-,,,,,,
-,,,,,,
-,Thermal Resistance for LM3480IM3 with 3.3V,,,,,
-,Vin = 5V,Vout = 3.3V,Iout = 20mA,,,
-,Pd = (Vin - Vout) * Iout = (1.7V)(20mA) = 34mW,,,,,
-,SOT223 - θjamax is 62°C/W so worst case from our power is Tj = (34mW)(300°C/W) = 10.2°C,,Also power dissipation is 100mW in datasheet,,,
-,"At ambient, total Tj = 25°C + 10.2°C = 35.2°C",,,,,
-,"At our max, total Tj = 80°C + 10.2°C = 90.2°C",,,,,
-,Junction temp max is 150°C so this package works.,,"The schematic says IM4, but IM3 works fine.",,,
