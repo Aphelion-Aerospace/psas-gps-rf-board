@@ -3749,15 +3749,15 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="47.96" y="8.9726" size="0.6096" layer="25"/>
 <attribute name="VALUE" x="47.371" y="8.8265" size="0.6096" layer="27"/>
 </element>
-<element name="R38" library="rcl" package="R0402" value="750" x="49.2125" y="32.7025" smashed="yes" rot="R270">
+<element name="R38" library="rcl" package="R0402" value="68" x="49.2125" y="32.7025" smashed="yes" rot="R270">
 <attribute name="NAME" x="48.5775" y="36.0045" size="0.6096" layer="25" rot="R270"/>
 <attribute name="VALUE" x="49.2125" y="35.8775" size="0.6096" layer="27" rot="R270"/>
 </element>
-<element name="R39" library="rcl" package="R0402" value="750" x="47.9425" y="32.7025" smashed="yes" rot="R270">
+<element name="R39" library="rcl" package="R0402" value="68" x="47.9425" y="32.7025" smashed="yes" rot="R270">
 <attribute name="NAME" x="47.3075" y="36.0045" size="0.6096" layer="25" rot="R270"/>
 <attribute name="VALUE" x="47.9425" y="35.8775" size="0.6096" layer="27" rot="R270"/>
 </element>
-<element name="R40" library="rcl" package="R0402" value="300" x="50.4825" y="32.7025" smashed="yes" rot="R270">
+<element name="R40" library="rcl" package="R0402" value="27" x="50.4825" y="32.7025" smashed="yes" rot="R270">
 <attribute name="NAME" x="49.8475" y="36.0045" size="0.6096" layer="25" rot="R270"/>
 <attribute name="VALUE" x="50.4825" y="35.8775" size="0.6096" layer="27" rot="R270"/>
 </element>
@@ -3896,7 +3896,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="17.4625" y="36.5125" size="0.6096" layer="25"/>
 <attribute name="VALUE" x="17.4625" y="37.1475" size="0.6096" layer="27"/>
 </element>
-<element name="R6" library="rcl" package="R0402" value="750" x="20.0025" y="34.6075" smashed="yes" rot="R180">
+<element name="R6" library="rcl" package="R0402" value="68" x="20.0025" y="34.6075" smashed="yes" rot="R180">
 <attribute name="NAME" x="18.7325" y="35.2425" size="0.6096" layer="25"/>
 <attribute name="VALUE" x="20.0025" y="35.2425" size="0.6096" layer="27"/>
 </element>

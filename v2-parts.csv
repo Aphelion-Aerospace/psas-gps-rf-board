@@ -1,0 +1,66 @@
+Qty,Name,Manufacturer,Part Number,Package,Unit Cost,Total Cost
+1,"Cap, Ceramic, 0.047uF, 10V, 10%",SMTZone,MC02KTB100473,0402,ON HAND,
+3,"Cap, Ceramic, 0.47uF, 6.3V, 10%",SMTZone,MC02KTX6V3474,0402,ON HAND,
+22,"Cap, Ceramic, 100nF, 10V, 10%",SMTZone,MC02KTB100104,0402,ON HAND,
+11,"Cap, Ceramic, 100pF, 50V, 5%",SMTZone,MC02JTN500101,0402,ON HAND,
+2,"Cap, Ceramic, 100uF, 10V, 20%",TDK,C3216X5R1A107M160AC,1206,0.46,0.92
+2,"Cap, Ceramic, 10nF, 50V, 10%",SMTZone,MC02KTB500103,0402,ON HAND,
+2,"Cap, Ceramic, 10uF, 50V, 10%",Samsung,CL31A106KBHNNNE,1206,0.38,0.76
+1,"Cap, Ceramic, 10uF, 6.3V, 10%",Taiyo Yuden,JMK316B7106KL-T,1206,0.28,0.28
+2,"Cap, Ceramic, 18pF, 50V, 10%",SMTZone,MC02JTN500180,0402,ON HAND,
+1,"Cap, Ceramic, 1nF, 50V, 10%",SMTZone,MC02KTB500102,0402,ON HAND,
+2,"Cap, Ceramic, 1uF, 10V, 10%",Taiyo Yuden,LMK107B7105KA-T,0603,0.10,0.2
+3,"Cap, Ceramic, 2.2uF, 10V, 10%",Taiyo Yuden,LMK107BJ225KA-T,0603,.13,0.39
+2,"Cap, Ceramic, 22pF, 50V, 5%",SMTZone,MC02JTN500220,0402,ON HAND,
+3,"Cap, Ceramic, 22uF, 6.3V, 10%",TDK,C3216X5R0J226K/1.6,1206,.48,1.44
+1,"Cap, Ceramic, 27pF",SMTZone,MC02JTN500270,0402,ON HAND,
+1,"Cap, Ceramic, 470pF",SMTZone,MC02KTB500471,0402,ON HAND,
+1,"Conn, Coax, SMA",?,SMA,SMA,ON HAND,
+1,"Conn, JTAG, 2x5 (10 pins)",Harwin,M50-3600542,SMD,1.16,1.16
+1,"Conn, Micro-USB B, SMD",TE Connectivity,Type B,microUSB-B,ON HAND,
+1,"Conn, microSD, Push-Push",3M,2908-05WB-MG,microSD,ON HAND,
+1,"Conn, Rocketnet",PSAS,It's a PSAS Special,,ON HAND,
+1,"Crystal, 25MHz, 18pF",CTS,406I35D25M00000,CTS406,1.09,1.09
+1,"Diode, 400V, 1A",Diodes Inc,ES1G-13-F,SMA,0.5,0.5
+1,"Ferrite, 600ohm, 200mA, 0805",Murata,BLM21BD601SN1D,0805,0.16,0.16
+2,"Filter, SAW, 1.57542GHz, 0.8dB Loss, 2MHz",EPCOS,B39162B9415K610,SMD,1.58,3.16
+1,"Header, 1x4",Sparkfun,M1x04,,ON HAND,
+1,"IC, Ethernet PHY, 10/100, MII/RMII",Microchip,LAN8710A-EZC,32QFN,1.31,1.31
+1,"IC, Volt Reg, 3.3V, 0.1A",TI,LM3480IM3-3.3,SOT23-3,0.97,0.97
+1,"IC, Switch Reg, Buck, 4A, Adj",Linear Tech,LTM4619,144LGA,28.62,28.62
+1,"IC, Universal GPS Receiver",Maxim,MAX2769BETI/V+,28WFQFN,ON HAND,
+1,"IC, Microcontroller, 32bit, 100-pin",STMicroelectronics,STM32F407VET6,100LQFP,ON HAND,
+1,"IC, GPS LNA, 1.6GHz",Torex,XC2401,USPN-4B02,0.68,0.68
+1,"Inductor, 3.3nH",?,?,0402,ON HAND,
+1,"LED, Blue, 20mA, 2.8V",Lite-On,LTST-C193TBKT-5A,0603,0.47,0.47
+2,"LED, Green, 20mA, 2.0V",Lite-On,LTST-C190KGKT,0603,0.29,0.58
+1,"LED, Red, 20mA, 2.0V",Lite-On,LTST-C190KRKT,0603,0.29,0.29
+1,"MOSFET, P-Channel, 20V, 1.8A",ON Semi,NTR4101P,SOT-23,0.45,0.45
+2,"Resistor, 0",Panasonic,ERJ-2GE0R00X,0402,0.1,0.2
+1,"Resistor, 1.5k, 1/10W, 1%",SMTZone,Included in kit,0402,ON HAND,
+5,"Resistor, 10k, 1/10W, 1%",SMTZone,Included in kit,0402,ON HAND,
+1,"Resistor, 11.5k, 1/10W, 1%",Panasonic,ERJ-2RKF1152X,0402,0.1,0.1
+1,"Resistor, 12.1k, 1/10W, 1%",SMTZone,Included in kit,0402,ON HAND,
+1,"Resistor, 150, 1/10W, 1%",SMTZone,Included in kit,0402,ON HAND,
+1,"Resistor, 19.1k, 1/10W, 1%",Panasonic,ERJ-2RKF1912X,0402,0.1,0.1
+1,"Resistor, 2.2k, 1/10W, 1%",SMTZone,Included in kit,0402,ON HAND,
+1,"Resistor, 20k, 1/10W, 1%",SMTZone,Included in kit,0402,ON HAND,
+1,"Resistor, 27, 1/10W, 1%",SMTZone,Included in kit,0402,ON HAND,
+8,"Resistor, 4.7k, 1/10W, 1%",SMTZone,Included in kit,0402,ON HAND,
+4,"Resistor, 49.9, 1/10W, 1%",SMTZone,Included in kit,0402,ON HAND,
+2,"Resistor, 75, 1/10W, 1%",SMTZone,Included in kit,0402,ON HAND,
+3,"Resistor, 68, 1/10W, 1%",SMTZone,Included in kit,0402,ON HAND,
+1,"Oscillator, TXCO, 16.368MHz, 3.3V",TXC,7Q-16.368MBG-T,SMD,3.58,3.58
+2,"Choke, Common Mode, 360 ohms, 220mA",TDK ,ACM2012-900-2P-T002,SMD,0.5,1
+2,"Transformer, Pulse, LAN, 1:1, 200uH",TDK,ALT4532-201-T001,,1.49,2.98
+,,,,,SUM,51.39
+,,,,,,
+,,,,,,
+,,,,,,
+,Thermal Resistance for LM3480IM3 with 3.3V,,,,,
+,Vin = 5V,Vout = 3.3V,Iout = 20mA,,,
+,Pd = (Vin - Vout) * Iout = (1.7V)(20mA) = 34mW,,,,,
+,SOT223 - θjamax is 62°C/W so worst case from our power is Tj = (34mW)(300°C/W) = 10.2°C,,Also power dissipation is 100mW in datasheet,,,
+,"At ambient, total Tj = 25°C + 10.2°C = 35.2°C",,,,,
+,"At our max, total Tj = 80°C + 10.2°C = 90.2°C",,,,,
+,Junction temp max is 150°C so this package works.,,"The schematic says IM4, but IM3 works fine.",,,

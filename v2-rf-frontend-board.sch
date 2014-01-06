@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.0125" unitdist="inch" unit="inch" style="dots" multiple="2" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.0125" unitdist="inch" unit="inch" style="dots" multiple="2" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -16338,9 +16338,9 @@ http://www.maxim-ic.com/datasheet/index.mvp/id/5241</description>
 <part name="DIG_GND10" library="supply" deviceset="GND_BAR" device="" value="GND"/>
 <part name="R18" library="rcl" deviceset="R-US_" device="R0402" value="10k"/>
 <part name="TP2" library="testpad" deviceset="TP" device="TP06R" value=""/>
-<part name="R38" library="rcl" deviceset="R-US_" device="R0402" value="750"/>
-<part name="R39" library="rcl" deviceset="R-US_" device="R0402" value="750"/>
-<part name="R40" library="rcl" deviceset="R-US_" device="R0402" value="300"/>
+<part name="R38" library="rcl" deviceset="R-US_" device="R0402" value="68"/>
+<part name="R39" library="rcl" deviceset="R-US_" device="R0402" value="68"/>
+<part name="R40" library="rcl" deviceset="R-US_" device="R0402" value="27"/>
 <part name="3.3VD3" library="SparkFun-Aesthetics" deviceset="3.3VD" device=""/>
 <part name="U$7" library="SparkFun-Aesthetics" deviceset="3.3VD" device=""/>
 <part name="U$10" library="SparkFun-Aesthetics" deviceset="3.3VD" device=""/>
@@ -16392,7 +16392,7 @@ http://www.maxim-ic.com/datasheet/index.mvp/id/5241</description>
 <part name="C42" library="rcl" deviceset="C-EU" device="C0402" value="10n"/>
 <part name="C43" library="rcl" deviceset="C-EU" device="C0402" value="10n"/>
 <part name="LED1" library="led" deviceset="LED" device="CHIP-LED0603" value="GREEN"/>
-<part name="R6" library="rcl" deviceset="R-US_" device="R0402" value="750"/>
+<part name="R6" library="rcl" deviceset="R-US_" device="R0402" value="68"/>
 <part name="R10" library="rcl" deviceset="R-US_" device="R0402" value="75"/>
 <part name="R11" library="rcl" deviceset="R-US_" device="R0402" value="75"/>
 <part name="C44" library="rcl" deviceset="C-EU" device="C0402" value="1nF"/>
@@ -19121,24 +19121,8 @@ Transformers</text>
 <approved hash="102,1,234.95,210.82,BAR_GND,GND,,,,"/>
 <approved hash="102,1,99.06,74.93,BAR_GND,GND,,,,"/>
 <approved hash="102,1,162.56,175.26,BAR_GND,GND,,,,"/>
-<approved hash="102,1,101.6,180.34,+5V,VIN,,,,"/>
-<approved hash="201,1,162.56,175.26,BAR_GND,GND\, BAR_GND,,,,"/>
-<approved hash="201,1,99.06,74.93,BAR_GND,GND\, BAR_GND,,,,"/>
-<approved hash="201,1,234.95,210.82,BAR_GND,GND\, BAR_GND,,,,"/>
-<approved hash="201,1,222.25,210.82,BAR_GND,GND\, BAR_GND,,,,"/>
-<approved hash="201,1,132.08,210.82,BAR_GND,GND\, BAR_GND,,,,"/>
-<approved hash="201,1,142.24,210.82,BAR_GND,GND\, BAR_GND,,,,"/>
-<approved hash="201,1,152.4,210.82,BAR_GND,GND\, BAR_GND,,,,"/>
-<approved hash="201,1,162.56,210.82,BAR_GND,GND\, BAR_GND,,,,"/>
-<approved hash="201,1,172.72,210.82,BAR_GND,GND\, BAR_GND,,,,"/>
-<approved hash="201,1,182.88,210.82,BAR_GND,GND\, BAR_GND,,,,"/>
-<approved hash="201,1,205.74,36.83,BAR_GND,GND\, BAR_GND,,,,"/>
-<approved hash="201,1,68.58,133.35,BAR_GND,GND\, BAR_GND,,,,"/>
-<approved hash="201,1,78.74,99.06,BAR_GND,GND\, BAR_GND,,,,"/>
-<approved hash="201,1,66.04,95.25,BAR_GND,GND\, BAR_GND,,,,"/>
-<approved hash="201,1,284.48,180.34,BAR_GND,GND\, BAR_GND,,,,"/>
-<approved hash="201,1,284.48,172.72,BAR_GND,GND\, BAR_GND,,,,"/>
-<approved hash="201,1,99.06,156.21,BAR_GND,GND\, BAR_GND,,,,"/>
+<approved hash="102,1,101.6,189.23,+5V,VIN,,,,"/>
+<approved hash="102,1,86.36,99.06,BAR_GND,GND,,,,"/>
 <approved hash="102,2,241.3,50.8,BAR_GND,GND,,,,"/>
 <approved hash="102,2,259.08,50.8,BAR_GND,GND,,,,"/>
 <approved hash="102,2,233.68,208.28,BAR_GND,GND,,,,"/>
@@ -19160,35 +19144,33 @@ Transformers</text>
 <approved hash="102,2,69.85,116.84,BAR_GND,GND,,,,"/>
 <approved hash="102,2,101.6,91.44,BAR_GND,GND,,,,"/>
 <approved hash="102,2,151.13,111.76,BAR_GND,GND,,,,"/>
-<approved hash="201,2,151.13,111.76,BAR_GND,GND\, BAR_GND,,,,"/>
-<approved hash="201,2,101.6,91.44,BAR_GND,GND\, BAR_GND,,,,"/>
-<approved hash="201,2,69.85,116.84,BAR_GND,GND\, BAR_GND,,,,"/>
-<approved hash="201,2,85.09,116.84,BAR_GND,GND\, BAR_GND,,,,"/>
-<approved hash="201,2,71.12,88.9,BAR_GND,GND\, BAR_GND,,,,"/>
-<approved hash="201,2,173.99,88.9,BAR_GND,GND\, BAR_GND,,,,"/>
-<approved hash="201,2,189.23,111.76,BAR_GND,GND\, BAR_GND,,,,"/>
-<approved hash="201,2,209.55,63.5,BAR_GND,GND\, BAR_GND,,,,"/>
-<approved hash="201,2,248.92,73.66,BAR_GND,GND\, BAR_GND,,,,"/>
-<approved hash="201,2,236.22,180.34,BAR_GND,GND\, BAR_GND,,,,"/>
-<approved hash="201,2,223.52,180.34,BAR_GND,GND\, BAR_GND,,,,"/>
-<approved hash="201,2,271.78,182.88,BAR_GND,GND\, BAR_GND,,,,"/>
-<approved hash="201,2,193.04,180.34,BAR_GND,GND\, BAR_GND,,,,"/>
-<approved hash="201,2,205.74,180.34,BAR_GND,GND\, BAR_GND,,,,"/>
-<approved hash="201,2,162.56,180.34,BAR_GND,GND\, BAR_GND,,,,"/>
-<approved hash="201,2,172.72,180.34,BAR_GND,GND\, BAR_GND,,,,"/>
-<approved hash="201,2,264.16,182.88,BAR_GND,GND\, BAR_GND,,,,"/>
-<approved hash="201,2,220.98,208.28,BAR_GND,GND\, BAR_GND,,,,"/>
-<approved hash="201,2,233.68,208.28,BAR_GND,GND\, BAR_GND,,,,"/>
-<approved hash="201,2,259.08,50.8,BAR_GND,GND\, BAR_GND,,,,"/>
-<approved hash="201,2,241.3,50.8,BAR_GND,GND\, BAR_GND,,,,"/>
-<approved hash="104,4,193.04,152.4,U3,VDD1A,N$59,,,"/>
-<approved hash="104,4,193.04,147.32,U3,VDD2A,N$59,,,"/>
+<approved hash="102,2,287.02,182.88,BAR_GND,GND,,,,"/>
+<approved hash="102,2,294.64,182.88,BAR_GND,GND,,,,"/>
+<approved hash="102,2,45.72,63.5,BAR_GND,GND,,,,"/>
+<approved hash="102,2,210.82,129.54,BAR_GND,GND,,,,"/>
+<approved hash="102,2,139.7,124.46,BAR_GND,GND,,,,"/>
+<approved hash="104,1,199.39,187.96,U8,VDD1,3.3VD,,,"/>
+<approved hash="104,1,196.85,187.96,U8,VDD2,3.3VD,,,"/>
+<approved hash="104,1,194.31,187.96,U8,VDD3,3.3VD,,,"/>
+<approved hash="104,1,191.77,187.96,U8,VDD4,3.3VD,,,"/>
+<approved hash="104,1,189.23,187.96,U8,VDD5,3.3VD,,,"/>
+<approved hash="104,1,186.69,187.96,U8,VDD6,3.3VD,,,"/>
+<approved hash="104,1,203.2,41.91,U8,VSS1,GND,,,"/>
+<approved hash="104,1,205.74,41.91,U8,VSS2,GND,,,"/>
+<approved hash="104,1,208.28,41.91,U8,VSS3,GND,,,"/>
+<approved hash="104,4,193.04,152.4,U3,VDD1A,VDDA,,,"/>
+<approved hash="104,4,193.04,147.32,U3,VDD2A,VDDA,,,"/>
 <approved hash="104,4,193.04,142.24,U3,VDDCR,N$58,,,"/>
 <approved hash="104,4,193.04,160.02,U3,VDDIO,3.3VD,,,"/>
 <approved hash="104,4,59.69,116.84,J3,B+,VIN,,,"/>
 <approved hash="104,4,59.69,114.3,J3,B+,VIN,,,"/>
 <approved hash="104,4,59.69,81.28,J3,B-,GND,,,"/>
 <approved hash="104,4,59.69,78.74,J3,B-,GND,,,"/>
+<approved hash="104,3,101.6,168.91,U7,INTVCC,N$6,,,"/>
+<approved hash="104,3,160.02,166.37,U7,VOUT1,+5V,,,"/>
+<approved hash="104,3,160.02,138.43,U7,VOUT2,3.3VD,,,"/>
+<approved hash="104,3,101.6,132.08,U7,SGND,GND,,,"/>
+<approved hash="104,3,101.6,134.62,U7,PGND,GND,,,"/>
 <approved hash="104,2,248.92,78.74,U1,BODY,GND,,,"/>
 <approved hash="104,2,261.62,154.94,U1,VCCADC,3.3VD,,,"/>
 <approved hash="104,2,243.84,154.94,U1,VCCCP,3.3VA,,,"/>
@@ -19199,9 +19181,14 @@ Transformers</text>
 <approved hash="104,2,204.47,55.88,U2,GND1,GND,,,"/>
 <approved hash="104,2,209.55,55.88,U2,GND2,GND,,,"/>
 <approved hash="104,2,214.63,55.88,U2,GND3,GND,,,"/>
-<approved hash="104,2,66.04,88.9,U6,GND1,GND,,,"/>
-<approved hash="104,2,71.12,88.9,U6,GND2,GND,,,"/>
-<approved hash="104,2,76.2,88.9,U6,GND3,GND,,,"/>
+<approved hash="104,2,66.04,88.9,L6,GND1,GND,,,"/>
+<approved hash="104,2,71.12,88.9,L6,GND2,GND,,,"/>
+<approved hash="104,2,76.2,88.9,L6,GND3,GND,,,"/>
+<approved hash="115,1,111.76,84.8826,JTAG1,,,,,"/>
+<approved hash="115,1,193.888,130.071,FRAME1,,,,,"/>
+<approved hash="115,2,193.888,130.071,FRAME2,,,,,"/>
+<approved hash="115,3,193.888,130.071,FRAME3,,,,,"/>
+<approved hash="115,4,193.888,130.071,FRAME4,,,,,"/>
 </errors>
 </schematic>
 </drawing>
