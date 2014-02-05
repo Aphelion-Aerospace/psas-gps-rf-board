@@ -17815,7 +17815,7 @@ CHOICE #2:
 <wire x1="80.01" y1="106.426" x2="78.994" y2="106.426" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$23" class="0">
+<net name="ANTBIAS" class="0">
 <segment>
 <pinref part="R13" gate="G$1" pin="1"/>
 <wire x1="150.876" y1="127.762" x2="219.456" y2="127.762" width="0.1524" layer="91"/>
