@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="6.4">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -11,16 +11,6 @@
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="yes"/>
-<layer number="4" name="Route4" color="1" fill="4" visible="no" active="yes"/>
-<layer number="5" name="Route5" color="4" fill="4" visible="no" active="yes"/>
-<layer number="6" name="Route6" color="1" fill="8" visible="no" active="yes"/>
-<layer number="7" name="Route7" color="4" fill="8" visible="no" active="yes"/>
-<layer number="8" name="Route8" color="1" fill="2" visible="no" active="yes"/>
-<layer number="9" name="Route9" color="4" fill="2" visible="no" active="yes"/>
-<layer number="10" name="Route10" color="1" fill="7" visible="no" active="yes"/>
-<layer number="11" name="Route11" color="4" fill="7" visible="no" active="yes"/>
-<layer number="12" name="Route12" color="1" fill="5" visible="no" active="yes"/>
-<layer number="13" name="Route13" color="4" fill="5" visible="no" active="yes"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="yes"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -76,7 +66,7 @@
 <layer number="99" name="Invisibles" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="100" name="Hidden_Layer" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="101" name="Flex-Kleb" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="102" name="Changes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="102" name="Vscore" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="103" name="tMap" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="104" name="Name" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="105" name="Beschreib" color="7" fill="1" visible="yes" active="yes"/>
@@ -85,8 +75,8 @@
 <layer number="108" name="fp8" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="109" name="fp9" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="110" name="fp0" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="111" name="LPC17xx" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="111" name="Text" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="112" name="2Restrict" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
@@ -97,8 +87,8 @@
 <layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="130" name="bLogo" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="131" name="tAdjust" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="132" name="bAdjust" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="131" name="tText" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="132" name="bMask" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="152" name="_bDocu" color="7" fill="1" visible="yes" active="yes"/>
@@ -255,19 +245,19 @@
 </packages>
 <symbols>
 <symbol name="STM32F4_100PIN_GPSBOARD">
-<wire x1="-38.1" y1="-83.82" x2="-38.1" y2="52.07" width="0.005" layer="94"/>
+<wire x1="-38.1" y1="-93.726" x2="-38.1" y2="52.07" width="0.005" layer="94"/>
 <wire x1="-38.1" y1="52.07" x2="39.37" y2="52.07" width="0.005" layer="94"/>
-<wire x1="39.37" y1="52.07" x2="39.37" y2="-83.82" width="0.005" layer="94"/>
-<wire x1="39.37" y1="-83.82" x2="-38.1" y2="-83.82" width="0.005" layer="94"/>
+<wire x1="39.37" y1="52.07" x2="39.37" y2="-93.726" width="0.005" layer="94"/>
+<wire x1="39.37" y1="-93.726" x2="-38.1" y2="-93.726" width="0.005" layer="94"/>
 <pin name="BOOT0" x="-43.18" y="49.53" length="middle"/>
 <pin name="NRST" x="-43.18" y="46.99" length="middle"/>
 <pin name="PA0" x="44.45" y="29.21" length="middle" rot="R180"/>
 <pin name="PA1" x="-43.18" y="21.59" length="middle"/>
 <pin name="PA2" x="-43.18" y="19.05" length="middle"/>
 <pin name="PA3" x="-43.18" y="24.13" length="middle"/>
-<pin name="PA4" x="-43.18" y="-69.85" length="middle"/>
-<pin name="PA5" x="-43.18" y="-72.39" length="middle"/>
-<pin name="PA6" x="-43.18" y="-74.93" length="middle"/>
+<pin name="PA4" x="44.704" y="-89.662" length="middle" rot="R180"/>
+<pin name="PA5" x="44.704" y="-84.582" length="middle" rot="R180"/>
+<pin name="PA6" x="44.704" y="-81.788" length="middle" rot="R180"/>
 <pin name="PA7" x="-43.18" y="16.51" length="middle"/>
 <pin name="PA8" x="44.45" y="31.75" length="middle" rot="R180"/>
 <pin name="PA9" x="-43.18" y="35.56" length="middle"/>
@@ -278,11 +268,11 @@
 <pin name="PA14" x="-43.18" y="-26.67" length="middle"/>
 <pin name="PA15" x="-43.18" y="-31.75" length="middle"/>
 <pin name="PB0" x="44.45" y="34.29" length="middle" rot="R180"/>
-<pin name="PB1" x="44.45" y="-39.37" length="middle" rot="R180"/>
-<pin name="PB2" x="44.45" y="-41.91" length="middle" rot="R180"/>
+<pin name="PB1" x="44.704" y="-74.676" length="middle" rot="R180"/>
+<pin name="PB2" x="44.704" y="-71.882" length="middle" rot="R180"/>
 <pin name="PB3" x="-43.18" y="-29.21" length="middle"/>
 <pin name="PB4" x="44.45" y="24.13" length="middle" rot="R180"/>
-<pin name="PB5" x="-43.18" y="-77.47" length="middle"/>
+<pin name="PB5" x="44.704" y="-87.122" length="middle" rot="R180"/>
 <pin name="PB6" x="44.45" y="36.83" length="middle" rot="R180"/>
 <pin name="PB7" x="44.45" y="39.37" length="middle" rot="R180"/>
 <pin name="PB8" x="-43.18" y="-64.77" length="middle"/>
@@ -333,15 +323,15 @@
 <pin name="PE4" x="-43.18" y="-46.99" length="middle"/>
 <pin name="PE5" x="-43.18" y="-49.53" length="middle"/>
 <pin name="PE6" x="-43.18" y="-52.07" length="middle"/>
-<pin name="PE7" x="44.45" y="-44.45" length="middle" rot="R180"/>
-<pin name="PE8" x="44.45" y="-46.99" length="middle" rot="R180"/>
-<pin name="PE9" x="44.45" y="-49.53" length="middle" rot="R180"/>
-<pin name="PE10" x="44.45" y="-58.42" length="middle" rot="R180"/>
-<pin name="PE11" x="44.45" y="-60.96" length="middle" rot="R180"/>
-<pin name="PE12" x="44.45" y="-69.85" length="middle" rot="R180"/>
-<pin name="PE13" x="44.45" y="-72.39" length="middle" rot="R180"/>
-<pin name="PE14" x="44.45" y="-74.93" length="middle" rot="R180"/>
-<pin name="PE15" x="44.45" y="-77.47" length="middle" rot="R180"/>
+<pin name="PE7" x="44.704" y="-69.088" length="middle" rot="R180"/>
+<pin name="PE8" x="44.704" y="-66.802" length="middle" rot="R180"/>
+<pin name="PE9" x="44.704" y="-64.516" length="middle" rot="R180"/>
+<pin name="PE10" x="44.45" y="-55.88" length="middle" rot="R180"/>
+<pin name="PE11" x="44.45" y="-53.594" length="middle" rot="R180"/>
+<pin name="PE12" x="44.45" y="-44.45" length="middle" rot="R180"/>
+<pin name="PE13" x="44.45" y="-41.91" length="middle" rot="R180"/>
+<pin name="PE14" x="44.45" y="-39.37" length="middle" rot="R180"/>
+<pin name="PE15" x="44.45" y="-36.322" length="middle" rot="R180"/>
 <pin name="PH0" x="44.45" y="49.53" length="middle" rot="R180"/>
 <pin name="PH1" x="44.45" y="41.91" length="middle" rot="R180"/>
 <pin name="VBAT" x="26.67" y="57.15" length="middle" rot="R270"/>
@@ -355,11 +345,11 @@
 <pin name="VDD6" x="-24.13" y="57.15" length="middle" direction="pwr" rot="R270"/>
 <pin name="VDDA" x="16.51" y="57.15" length="middle" rot="R270"/>
 <pin name="VREF+" x="22.86" y="57.15" length="middle" rot="R270"/>
-<pin name="VSS1" x="-7.62" y="-88.9" length="middle" direction="pwr" rot="R90"/>
-<pin name="VSS2" x="-5.08" y="-88.9" length="middle" direction="pwr" rot="R90"/>
-<pin name="VSS3" x="-2.54" y="-88.9" length="middle" direction="pwr" rot="R90"/>
+<pin name="VSS1" x="-7.62" y="-98.806" length="middle" direction="pwr" rot="R90"/>
+<pin name="VSS2" x="-5.08" y="-98.806" length="middle" direction="pwr" rot="R90"/>
+<pin name="VSS3" x="-2.54" y="-98.806" length="middle" direction="pwr" rot="R90"/>
 <pin name="VSSA" x="19.05" y="57.15" length="middle" rot="R270"/>
-<text x="-25.4" y="-71.12" size="1.6764" layer="94">SPI</text>
+<text x="27.432" y="-83.566" size="1.6764" layer="94" rot="R180">SPI</text>
 <text x="-25.4" y="22.86" size="1.6764" layer="94">ETHERNET</text>
 <text x="-25.4" y="36.83" size="1.6764" layer="94">USB FS</text>
 <text x="-25.4" y="-6.35" size="1.6764" layer="94">SDIO</text>
