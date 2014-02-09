@@ -14960,16 +14960,16 @@ MAX2769 Universal GPS Receiver Footprint</description>
 <part name="C53" library="rcl_custom" deviceset="C-EU" device="0402-C-NOSILK" value="100nF 10V"/>
 <part name="U1" library="max2769" deviceset="MAX2769" device=""/>
 <part name="C11" library="rcl_custom" deviceset="C-EU" device="0402-C-NOSILK" value="DNP"/>
-<part name="U2" library="swift-nav" deviceset="SAW_1.4X1.1" device="" value="SAW"/>
+<part name="L7" library="swift-nav" deviceset="SAW_1.4X1.1" device="" value="SAW_1.4X1.1"/>
 <part name="BAR_GND1" library="supply" deviceset="GND_BAR" device="" value="GND"/>
 <part name="U4" library="swift-nav" deviceset="7Q-16.368MBG-T" device=""/>
 <part name="C2" library="rcl_custom" deviceset="C-EU" device="0402-C-NOSILK" value="100n 10V"/>
 <part name="DIG_GND7" library="supply" deviceset="GND_BAR" device="" value="GND"/>
 <part name="U$6" library="SparkFun-Aesthetics" deviceset="2.85VD" device=""/>
 <part name="U5" library="swift-nav" deviceset="XC2401" device=""/>
-<part name="L6" library="swift-nav" deviceset="SAW_1.4X1.1" device="" value="SAW"/>
+<part name="L6" library="swift-nav" deviceset="SAW_1.4X1.1" device="" value="SAW_1.4X1.1"/>
 <part name="BAR_GND2" library="supply" deviceset="GND_BAR" device="" value="GND"/>
-<part name="C58" library="rcl_custom" deviceset="C-EU" device="0402-C-NOSILK" value="470nF 10V"/>
+<part name="C58" library="rcl_custom" deviceset="C-EU" device="0603-C-NOSILK" value="470nF 10V"/>
 <part name="DIG_GND28" library="supply" deviceset="GND_BAR" device="" value="GND"/>
 <part name="DIG_GND9" library="supply" deviceset="GND_BAR" device="" value="GND"/>
 <part name="DIG_GND15" library="supply" deviceset="GND_BAR" device="" value="GND"/>
@@ -15006,7 +15006,7 @@ MAX2769 Universal GPS Receiver Footprint</description>
 <part name="TP32" library="Tova" deviceset="TEST-POINT" device=""/>
 <part name="TP33" library="Tova" deviceset="TEST-POINT" device=""/>
 <part name="DIG_GND18" library="supply" deviceset="GND_BAR" device="" value="GND"/>
-<part name="SD" library="con-usd-hirose-dm3-gpsboard" deviceset="CON_HIROSE_DM3*" device="D(MICROSD)"/>
+<part name="SD1" library="con-usd-hirose-dm3-gpsboard" deviceset="CON_HIROSE_DM3*" device="D(MICROSD)"/>
 <part name="DIG_GND21" library="supply" deviceset="GND_BAR" device="" value="GND"/>
 <part name="DIG_GND31" library="supply" deviceset="GND_BAR" device="" value="GND"/>
 <part name="USB" library="con-hirose-microusb" deviceset="ZX62D-B-5P8" device=""/>
@@ -15020,11 +15020,11 @@ MAX2769 Universal GPS Receiver Footprint</description>
 <part name="GND14" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="R1" library="rcl_custom" deviceset="R-US_" device="0402-C-NOSILK" value="10k"/>
 <part name="R3" library="rcl_custom" deviceset="R-US_" device="0402-C-NOSILK" value="3.3k"/>
-<part name="R7" library="rcl_custom" deviceset="R-US_" device="0402-C-NOSILK" value="240k"/>
+<part name="R7" library="rcl_custom" deviceset="R-US_" device="0402-C-NOSILK" value="249k"/>
 <part name="GND4" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C38" library="SparkFun-Passives" deviceset="CAP_POL" device="6032" value="100u 10V"/>
 <part name="GND15" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="C33" library="rcl_custom" deviceset="C-EU" device="0805-C-NOSILK" value="10uF 50V"/>
+<part name="C33" library="rcl_custom" deviceset="C-EU" device="1206-C" value="10uF 50V"/>
 <part name="GND2" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C39" library="rcl_custom" deviceset="C-EU" device="0603-C-NOSILK" value="1uF 10V"/>
 <part name="GND16" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -15163,12 +15163,12 @@ to MAX2769</text>
 <instance part="LED3" gate="G$1" x="283.21" y="110.49" rot="R90"/>
 <instance part="LED4" gate="G$1" x="283.21" y="99.06" rot="R90"/>
 <instance part="DIG_GND18" gate="1" x="264.16" y="37.846"/>
-<instance part="SD" gate="$" x="51.562" y="117.094" rot="MR0"/>
-<instance part="SD" gate="G1" x="55.372" y="102.87"/>
-<instance part="SD" gate="G2" x="55.372" y="100.33"/>
-<instance part="SD" gate="G3" x="55.372" y="97.79"/>
-<instance part="SD" gate="G4" x="55.372" y="95.25"/>
-<instance part="SD" gate="CD" x="54.102" y="134.112"/>
+<instance part="SD1" gate="$" x="51.562" y="117.094" rot="MR0"/>
+<instance part="SD1" gate="G1" x="55.372" y="102.87"/>
+<instance part="SD1" gate="G2" x="55.372" y="100.33"/>
+<instance part="SD1" gate="G3" x="55.372" y="97.79"/>
+<instance part="SD1" gate="G4" x="55.372" y="95.25"/>
+<instance part="SD1" gate="CD" x="54.102" y="134.112"/>
 <instance part="DIG_GND21" gate="1" x="65.532" y="131.572"/>
 <instance part="DIG_GND31" gate="1" x="41.656" y="131.572"/>
 <instance part="USB" gate="G$1" x="37.084" y="199.898"/>
@@ -15314,27 +15314,27 @@ to MAX2769</text>
 <junction x="65.532" y="100.33"/>
 <wire x1="65.532" y1="107.696" x2="65.532" y2="102.87" width="0.1524" layer="91"/>
 <junction x="65.532" y="102.87"/>
-<pinref part="SD" gate="G1" pin="PAD"/>
+<pinref part="SD1" gate="G1" pin="PAD"/>
 <wire x1="57.912" y1="102.87" x2="62.992" y2="102.87" width="0.1524" layer="91"/>
-<pinref part="SD" gate="G2" pin="PAD"/>
+<pinref part="SD1" gate="G2" pin="PAD"/>
 <wire x1="62.992" y1="100.33" x2="57.912" y2="100.33" width="0.1524" layer="91"/>
-<pinref part="SD" gate="G3" pin="PAD"/>
+<pinref part="SD1" gate="G3" pin="PAD"/>
 <wire x1="57.912" y1="97.79" x2="65.532" y2="97.79" width="0.1524" layer="91"/>
-<pinref part="SD" gate="G4" pin="PAD"/>
+<pinref part="SD1" gate="G4" pin="PAD"/>
 <wire x1="57.912" y1="95.25" x2="65.532" y2="95.25" width="0.1524" layer="91"/>
 <junction x="65.532" y="95.25"/>
 <junction x="65.532" y="97.79"/>
-<pinref part="SD" gate="$" pin="6"/>
+<pinref part="SD1" gate="$" pin="6"/>
 <wire x1="58.42" y1="107.696" x2="57.15" y2="107.696" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="SD" gate="CD" pin="1"/>
+<pinref part="SD1" gate="CD" pin="1"/>
 <pinref part="DIG_GND21" gate="1" pin="BAR_GND"/>
 <wire x1="56.642" y1="134.112" x2="60.706" y2="134.112" width="0.1524" layer="91"/>
 <wire x1="60.706" y1="134.112" x2="65.532" y2="134.112" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="SD" gate="CD" pin="0"/>
+<pinref part="SD1" gate="CD" pin="0"/>
 <pinref part="DIG_GND31" gate="1" pin="BAR_GND"/>
 <wire x1="49.022" y1="134.112" x2="41.656" y2="134.112" width="0.1524" layer="91"/>
 </segment>
@@ -15459,7 +15459,7 @@ to MAX2769</text>
 <label x="63.5" y="125.476" size="1.778" layer="95"/>
 <pinref part="U8" gate="G$1" pin="PC8"/>
 <wire x1="57.15" y1="125.476" x2="167.64" y2="125.73" width="0.1524" layer="91"/>
-<pinref part="SD" gate="$" pin="7"/>
+<pinref part="SD1" gate="$" pin="7"/>
 </segment>
 </net>
 <net name="SDIO_D1" class="0">
@@ -15467,7 +15467,7 @@ to MAX2769</text>
 <label x="63.5" y="115.316" size="1.778" layer="95"/>
 <pinref part="U8" gate="G$1" pin="PC9"/>
 <wire x1="167.64" y1="115.57" x2="57.15" y2="115.316" width="0.1524" layer="91"/>
-<pinref part="SD" gate="$" pin="8"/>
+<pinref part="SD1" gate="$" pin="8"/>
 </segment>
 </net>
 <net name="SDIO_D2" class="0">
@@ -15475,7 +15475,7 @@ to MAX2769</text>
 <label x="63.5" y="112.776" size="1.778" layer="95"/>
 <pinref part="U8" gate="G$1" pin="PC10"/>
 <wire x1="167.64" y1="113.03" x2="57.15" y2="112.776" width="0.1524" layer="91"/>
-<pinref part="SD" gate="$" pin="1"/>
+<pinref part="SD1" gate="$" pin="1"/>
 </segment>
 </net>
 <net name="SDIO_CLK" class="0">
@@ -15483,7 +15483,7 @@ to MAX2769</text>
 <label x="63.5" y="120.396" size="1.778" layer="95"/>
 <pinref part="U8" gate="G$1" pin="PC12"/>
 <wire x1="57.15" y1="120.396" x2="167.64" y2="120.65" width="0.1524" layer="91"/>
-<pinref part="SD" gate="$" pin="5"/>
+<pinref part="SD1" gate="$" pin="5"/>
 </segment>
 </net>
 <net name="SDIO_CMD" class="0">
@@ -15491,7 +15491,7 @@ to MAX2769</text>
 <label x="63.5" y="122.936" size="1.778" layer="95"/>
 <pinref part="U8" gate="G$1" pin="PD2"/>
 <wire x1="57.15" y1="122.936" x2="167.64" y2="123.19" width="0.1524" layer="91"/>
-<pinref part="SD" gate="$" pin="3"/>
+<pinref part="SD1" gate="$" pin="3"/>
 </segment>
 </net>
 <net name="SDIO_D3" class="0">
@@ -15500,7 +15500,7 @@ to MAX2769</text>
 <wire x1="57.15" y1="117.856" x2="163.83" y2="118.11" width="0.1524" layer="91"/>
 <pinref part="U8" gate="G$1" pin="PC11"/>
 <wire x1="163.83" y1="118.11" x2="167.64" y2="118.11" width="0.15" layer="91"/>
-<pinref part="SD" gate="$" pin="2"/>
+<pinref part="SD1" gate="$" pin="2"/>
 </segment>
 </net>
 <net name="OSC_OUT" class="0">
@@ -15884,7 +15884,7 @@ to MAX2769</text>
 <pinref part="C20" gate="CE" pin="2"/>
 <wire x1="57.15" y1="110.236" x2="73.152" y2="110.236" width="0.1524" layer="91"/>
 <wire x1="73.152" y1="110.236" x2="73.152" y2="107.188" width="0.1524" layer="91"/>
-<pinref part="SD" gate="$" pin="4"/>
+<pinref part="SD1" gate="$" pin="4"/>
 <label x="63.5" y="110.49" size="1.778" layer="95"/>
 <wire x1="73.152" y1="110.236" x2="89.154" y2="110.236" width="0.1524" layer="91"/>
 <junction x="73.152" y="110.236"/>
@@ -16029,7 +16029,10 @@ CHOICE #2:
 <attribute name="NAME" x="199.644" y="143.256" size="1.778" layer="95"/>
 <attribute name="VALUE" x="208.28" y="143.002" size="1.778" layer="96"/>
 </instance>
-<instance part="U2" gate="U1" x="204.47" y="88.646"/>
+<instance part="L7" gate="U1" x="204.47" y="88.646" smashed="yes">
+<attribute name="NAME" x="197.358" y="97.028" size="1.27" layer="95"/>
+<attribute name="VALUE" x="214.122" y="97.028" size="1.27" layer="96" align="bottom-right"/>
+</instance>
 <instance part="BAR_GND1" gate="1" x="205.74" y="73.914"/>
 <instance part="U4" gate="U$1" x="170.942" y="142.748"/>
 <instance part="C2" gate="CE" x="199.644" y="134.62" smashed="yes" rot="R90">
@@ -16187,11 +16190,11 @@ CHOICE #2:
 <pinref part="U1" gate="G$1" pin="BODY"/>
 </segment>
 <segment>
-<pinref part="U2" gate="U1" pin="GND1"/>
-<pinref part="U2" gate="U1" pin="GND3"/>
+<pinref part="L7" gate="U1" pin="GND1"/>
+<pinref part="L7" gate="U1" pin="GND3"/>
 <wire x1="200.66" y1="78.486" x2="205.74" y2="78.486" width="0.15" layer="91"/>
 <wire x1="205.74" y1="78.486" x2="210.82" y2="78.486" width="0.15" layer="91"/>
-<pinref part="U2" gate="U1" pin="GND2"/>
+<pinref part="L7" gate="U1" pin="GND2"/>
 <pinref part="BAR_GND1" gate="1" pin="BAR_GND"/>
 <junction x="205.74" y="78.486"/>
 <wire x1="205.74" y1="78.486" x2="205.74" y2="76.454" width="0.1524" layer="91"/>
@@ -16309,7 +16312,7 @@ CHOICE #2:
 </net>
 <net name="LNAOUT" class="0">
 <segment>
-<pinref part="U2" gate="U1" pin="RFIN"/>
+<pinref part="L7" gate="U1" pin="RFIN"/>
 <pinref part="U1" gate="G$1" pin="LNAOUT"/>
 <wire x1="191.77" y1="93.726" x2="191.77" y2="111.506" width="0.15" layer="91"/>
 <wire x1="191.77" y1="111.506" x2="219.71" y2="111.506" width="0.15" layer="91"/>
@@ -16317,7 +16320,7 @@ CHOICE #2:
 </net>
 <net name="MIXIN" class="0">
 <segment>
-<pinref part="U2" gate="U1" pin="RFOUT"/>
+<pinref part="L7" gate="U1" pin="RFOUT"/>
 <pinref part="U1" gate="G$1" pin="MIXIN"/>
 <wire x1="219.71" y1="93.726" x2="219.71" y2="106.426" width="0.1524" layer="91"/>
 </segment>
@@ -17832,9 +17835,9 @@ Transformers</text>
 <approved hash="104,2,242.57,177.546,U1,VCCIF,2.85VA,,,"/>
 <approved hash="104,2,234.95,177.546,U1,VCCRF,2.85VA,,,"/>
 <approved hash="104,2,245.11,177.546,U1,VCCVCO,2.85VA,,,"/>
-<approved hash="104,2,200.66,78.486,U2,GND1,GND,,,"/>
-<approved hash="104,2,205.74,78.486,U2,GND2,GND,,,"/>
-<approved hash="104,2,210.82,78.486,U2,GND3,GND,,,"/>
+<approved hash="104,2,200.66,78.486,L7,GND1,GND,,,"/>
+<approved hash="104,2,205.74,78.486,L7,GND2,GND,,,"/>
+<approved hash="104,2,210.82,78.486,L7,GND3,GND,,,"/>
 <approved hash="104,2,39.37,89.662,L6,GND1,GND,,,"/>
 <approved hash="104,2,44.45,89.662,L6,GND2,GND,,,"/>
 <approved hash="104,2,49.53,89.662,L6,GND3,GND,,,"/>
