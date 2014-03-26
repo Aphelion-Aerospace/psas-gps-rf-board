@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mic" unit="mic" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="100" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -224,7 +224,7 @@ http://pdfserv.maxim-ic.com/land_patterns/90-0023.PDF</description>
 <pin name="!CS" x="-25.4" y="20.32" length="short" direction="in"/>
 <pin name="!IDLE" x="-25.4" y="33.02" length="short" direction="in"/>
 <pin name="!SHDN" x="-25.4" y="30.48" length="short" direction="in"/>
-<pin name="ANTBIAS" x="-25.4" y="-11.684" length="short" direction="out"/>
+<pin name="ANTBIAS" x="-25.4" y="-12.7" length="short" direction="out"/>
 <pin name="ANTFLAG" x="25.4" y="-10.16" length="short" direction="out" rot="R180"/>
 <pin name="BODY" x="0" y="-38.1" length="short" direction="pwr" rot="R90"/>
 <pin name="CLKOUT" x="25.4" y="0" length="short" direction="out" rot="R180"/>
@@ -232,7 +232,7 @@ http://pdfserv.maxim-ic.com/land_patterns/90-0023.PDF</description>
 <pin name="I0" x="25.4" y="12.7" length="short" direction="out" rot="R180"/>
 <pin name="I1" x="25.4" y="10.16" length="short" direction="out" rot="R180"/>
 <pin name="LD" x="25.4" y="-7.62" length="short" direction="out" rot="R180"/>
-<pin name="LNA1" x="-25.4" y="-17.018" length="short" direction="pas"/>
+<pin name="LNA1" x="-25.4" y="-17.78" length="short" direction="pas"/>
 <pin name="LNA2" x="-25.4" y="-22.86" length="short" direction="pas"/>
 <pin name="LNAOUT" x="-25.4" y="-27.94" length="short" direction="pas"/>
 <pin name="MIXIN" x="-25.4" y="-33.02" length="short" direction="pas"/>
@@ -249,7 +249,7 @@ http://pdfserv.maxim-ic.com/land_patterns/90-0023.PDF</description>
 <pin name="VCCIF" x="-2.54" y="38.1" length="short" direction="pwr" rot="R270"/>
 <pin name="VCCRF" x="-10.16" y="38.1" length="short" direction="pwr" rot="R270"/>
 <pin name="VCCVCO" x="0" y="38.1" length="short" direction="pwr" rot="R270"/>
-<pin name="XTAL" x="-25.4" y="-4.826" length="short" direction="in"/>
+<pin name="XTAL" x="-25.4" y="-5.08" length="short" direction="in"/>
 <text x="-25.4" y="38.1" size="2.54" layer="95" font="vector">&gt;NAME</text>
 <text x="-25.4" y="35.56" size="2.54" layer="96" font="vector">&gt;VALUE</text>
 <text x="-8.89" y="0" size="2.54" layer="97" font="vector">MAX2769</text>
