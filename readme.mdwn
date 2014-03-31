@@ -1,21 +1,60 @@
-Universal GPS RF Front-end Board
+Open Source GPS RF Front-end Board
+==================================
 
-Current status: January 2014 - Ready to order v2 board and parts 
+Current status: March 2014 - Ready to order v2 board and parts 
 
 Author: Jenner Hanni <wicker>
-School: Portland State University
-
+Institution: Portland State University (http://www.pdx.edu/) and the Portland State Aerospace Society (http://psas.pdx.edu/)
 License: BSD "3 clause" license.
 
-BOM available at 
-https://docs.google.com/spreadsheet/ccc?key=0Aj2ugLxWTS6bdDNQeDJjXzUxYTRNRFFiaVJvZ1Nmanc&usp=sharing
+## What
 
-This is an RF front-end board that breaks out I and Q signals to serial, USB, and Ethernet for GPS receiver development. 
+This is an GPS "RF front-end" board. It uses the MAX2769 GPS RF front-end that down-converts and then samples the GPS signals on 1.57542 GHz, and then sends that sampled stream to an STM32F407 microcontroller. The STM32 can then write the GPS raw data stream to a microSD card or out via 100 Mbps Ethernet.
+
+## Why
 
 Several GPS receiver boards exist on the market to receive GPS satellite signals and process it to provide location data but these GPS receivers only give the final location. Getting access to the raw data before they go into correlators means you have to purchase a “RF front end” for hundreds of dollars, at which point you can work on projects like building an FPGA receiver board or developing a software radio receiver. 
 
 Both of these projects are in-progress projects at Portland State, and are stalled on purchasing the very expensive RF front end. This project proposes to design, build, and release an open-source GPS receiver RF front-end board that would offer the GPS raw data over USB and serial outputs. Open source GPS receiver boards do exist, including in Andrew Greenberg’s GPL-GPS Master’s thesis, but all are based on very out dated and out-of-production GPS chipsets and are not easily acquired. 
 
 Cost is also a factor: commercial RF front end boards are hundreds to thousands of dollars. And while the proposed chip for this project, the MAX2769 Universal GPS Receiver, costs only $5, the development kit is $600 -- in other words, cost prohibitive for a small project and frustrating for embedded software developers who may not have the time or experience to design and build their own hardware.
+
+## Other
+
+- Boards are designed in EAGLE 6.5 and are fabricated using OSH Park's 4 layer service.
+- Thank you to Swift-Nav for providing an open source reference design for the MAX2769.
+- BOM available at <https://docs.google.com/spreadsheet/ccc?key=0Aj2ugLxWTS6bdDNQeDJjXzUxYTRNRFFiaVJvZ1Nmanc&usp=sharing>
+
+TODO
+====
+
+
+- Finish move to end-fire connector (move around RF components, better layout somehow?)
+- Verify MAX xtal package/part #
+- Verify STM xtal package/part #
+- BOM
+
+
+Components
+==========
+
+### L6, L8 -- 1.57542 GHz SAW Filters -- Kyocera SF14-1575F5UU19 (DK 478-5246-1-ND)
+
+We need to balance insertion loss with off-GPS-band attenuation. There are lots of very low insertion loss SAW filters, but they have weeny attenuation, especially at 2.4 GHz where we'll be nuking everything with our DxWiFi system (1W 802.11b @ 2.422 GHz using BPSK). So we chose this one, with 1.2 dB max. insertion loss, but 40 dB attention around 2.4 GHz. L8 between LNAOUT and MIXIN on the MAX2769: certainly the right place for a SAW filter. L6 before any LNA: Not so sure! However, we've experienced swamping out LNAs with our 2.4 GHz radiation, so it's probably waise to add a SAW filter even before our first LNA.
+
+### U5 -- 1.5 GHz LNA -- Torex Semiconductor XC2401A8167R-G (DK 893-1155-1-ND)
+
+This part we shamelessly borrowed from the Piksi. It seems like a very nice part: noise figure ~ 0.69 dB, and has a gain of 15 dB. It takes Vdd = 1.26 V, so we need to put in a resistor for bias; at 2.85 V (hey, it has that in the datasheet, so other people do this?) it's 470 ohms. The cap stays at 10 nF.  /capacitor bias network as per the datasheet. Ahhhh, cargo cult black magic. They claim they want the TDK GLQ1005 type of inductor for the 9.1 and 6.2 nH inductors.
+
+TODO: Idd = (,4.25,5.50) mA max; can the MAX2769 source that from ANTBIAS?
+
+### X2 -- End-fire SMA connector -- Emerson 142-0701-801 (DK J502-ND)
+
+
+
+
+
+
+
 
 
