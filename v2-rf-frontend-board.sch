@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="2" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -14788,7 +14788,7 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <class number="1" name="PWR" width="0" drill="0">
 </class>
 <class number="2" name="rf" width="0" drill="0">
-<clearance class="2" value="0.6604"/>
+<clearance class="2" value="0.3302"/>
 </class>
 </classes>
 <parts>
@@ -17822,6 +17822,7 @@ Transformers</text>
 <approved hash="102,1,236.22,196.85,BAR_GND,GND,,,,"/>
 <approved hash="102,1,226.06,204.47,BAR_GND,GND,,,,"/>
 <approved hash="102,1,149.86,177.8,BAR_GND,GND,,,,"/>
+<approved hash="102,1,276.86,134.62,BAR_GND,GND,,,,"/>
 <approved hash="102,2,236.22,73.66,BAR_GND,GND,,,,"/>
 <approved hash="102,2,254,73.66,BAR_GND,GND,,,,"/>
 <approved hash="102,2,233.68,219.71,BAR_GND,GND,,,,"/>
@@ -17837,11 +17838,11 @@ Transformers</text>
 <approved hash="102,2,243.84,99.06,BAR_GND,GND,,,,"/>
 <approved hash="102,2,204.47,76.2,BAR_GND,GND,,,,"/>
 <approved hash="102,2,185.42,137.16,BAR_GND,GND,,,,"/>
-<approved hash="102,2,44.45,86.36,BAR_GND,GND,,,,"/>
+<approved hash="102,2,45.72,86.36,BAR_GND,GND,,,,"/>
 <approved hash="102,2,149.86,137.16,BAR_GND,GND,,,,"/>
 <approved hash="102,2,309.88,219.71,BAR_GND,GND,,,,"/>
 <approved hash="102,2,327.66,219.71,BAR_GND,GND,,,,"/>
-<approved hash="102,2,24.13,88.9,BAR_GND,GND,,,,"/>
+<approved hash="102,2,22.86,96.52,BAR_GND,GND,,,,"/>
 <approved hash="102,2,207.01,153.67,BAR_GND,GND,,,,"/>
 <approved hash="102,2,135.89,147.32,BAR_GND,GND,,,,"/>
 <approved hash="102,2,116.84,83.82,BAR_GND,GND,,,,"/>
@@ -17857,12 +17858,8 @@ Transformers</text>
 <approved hash="104,2,241.3,177.8,U1,VCCIF,2.85VA,,,"/>
 <approved hash="104,2,233.68,177.8,U1,VCCRF,2.85VA,,,"/>
 <approved hash="104,2,243.84,177.8,U1,VCCVCO,2.85VA,,,"/>
-<approved hash="104,2,199.39,78.74,L7,GND1,GND,,,"/>
-<approved hash="104,2,204.47,78.74,L7,GND2,GND,,,"/>
-<approved hash="104,2,209.55,78.74,L7,GND3,GND,,,"/>
-<approved hash="104,2,39.37,90.17,L6,GND1,GND,,,"/>
-<approved hash="104,2,44.45,90.17,L6,GND2,GND,,,"/>
-<approved hash="104,2,49.53,90.17,L6,GND3,GND,,,"/>
+<approved hash="104,2,116.84,116.84,U5,VDD,N$4,,,"/>
+<approved hash="104,2,116.84,96.52,U5,VSS,GND,,,"/>
 <approved hash="104,1,63.5,187.96,USB,VCC,OTG_FS_VBUS,,,"/>
 <approved hash="104,3,109.22,162.56,U10,VOUT,3.3VD,,,"/>
 <approved hash="104,1,200.66,35.56,U2,VSS,GND,,,"/>
@@ -17885,6 +17882,8 @@ Transformers</text>
 <approved hash="113,2,193.888,130.071,FRAME2,,,,,"/>
 <approved hash="113,3,193.888,130.071,FRAME3,,,,,"/>
 <approved hash="113,4,193.888,130.071,FRAME4,,,,,"/>
+<approved hash="113,1,288.29,110.236,LED3,,,,,"/>
+<approved hash="113,1,287.257,144.911,JP3,,,,,"/>
 </errors>
 </schematic>
 </drawing>
