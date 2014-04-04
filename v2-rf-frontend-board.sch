@@ -14597,8 +14597,6 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <plain>
 <text x="261.62" y="80.01" size="1.778" layer="95">3-wire faux-SPI serial config bus</text>
 <text x="64.77" y="179.07" size="1.778" layer="97">NC</text>
-<text x="345.44" y="93.98" size="1.778" layer="97">MAX_INPUTS</text>
-<text x="345.44" y="63.5" size="1.778" layer="97">MAX_OUTPUTS</text>
 <text x="314.452" y="30.226" size="1.778" layer="95">2mm digital int.
 to MAX2769</text>
 <wire x1="260.35" y1="92.456" x2="260.35" y2="78.486" width="0.1524" layer="97" style="longdash"/>
@@ -14620,6 +14618,8 @@ to MAX2769</text>
 <text x="276.86" y="165.1" size="1.778" layer="97">Clock to Eth PHY</text>
 <text x="297.18" y="135.89" size="1.778" layer="97" rot="R90">To COTS GPS
 (and FTDI)</text>
+<text x="372.11" y="95.25" size="2.54" layer="97" rot="R180">MAX INPUTS</text>
+<text x="375.92" y="67.31" size="2.54" layer="97" rot="R180">MAX OUTPUTS</text>
 </plain>
 <instances>
 <instance part="DIG_GND25" gate="1" x="72.39" y="172.72" rot="MR0"/>
@@ -14768,12 +14768,28 @@ to MAX2769</text>
 <busses>
 <bus name="MAX_!IDLE,MAX_!SHDN,MAX_CFG_SCLK,MAX_CFG_MOSI,MAX_CFG_!CS">
 <segment>
-<wire x1="342.9" y1="96.266" x2="342.9" y2="73.66" width="0.762" layer="92"/>
+<wire x1="347.98" y1="93.98" x2="342.9" y2="93.98" width="0.762" layer="92"/>
+<wire x1="342.9" y1="93.98" x2="342.9" y2="73.66" width="0.762" layer="92"/>
 </segment>
 </bus>
 <bus name="ANTFLAG,LD,I0-DATA_OUT,I1-CLK_SER,Q0-DATASYNC,Q1-TIMESYNC">
 <segment>
+<wire x1="347.98" y1="66.04" x2="342.9" y2="66.04" width="0.762" layer="92"/>
 <wire x1="342.9" y1="66.04" x2="342.9" y2="43.18" width="0.762" layer="92"/>
+</segment>
+<segment>
+<wire x1="347.98" y1="93.98" x2="350.52" y2="96.52" width="0.1524" layer="92"/>
+<wire x1="350.52" y1="96.52" x2="373.38" y2="96.52" width="0.1524" layer="92"/>
+<wire x1="373.38" y1="96.52" x2="373.38" y2="91.44" width="0.1524" layer="92"/>
+<wire x1="373.38" y1="91.44" x2="350.52" y2="91.44" width="0.1524" layer="92"/>
+<wire x1="350.52" y1="91.44" x2="347.98" y2="93.98" width="0.1524" layer="92"/>
+</segment>
+<segment>
+<wire x1="347.98" y1="66.04" x2="350.52" y2="68.58" width="0.1524" layer="92"/>
+<wire x1="350.52" y1="68.58" x2="377.19" y2="68.58" width="0.1524" layer="92"/>
+<wire x1="377.19" y1="68.58" x2="377.19" y2="63.5" width="0.1524" layer="92"/>
+<wire x1="377.19" y1="63.5" x2="350.52" y2="63.5" width="0.1524" layer="92"/>
+<wire x1="350.52" y1="63.5" x2="347.98" y2="66.04" width="0.1524" layer="92"/>
 </segment>
 </bus>
 </busses>
@@ -17592,7 +17608,7 @@ Transformers</text>
 <approved hash="113,2,193.888,130.071,FRAME2,,,,,"/>
 <approved hash="113,3,193.888,130.071,FRAME3,,,,,"/>
 <approved hash="113,4,193.888,130.071,FRAME4,,,,,"/>
-<approved hash="113,1,287.257,144.911,JP3,,,,,"/>
+<approved hash="113,1,287.257,144.911,J6,,,,,"/>
 </errors>
 </schematic>
 </drawing>
