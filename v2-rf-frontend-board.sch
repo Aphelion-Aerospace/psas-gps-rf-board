@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="2" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -14620,6 +14620,9 @@ to MAX2769</text>
 (and FTDI)</text>
 <text x="372.11" y="95.25" size="2.54" layer="97" rot="R180">MAX INPUTS</text>
 <text x="375.92" y="67.31" size="2.54" layer="97" rot="R180">MAX OUTPUTS</text>
+<text x="155.194" y="17.272" size="1.9304" layer="97" ratio="14" rot="R90">SPI2_SCK AF=5 (MODWIRE)</text>
+<text x="165.354" y="24.892" size="1.9304" layer="97" ratio="14" rot="R90">SPI2_NSS AF=5 (MODWIRE)</text>
+<text x="360.934" y="123.952" size="1.9304" layer="97" ratio="13" rot="R90">SPI2_MOSI AF=5 (MODWIRE)</text>
 </plain>
 <instances>
 <instance part="DIG_GND25" gate="1" x="72.39" y="172.72" rot="MR0"/>
@@ -15351,23 +15354,38 @@ to MAX2769</text>
 <pinref part="J5" gate="G$1" pin="1"/>
 <pinref part="J5" gate="G$1" pin="22"/>
 <wire x1="313.69" y1="88.9" x2="328.93" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="328.93" y1="88.9" x2="342.9" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="328.93" y1="88.9" x2="335.28" y2="88.9" width="0.1524" layer="91"/>
 <junction x="328.93" y="88.9"/>
 <junction x="313.69" y="88.9"/>
 <pinref part="U2" gate="U" pin="PE14"/>
+<pinref part="U2" gate="U" pin="PB15"/>
+<wire x1="335.28" y1="88.9" x2="342.9" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="187.96" x2="241.3" y2="193.04" width="0.8128" layer="91"/>
+<wire x1="241.3" y1="193.04" x2="355.6" y2="193.04" width="0.8128" layer="91"/>
+<wire x1="355.6" y1="193.04" x2="355.6" y2="106.68" width="0.8128" layer="91"/>
+<wire x1="355.6" y1="106.68" x2="335.28" y2="106.68" width="0.8128" layer="91"/>
+<wire x1="335.28" y1="106.68" x2="335.28" y2="88.9" width="0.8128" layer="91"/>
+<junction x="335.28" y="88.9"/>
 </segment>
 </net>
 <net name="MAX_CFG_SCLK" class="0">
 <segment>
 <pinref part="J5" gate="G$1" pin="21"/>
-<wire x1="328.93" y1="86.36" x2="342.9" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="328.93" y1="86.36" x2="337.82" y2="86.36" width="0.1524" layer="91"/>
 <label x="261.62" y="86.36" size="1.778" layer="95"/>
+<wire x1="337.82" y1="86.36" x2="342.9" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="313.69" y1="86.36" x2="254" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="J5" gate="G$1" pin="2"/>
 <wire x1="328.93" y1="86.36" x2="313.69" y2="86.36" width="0.1524" layer="91"/>
 <junction x="313.69" y="86.36"/>
 <junction x="328.93" y="86.36"/>
 <pinref part="U2" gate="U" pin="PE13"/>
+<pinref part="U2" gate="U" pin="PB10"/>
+<wire x1="170.18" y1="71.12" x2="157.48" y2="71.12" width="0.8128" layer="91"/>
+<wire x1="157.48" y1="71.12" x2="157.48" y2="15.24" width="0.8128" layer="91"/>
+<wire x1="157.48" y1="15.24" x2="337.82" y2="15.24" width="0.8128" layer="91"/>
+<wire x1="337.82" y1="15.24" x2="337.82" y2="86.36" width="0.8128" layer="91"/>
+<junction x="337.82" y="86.36"/>
 </segment>
 </net>
 <net name="MAX_CFG_!CS" class="0">
@@ -15377,10 +15395,17 @@ to MAX2769</text>
 <pinref part="J5" gate="G$1" pin="3"/>
 <pinref part="J5" gate="G$1" pin="20"/>
 <wire x1="313.69" y1="83.82" x2="328.93" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="328.93" y1="83.82" x2="342.9" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="328.93" y1="83.82" x2="332.74" y2="83.82" width="0.1524" layer="91"/>
 <junction x="328.93" y="83.82"/>
 <junction x="313.69" y="83.82"/>
 <pinref part="U2" gate="U" pin="PE12"/>
+<pinref part="U2" gate="U" pin="PB9"/>
+<wire x1="332.74" y1="83.82" x2="342.9" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="68.58" x2="162.56" y2="68.58" width="0.8128" layer="91"/>
+<wire x1="162.56" y1="68.58" x2="162.56" y2="20.32" width="0.8128" layer="91"/>
+<wire x1="162.56" y1="20.32" x2="332.74" y2="20.32" width="0.8128" layer="91"/>
+<wire x1="332.74" y1="20.32" x2="332.74" y2="83.82" width="0.8128" layer="91"/>
+<junction x="332.74" y="83.82"/>
 </segment>
 </net>
 <net name="MAX_!SHDN" class="0">

@@ -4463,6 +4463,8 @@ einem neuen Namen ab.</description>
 <wire x1="73.93" y1="16.367" x2="69.977" y2="20.32" width="0.2032" layer="1"/>
 <wire x1="69.977" y1="20.32" x2="69.977" y2="23.495" width="0.2032" layer="1"/>
 <wire x1="69.977" y1="23.495" x2="67.183" y2="26.289" width="0.2032" layer="1"/>
+<contactref element="U2" pad="47"/>
+<wire x1="57.026" y1="22.177" x2="57.026" y2="23.677" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MAX_CFG_MOSI">
 <contactref element="U1" pad="8"/>
@@ -4483,6 +4485,8 @@ einem neuen Namen ab.</description>
 <wire x1="73.938" y1="16.867" x2="70.358" y2="20.447" width="0.2032" layer="1"/>
 <wire x1="70.358" y1="20.447" x2="70.358" y2="23.749" width="0.2032" layer="1"/>
 <wire x1="70.358" y1="23.749" x2="67.437" y2="26.67" width="0.2032" layer="1"/>
+<contactref element="U2" pad="54"/>
+<wire x1="57.026" y1="22.677" x2="53.776" y2="26.927" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MAX_CFG_!CS">
 <contactref element="U1" pad="10"/>
@@ -4500,6 +4504,8 @@ einem neuen Namen ab.</description>
 <wire x1="69.596" y1="23.241" x2="69.088" y2="23.749" width="0.2032" layer="1"/>
 <wire x1="57.026" y1="21.677" x2="59.777" y2="21.677" width="0.2032" layer="1"/>
 <wire x1="59.777" y1="21.677" x2="61.849" y2="23.749" width="0.2032" layer="1"/>
+<contactref element="U2" pad="96"/>
+<wire x1="41.526" y1="15.177" x2="57.026" y2="21.677" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$9">
 <contactref element="U2" pad="94"/>
