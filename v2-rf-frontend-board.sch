@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="2" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -14630,6 +14630,7 @@ to MAX2769</text>
 <text x="248.92" y="55.88" size="1.778" layer="97">PA5: SPI1_SCK</text>
 <text x="248.92" y="53.34" size="1.778" layer="97">PB5: SPI1_MOSI</text>
 <text x="326.39" y="36.83" size="1.778" layer="102" rot="R90">MODWIRE</text>
+<text x="110.49" y="92.71" size="1.778" layer="102" rot="R90">MODWIRE</text>
 </plain>
 <instances>
 <instance part="DIG_GND25" gate="1" x="62.23" y="182.88" rot="MR0"/>
@@ -15689,11 +15690,18 @@ to MAX2769</text>
 <wire x1="160.02" y1="96.52" x2="149.86" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$57" class="0">
+<net name="DEBUG-PHY-MODWIRE" class="0">
 <segment>
 <pinref part="TP1" gate="G$1" pin="1"/>
 <pinref part="U2" gate="U" pin="PE2"/>
-<wire x1="149.86" y1="99.06" x2="160.02" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="99.06" x2="157.48" y2="99.06" width="0.1524" layer="91"/>
+<label x="101.6" y="88.9" size="1.778" layer="102" font="vector" rot="R180" xref="yes"/>
+<wire x1="157.48" y1="99.06" x2="160.02" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="104.14" x2="157.48" y2="99.06" width="0.1524" layer="91" style="shortdash"/>
+<junction x="157.48" y="99.06"/>
+<wire x1="101.6" y1="88.9" x2="111.76" y2="88.9" width="0.1524" layer="91" style="shortdash"/>
+<wire x1="111.76" y1="88.9" x2="111.76" y2="104.14" width="0.1524" layer="91" style="shortdash"/>
+<wire x1="111.76" y1="104.14" x2="157.48" y2="104.14" width="0.1524" layer="91" style="shortdash"/>
 </segment>
 </net>
 <net name="USART6_TX" class="0">
@@ -16954,6 +16962,7 @@ Transformers</text>
 <text x="222.25" y="113.03" size="1.778" layer="97">NC</text>
 <text x="273.05" y="110.49" size="1.778" layer="97">25 MHz from STM32</text>
 <text x="278.13" y="115.57" size="1.778" layer="97">50 MHz to STM32 ETH</text>
+<text x="238.76" y="83.82" size="1.778" layer="102">MODWIRE</text>
 </plain>
 <instances>
 <instance part="GND102" gate="1" x="105.41" y="83.82"/>
@@ -17504,14 +17513,18 @@ Transformers</text>
 <label x="187.96" y="177.8" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$39" class="0">
+<net name="DEBUG-PHY-MODWIRE" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="LED0/ANEN_SPEED"/>
 <wire x1="220.98" y1="124.46" x2="236.22" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="236.22" y1="124.46" x2="236.22" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="124.46" x2="236.22" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="86.36" x2="236.22" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="236.22" y1="71.12" x2="223.52" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="223.52" y1="71.12" x2="223.52" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="LED6" gate="G$1" pin="C"/>
+<label x="256.54" y="86.36" size="1.778" layer="102" font="vector" xref="yes"/>
+<wire x1="256.54" y1="86.36" x2="236.22" y2="86.36" width="0.1524" layer="91" style="shortdash"/>
+<junction x="236.22" y="86.36"/>
 </segment>
 </net>
 <net name="N$24" class="0">

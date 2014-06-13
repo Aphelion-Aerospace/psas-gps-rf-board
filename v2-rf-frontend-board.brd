@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -5486,7 +5486,7 @@ einem neuen Namen ab.</description>
 <vertex x="25.4" y="17.018"/>
 </polygon>
 </signal>
-<signal name="N$39">
+<signal name="DEBUG-PHY-MODWIRE">
 <contactref element="U3" pad="23"/>
 <contactref element="LED6" pad="C"/>
 <wire x1="26.936" y1="17.862" x2="26.936" y2="20.078" width="0.2032" layer="1"/>
@@ -5496,6 +5496,15 @@ einem neuen Namen ab.</description>
 <wire x1="25.769" y1="22.606" x2="25.781" y2="22.618" width="0.2032" layer="1"/>
 <wire x1="26.936" y1="20.078" x2="26.936" y2="22.594" width="0.2286" layer="16"/>
 <wire x1="26.936" y1="22.594" x2="26.924" y2="22.606" width="0.2286" layer="16"/>
+<contactref element="TP1" pad="1"/>
+<contactref element="U2" pad="1"/>
+<wire x1="39.37" y1="10.795" x2="39.624" y2="10.795" width="0.2286" layer="1"/>
+<wire x1="39.624" y1="10.795" x2="40.64" y2="11.811" width="0.2286" layer="1"/>
+<wire x1="40.64" y1="11.811" x2="42.164" y2="11.811" width="0.2286" layer="1"/>
+<wire x1="42.164" y1="11.811" x2="42.545" y2="11.43" width="0.2286" layer="1"/>
+<wire x1="42.545" y1="11.43" x2="43.273" y2="11.43" width="0.2286" layer="1"/>
+<wire x1="43.273" y1="11.43" x2="43.276" y2="11.427" width="0.2286" layer="1"/>
+<wire x1="26.936" y1="17.862" x2="39.37" y2="10.795" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$24">
 <contactref element="T1" pad="3"/>
@@ -5585,16 +5594,6 @@ einem neuen Namen ab.</description>
 <wire x1="43.561" y1="10.414" x2="42.545" y2="10.414" width="0.2286" layer="1"/>
 <wire x1="42.545" y1="10.414" x2="42.164" y2="10.795" width="0.2286" layer="1"/>
 <wire x1="42.164" y1="10.795" x2="41.148" y2="10.795" width="0.2286" layer="1"/>
-</signal>
-<signal name="N$57">
-<contactref element="TP1" pad="1"/>
-<contactref element="U2" pad="1"/>
-<wire x1="39.37" y1="10.795" x2="39.624" y2="10.795" width="0.2286" layer="1"/>
-<wire x1="39.624" y1="10.795" x2="40.64" y2="11.811" width="0.2286" layer="1"/>
-<wire x1="40.64" y1="11.811" x2="42.164" y2="11.811" width="0.2286" layer="1"/>
-<wire x1="42.164" y1="11.811" x2="42.545" y2="11.43" width="0.2286" layer="1"/>
-<wire x1="42.545" y1="11.43" x2="43.273" y2="11.43" width="0.2286" layer="1"/>
-<wire x1="43.273" y1="11.43" x2="43.276" y2="11.427" width="0.2286" layer="1"/>
 </signal>
 <signal name="USART6_TX">
 <contactref element="U2" pad="63"/>
