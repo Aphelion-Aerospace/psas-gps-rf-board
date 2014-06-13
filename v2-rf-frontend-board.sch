@@ -14621,7 +14621,6 @@ to MAX2769</text>
 <text x="372.11" y="95.25" size="2.54" layer="97" rot="R180">MAX INPUTS</text>
 <text x="375.92" y="67.31" size="2.54" layer="97" rot="R180">MAX OUTPUTS</text>
 <text x="155.194" y="17.272" size="1.9304" layer="97" ratio="14" rot="R90">SPI2_SCK AF=5 (MODWIRE)</text>
-<text x="165.354" y="24.892" size="1.9304" layer="97" ratio="14" rot="R90">SPI2_NSS AF=5 (MODWIRE)</text>
 <text x="360.934" y="123.952" size="1.9304" layer="97" ratio="13" rot="R90">SPI2_MOSI AF=5 (MODWIRE)</text>
 </plain>
 <instances>
@@ -15395,17 +15394,10 @@ to MAX2769</text>
 <pinref part="J5" gate="G$1" pin="3"/>
 <pinref part="J5" gate="G$1" pin="20"/>
 <wire x1="313.69" y1="83.82" x2="328.93" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="328.93" y1="83.82" x2="332.74" y2="83.82" width="0.1524" layer="91"/>
 <junction x="328.93" y="83.82"/>
 <junction x="313.69" y="83.82"/>
 <pinref part="U2" gate="U" pin="PE12"/>
-<pinref part="U2" gate="U" pin="PB9"/>
-<wire x1="332.74" y1="83.82" x2="342.9" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="170.18" y1="68.58" x2="162.56" y2="68.58" width="0.8128" layer="91"/>
-<wire x1="162.56" y1="68.58" x2="162.56" y2="20.32" width="0.8128" layer="91"/>
-<wire x1="162.56" y1="20.32" x2="332.74" y2="20.32" width="0.8128" layer="91"/>
-<wire x1="332.74" y1="20.32" x2="332.74" y2="83.82" width="0.8128" layer="91"/>
-<junction x="332.74" y="83.82"/>
+<wire x1="328.93" y1="83.82" x2="342.9" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MAX_!SHDN" class="0">

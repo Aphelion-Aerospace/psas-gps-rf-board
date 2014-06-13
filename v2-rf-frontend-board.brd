@@ -4504,8 +4504,6 @@ einem neuen Namen ab.</description>
 <wire x1="69.596" y1="23.241" x2="69.088" y2="23.749" width="0.2032" layer="1"/>
 <wire x1="57.026" y1="21.677" x2="59.777" y2="21.677" width="0.2032" layer="1"/>
 <wire x1="59.777" y1="21.677" x2="61.849" y2="23.749" width="0.2032" layer="1"/>
-<contactref element="U2" pad="96"/>
-<wire x1="41.526" y1="15.177" x2="57.026" y2="21.677" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$9">
 <contactref element="U2" pad="94"/>
