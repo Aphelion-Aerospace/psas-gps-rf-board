@@ -1,0 +1,24 @@
+# Manufacturing and Test Log
+
+### ~ 2014/06/05: Bring up
+
+- Initial bring up ~ 
+- R38/R39/R40 TOTALLY WRONG - LED way to bright
+- MODWIRE: U2 (STM32) PE2 (pin 1, also TP1) to U3 (PHY chip) pin 23 (LED0) in order to engage PHY chip's debug features
+- FIXED: Misunderstood PHY error, so made Kenney reflow U3 (PHY) for no reason.
+- FOUND: PCB mfg error right at pad of pin 12 (RXD1) on U3 (PHY). Trace was "pinched off", NC to pad.
+   - FIXED: Kenney scraped back solder mask and added short mod wire to bridge pad and trace.
+- MODWIRE: U2 (STM32) PB10 (pin 47) to U1 (MAX) pin 9 (SCLK), also cut trace between 0.1 holes.
+- MODWIRE: U2 (STM32) PB15 (pin 54) to U1 (MAX) pin 8 (SDATA), also cut trace between 0.1 holes.
+
+### ~ 2014/05/20: Stuffed Board #1 
+
+- Board #1 (out of 3) stuffed on ~ 2014/05/20 by Jenner.
+   - LNA not stuffed: U5, L2, L5
+- Configuration:
+   - C24 (sch:down/brd:left), C22 (sch:down/brd:left), C19 (sch:left/brd:left), which is the "straight through to LNA1 configuration"
+   - LNA 
+
+### 2014-04-04: Board manufacturing
+
+- Sent to OSH Park on 2014/04/04 as a four layer board.
