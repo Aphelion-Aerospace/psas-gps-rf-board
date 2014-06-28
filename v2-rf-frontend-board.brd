@@ -5662,6 +5662,14 @@ einem neuen Namen ab.</description>
 <wire x1="29.972" y1="12.319" x2="31.623" y2="10.668" width="0.2032" layer="16"/>
 <wire x1="31.623" y1="10.668" x2="33.02" y2="10.668" width="0.2032" layer="16"/>
 </signal>
+<signal name="N$3">
+<contactref element="U2" pad="35"/>
+</signal>
+<signal name="SPI1-NSS">
+<contactref element="U2" pad="29"/>
+<contactref element="U2" pad="31"/>
+<wire x1="57.026" y1="14.677" x2="57.026" y2="15.677" width="0" layer="19" extent="1-1"/>
+</signal>
 </signals>
 <errors>
 <approved hash="19,1,3a184010415e3b56"/>

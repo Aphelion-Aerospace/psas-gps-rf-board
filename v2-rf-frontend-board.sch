@@ -14597,17 +14597,17 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <plain>
 <text x="257.81" y="90.17" size="1.778" layer="95">3-wire faux-SPI serial config bus</text>
 <text x="54.61" y="189.23" size="1.778" layer="97">NC</text>
-<text x="304.292" y="40.386" size="1.778" layer="95">2mm digital int.
+<text x="301.752" y="35.306" size="1.778" layer="95">2mm digital int.
 to MAX2769</text>
 <wire x1="250.19" y1="102.616" x2="250.19" y2="88.646" width="0.1524" layer="97" style="longdash"/>
 <wire x1="250.19" y1="88.646" x2="299.212" y2="88.646" width="0.1524" layer="97" style="longdash"/>
 <wire x1="299.212" y1="88.646" x2="299.212" y2="102.616" width="0.1524" layer="97" style="longdash"/>
 <wire x1="299.212" y1="102.616" x2="250.19" y2="102.616" width="0.1524" layer="97" style="longdash"/>
-<text x="261.874" y="45.466" size="1.778" layer="95">actual-SPI I/Q data in</text>
-<wire x1="245.872" y1="58.928" x2="245.872" y2="43.942" width="0.1524" layer="97" style="longdash"/>
-<wire x1="298.958" y1="58.928" x2="245.872" y2="58.928" width="0.1524" layer="97" style="longdash"/>
-<wire x1="298.958" y1="43.942" x2="298.958" y2="58.928" width="0.1524" layer="97" style="longdash"/>
-<wire x1="245.872" y1="43.942" x2="298.958" y2="43.942" width="0.1524" layer="97" style="longdash"/>
+<text x="256.794" y="49.276" size="1.778" layer="95">actual-SPI I/Q data in</text>
+<wire x1="248.412" y1="58.928" x2="248.412" y2="46.482" width="0.1524" layer="97" style="longdash"/>
+<wire x1="298.958" y1="58.928" x2="248.412" y2="58.928" width="0.1524" layer="97" style="longdash"/>
+<wire x1="298.958" y1="46.482" x2="298.958" y2="58.928" width="0.1524" layer="97" style="longdash"/>
+<wire x1="248.412" y1="46.482" x2="298.958" y2="46.482" width="0.1524" layer="97" style="longdash"/>
 <wire x1="35.56" y1="149.352" x2="35.56" y2="148.59" width="0.1524" layer="94"/>
 <wire x1="35.56" y1="148.59" x2="35.56" y2="102.616" width="0.4064" layer="94"/>
 <wire x1="35.56" y1="102.616" x2="50.292" y2="102.616" width="0.4064" layer="94"/>
@@ -14627,10 +14627,11 @@ to MAX2769</text>
 <text x="328.93" y="118.11" size="1.778" layer="102">MODWIRE</text>
 <text x="153.67" y="25.4" size="1.778" layer="102">MODWIRE</text>
 <text x="151.13" y="50.8" size="1.778" layer="102" rot="R90">MODWIRE</text>
-<text x="248.92" y="55.88" size="1.778" layer="97">PA5: SPI1_SCK</text>
-<text x="248.92" y="53.34" size="1.778" layer="97">PB5: SPI1_MOSI</text>
-<text x="326.39" y="36.83" size="1.778" layer="102" rot="R90">MODWIRE</text>
+<text x="251.46" y="55.88" size="1.778" layer="97">PA5: SPI1_SCK</text>
+<text x="251.46" y="53.34" size="1.778" layer="97">PB5: SPI1_MOSI</text>
+<text x="326.39" y="41.91" size="1.778" layer="102" rot="R90">MODWIRE</text>
 <text x="110.49" y="92.71" size="1.778" layer="102" rot="R90">MODWIRE</text>
+<text x="244.094" y="40.894" size="1.778" layer="102" rot="R180">MODWIRE</text>
 </plain>
 <instances>
 <instance part="DIG_GND25" gate="1" x="62.23" y="182.88" rot="MR0"/>
@@ -15727,6 +15728,25 @@ to MAX2769</text>
 <pinref part="J6" gate="A" pin="3"/>
 <pinref part="TP8" gate="G$1" pin="1"/>
 <wire x1="276.86" y1="154.94" x2="269.24" y2="154.94" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="U2" gate="U" pin="PB0"/>
+<wire x1="243.84" y1="175.26" x2="251.46" y2="175.26" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="SPI1-NSS" class="0">
+<segment>
+<pinref part="U2" gate="U" pin="PA4"/>
+<wire x1="243.84" y1="50.8" x2="246.38" y2="50.8" width="0.1524" layer="91" style="shortdash"/>
+<wire x1="246.38" y1="50.8" x2="246.38" y2="58.42" width="0.1524" layer="91" style="shortdash"/>
+<pinref part="U2" gate="U" pin="PA6"/>
+<wire x1="246.38" y1="58.42" x2="243.84" y2="58.42" width="0.1524" layer="91" style="shortdash"/>
+<label x="228.6" y="38.1" size="1.778" layer="102" rot="R180" xref="yes"/>
+<wire x1="228.6" y1="38.1" x2="246.38" y2="38.1" width="0.1524" layer="91" style="shortdash"/>
+<wire x1="246.38" y1="38.1" x2="246.38" y2="50.8" width="0.1524" layer="91" style="shortdash"/>
+<junction x="246.38" y="50.8"/>
 </segment>
 </net>
 </nets>
