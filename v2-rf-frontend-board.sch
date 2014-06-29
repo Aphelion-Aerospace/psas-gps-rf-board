@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="mm"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="2" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -14595,19 +14595,22 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <sheet>
 <description>STM</description>
 <plain>
-<text x="257.81" y="90.17" size="1.778" layer="95">3-wire faux-SPI serial config bus</text>
+<text x="255.27" y="90.17" size="1.778" layer="95">3-wire faux-SPI serial config bus</text>
 <text x="54.61" y="189.23" size="1.778" layer="97">NC</text>
 <text x="301.752" y="35.306" size="1.778" layer="95">2mm digital int.
 to MAX2769</text>
 <wire x1="250.19" y1="102.616" x2="250.19" y2="88.646" width="0.1524" layer="97" style="longdash"/>
-<wire x1="250.19" y1="88.646" x2="299.212" y2="88.646" width="0.1524" layer="97" style="longdash"/>
-<wire x1="299.212" y1="88.646" x2="299.212" y2="102.616" width="0.1524" layer="97" style="longdash"/>
-<wire x1="299.212" y1="102.616" x2="250.19" y2="102.616" width="0.1524" layer="97" style="longdash"/>
-<text x="256.794" y="49.276" size="1.778" layer="95">actual-SPI I/Q data in</text>
-<wire x1="248.412" y1="58.928" x2="248.412" y2="46.482" width="0.1524" layer="97" style="longdash"/>
-<wire x1="298.958" y1="58.928" x2="248.412" y2="58.928" width="0.1524" layer="97" style="longdash"/>
-<wire x1="298.958" y1="46.482" x2="298.958" y2="58.928" width="0.1524" layer="97" style="longdash"/>
-<wire x1="248.412" y1="46.482" x2="298.958" y2="46.482" width="0.1524" layer="97" style="longdash"/>
+<wire x1="250.19" y1="88.646" x2="294.132" y2="88.646" width="0.1524" layer="97" style="longdash"/>
+<wire x1="294.132" y1="88.646" x2="294.132" y2="102.616" width="0.1524" layer="97" style="longdash"/>
+<wire x1="294.132" y1="102.616" x2="250.19" y2="102.616" width="0.1524" layer="97" style="longdash"/>
+<text x="274.32" y="38.1" size="1.778" layer="95">High speed serial
+2 bit I/Q data in</text>
+<wire x1="248.92" y1="35.56" x2="294.64" y2="35.56" width="0.1524" layer="97" style="longdash"/>
+<wire x1="294.64" y1="35.56" x2="294.64" y2="80.01" width="0.1524" layer="97" style="longdash"/>
+<wire x1="294.64" y1="80.01" x2="273.05" y2="80.01" width="0.1524" layer="97" style="longdash"/>
+<wire x1="273.05" y1="80.01" x2="273.05" y2="59.69" width="0.1524" layer="97" style="longdash"/>
+<wire x1="273.05" y1="59.69" x2="248.92" y2="59.69" width="0.1524" layer="97" style="longdash"/>
+<wire x1="248.92" y1="59.69" x2="248.92" y2="35.56" width="0.1524" layer="97" style="longdash"/>
 <wire x1="35.56" y1="149.352" x2="35.56" y2="148.59" width="0.1524" layer="94"/>
 <wire x1="35.56" y1="148.59" x2="35.56" y2="102.616" width="0.4064" layer="94"/>
 <wire x1="35.56" y1="102.616" x2="50.292" y2="102.616" width="0.4064" layer="94"/>
@@ -14631,7 +14634,7 @@ to MAX2769</text>
 <text x="251.46" y="53.34" size="1.778" layer="97">PB5: SPI1_MOSI</text>
 <text x="326.39" y="41.91" size="1.778" layer="102" rot="R90">MODWIRE</text>
 <text x="110.49" y="92.71" size="1.778" layer="102" rot="R90">MODWIRE</text>
-<text x="244.094" y="40.894" size="1.778" layer="102" rot="R180">MODWIRE</text>
+<text x="243.586" y="49.784" size="1.778" layer="102" rot="R270">MODWIRE</text>
 </plain>
 <instances>
 <instance part="DIG_GND25" gate="1" x="62.23" y="182.88" rot="MR0"/>
@@ -15358,15 +15361,8 @@ to MAX2769</text>
 </net>
 <net name="MAX_CFG_MOSI" class="0">
 <segment>
-<label x="251.46" y="99.06" size="1.778" layer="95"/>
-<wire x1="303.53" y1="99.06" x2="243.84" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="J5" gate="G$1" pin="1"/>
 <pinref part="J5" gate="G$1" pin="22"/>
-<wire x1="303.53" y1="99.06" x2="318.77" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="318.77" y1="99.06" x2="325.12" y2="99.06" width="0.1524" layer="91"/>
-<junction x="318.77" y="99.06"/>
-<junction x="303.53" y="99.06"/>
-<pinref part="U2" gate="U" pin="PE14"/>
 <pinref part="U2" gate="U" pin="PB15"/>
 <wire x1="325.12" y1="99.06" x2="332.74" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="231.14" y1="198.12" x2="231.14" y2="203.2" width="0.1524" layer="91" style="shortdash"/>
@@ -15381,14 +15377,7 @@ to MAX2769</text>
 <segment>
 <pinref part="J5" gate="G$1" pin="21"/>
 <wire x1="318.77" y1="96.52" x2="327.66" y2="96.52" width="0.1524" layer="91"/>
-<label x="251.46" y="96.52" size="1.778" layer="95"/>
 <wire x1="327.66" y1="96.52" x2="332.74" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="303.53" y1="96.52" x2="243.84" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="J5" gate="G$1" pin="2"/>
-<wire x1="318.77" y1="96.52" x2="303.53" y2="96.52" width="0.1524" layer="91"/>
-<junction x="303.53" y="96.52"/>
-<junction x="318.77" y="96.52"/>
-<pinref part="U2" gate="U" pin="PE13"/>
 <pinref part="U2" gate="U" pin="PB10"/>
 <wire x1="160.02" y1="81.28" x2="147.32" y2="81.28" width="0.1524" layer="91" style="shortdash"/>
 <wire x1="147.32" y1="81.28" x2="147.32" y2="27.94" width="0.1524" layer="91" style="shortdash"/>
@@ -15439,7 +15428,7 @@ to MAX2769</text>
 </net>
 <net name="Q0-DATASYNC" class="0">
 <segment>
-<label x="251.46" y="71.12" size="1.778" layer="95"/>
+<label x="274.32" y="71.12" size="1.778" layer="95"/>
 <wire x1="303.53" y1="71.12" x2="243.84" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="J5" gate="G$1" pin="7"/>
 <pinref part="J5" gate="G$1" pin="16"/>
@@ -15529,7 +15518,7 @@ to MAX2769</text>
 </net>
 <net name="Q1-TIMESYNC" class="0">
 <segment>
-<label x="251.46" y="76.2" size="1.778" layer="95"/>
+<label x="274.32" y="76.2" size="1.778" layer="95"/>
 <wire x1="303.53" y1="76.2" x2="243.84" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="J5" gate="G$1" pin="6"/>
 <pinref part="J5" gate="G$1" pin="17"/>
@@ -15743,10 +15732,23 @@ to MAX2769</text>
 <wire x1="246.38" y1="50.8" x2="246.38" y2="58.42" width="0.1524" layer="91" style="shortdash"/>
 <pinref part="U2" gate="U" pin="PA6"/>
 <wire x1="246.38" y1="58.42" x2="243.84" y2="58.42" width="0.1524" layer="91" style="shortdash"/>
-<label x="228.6" y="38.1" size="1.778" layer="102" rot="R180" xref="yes"/>
-<wire x1="228.6" y1="38.1" x2="246.38" y2="38.1" width="0.1524" layer="91" style="shortdash"/>
+<label x="251.46" y="38.1" size="1.778" layer="102" xref="yes"/>
+<wire x1="251.46" y1="38.1" x2="246.38" y2="38.1" width="0.1524" layer="91" style="shortdash"/>
 <wire x1="246.38" y1="38.1" x2="246.38" y2="50.8" width="0.1524" layer="91" style="shortdash"/>
 <junction x="246.38" y="50.8"/>
+<wire x1="303.53" y1="96.52" x2="297.18" y2="96.52" width="0.1524" layer="91" style="shortdash"/>
+<wire x1="297.18" y1="96.52" x2="297.18" y2="62.23" width="0.1524" layer="91" style="shortdash"/>
+<wire x1="297.18" y1="62.23" x2="246.38" y2="62.23" width="0.1524" layer="91" style="shortdash"/>
+<wire x1="246.38" y1="62.23" x2="246.38" y2="58.42" width="0.1524" layer="91" style="shortdash"/>
+<junction x="246.38" y="58.42"/>
+<pinref part="J5" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="J5" gate="G$1" pin="1"/>
+<wire x1="303.53" y1="99.06" x2="243.84" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="U2" gate="U" pin="PE14"/>
 </segment>
 </net>
 </nets>
