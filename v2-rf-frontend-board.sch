@@ -14635,6 +14635,7 @@ to MAX2769</text>
 <text x="326.39" y="41.91" size="1.778" layer="102" rot="R90">MODWIRE</text>
 <text x="110.49" y="92.71" size="1.778" layer="102" rot="R90">MODWIRE</text>
 <text x="243.586" y="49.784" size="1.778" layer="102" rot="R270">MODWIRE</text>
+<text x="304.8" y="59.69" size="1.778" layer="102">MODWIRE</text>
 </plain>
 <instances>
 <instance part="DIG_GND25" gate="1" x="62.23" y="182.88" rot="MR0"/>
@@ -15426,7 +15427,7 @@ to MAX2769</text>
 <pinref part="U2" gate="U" pin="PB1"/>
 </segment>
 </net>
-<net name="Q0-DATASYNC" class="0">
+<net name="Q0-TIME_SYNC" class="0">
 <segment>
 <label x="274.32" y="71.12" size="1.778" layer="95"/>
 <wire x1="303.53" y1="71.12" x2="243.84" y2="71.12" width="0.1524" layer="91"/>
@@ -15439,30 +15440,38 @@ to MAX2769</text>
 <pinref part="U2" gate="U" pin="PE7"/>
 </segment>
 </net>
-<net name="I0-DATA_OUT" class="0">
+<net name="I0-CLK_SER" class="0">
 <segment>
-<label x="274.32" y="53.34" size="1.778" layer="95"/>
-<wire x1="303.53" y1="53.34" x2="243.84" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="J5" gate="G$1" pin="11"/>
 <pinref part="J5" gate="G$1" pin="12"/>
-<wire x1="303.53" y1="53.34" x2="318.77" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="318.77" y1="53.34" x2="332.74" y2="53.34" width="0.1524" layer="91"/>
-<junction x="318.77" y="53.34"/>
-<junction x="303.53" y="53.34"/>
-<pinref part="U2" gate="U" pin="PB5"/>
-</segment>
-</net>
-<net name="I1-CLK_SER" class="0">
-<segment>
 <label x="274.32" y="55.88" size="1.778" layer="95"/>
 <wire x1="303.53" y1="55.88" x2="243.84" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="J5" gate="G$1" pin="10"/>
-<pinref part="J5" gate="G$1" pin="13"/>
-<wire x1="303.53" y1="55.88" x2="318.77" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="318.77" y1="55.88" x2="332.74" y2="55.88" width="0.1524" layer="91"/>
-<junction x="318.77" y="55.88"/>
-<junction x="303.53" y="55.88"/>
 <pinref part="U2" gate="U" pin="PA5"/>
+<wire x1="303.53" y1="55.88" x2="303.53" y2="58.42" width="0.1524" layer="91" style="shortdash"/>
+<junction x="303.53" y="55.88"/>
+<wire x1="303.53" y1="58.42" x2="312.42" y2="58.42" width="0.1524" layer="91" style="shortdash"/>
+<wire x1="312.42" y1="58.42" x2="312.42" y2="54.61" width="0.1524" layer="91" style="shortdash"/>
+<wire x1="312.42" y1="54.61" x2="318.77" y2="54.61" width="0.1524" layer="91" style="shortdash"/>
+<wire x1="318.77" y1="54.61" x2="318.77" y2="53.34" width="0.1524" layer="91" style="shortdash"/>
+<junction x="318.77" y="53.34"/>
+</segment>
+</net>
+<net name="I1-DATA_OUT" class="0">
+<segment>
+<pinref part="J5" gate="G$1" pin="13"/>
+<wire x1="318.77" y1="55.88" x2="332.74" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="318.77" y1="55.88" x2="318.77" y2="57.15" width="0.1524" layer="91" style="shortdash"/>
+<junction x="318.77" y="55.88"/>
+<wire x1="318.77" y1="57.15" x2="309.88" y2="57.15" width="0.1524" layer="91" style="shortdash"/>
+<wire x1="309.88" y1="57.15" x2="309.88" y2="54.61" width="0.1524" layer="91" style="shortdash"/>
+<label x="274.32" y="53.34" size="1.778" layer="95"/>
+<wire x1="303.53" y1="53.34" x2="243.84" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="J5" gate="G$1" pin="11"/>
+<pinref part="U2" gate="U" pin="PB5"/>
+<wire x1="309.88" y1="54.61" x2="303.53" y2="54.61" width="0.1524" layer="91" style="shortdash"/>
+<wire x1="303.53" y1="54.61" x2="303.53" y2="53.34" width="0.1524" layer="91" style="shortdash"/>
+<junction x="303.53" y="53.34"/>
 </segment>
 </net>
 <net name="PE0" class="0">
@@ -15516,7 +15525,7 @@ to MAX2769</text>
 <junction x="57.15" y="175.26"/>
 </segment>
 </net>
-<net name="Q1-TIMESYNC" class="0">
+<net name="Q1-DATA_SYNC" class="0">
 <segment>
 <label x="274.32" y="76.2" size="1.778" layer="95"/>
 <wire x1="303.53" y1="76.2" x2="243.84" y2="76.2" width="0.1524" layer="91"/>
@@ -16165,28 +16174,28 @@ CHOICE #2:
 <label x="290.83" y="132.08" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="Q0-DATASYNC" class="0">
+<net name="Q0-TIME_SYNC" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="Q0"/>
 <wire x1="312.42" y1="147.32" x2="269.24" y2="147.32" width="0.1524" layer="91"/>
 <label x="290.83" y="147.32" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="Q1-TIMESYNC" class="0">
+<net name="Q1-DATA_SYNC" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="Q1"/>
 <wire x1="312.42" y1="144.78" x2="269.24" y2="144.78" width="0.1524" layer="91"/>
 <label x="290.83" y="144.78" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="I1-CLK_SER" class="0">
+<net name="I1-DATA_OUT" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="I1"/>
 <wire x1="312.42" y1="149.86" x2="269.24" y2="149.86" width="0.1524" layer="91"/>
 <label x="290.83" y="149.86" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="I0-DATA_OUT" class="0">
+<net name="I0-CLK_SER" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="I0"/>
 <wire x1="312.42" y1="152.4" x2="269.24" y2="152.4" width="0.1524" layer="91"/>

@@ -23,15 +23,15 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="SUPPLY" color="14" fill="1" visible="no" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
@@ -59,7 +59,7 @@
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -4306,7 +4306,7 @@ einem neuen Namen ab.</description>
 <wire x1="73.011" y1="9.824" x2="73.947" y2="9.824" width="0.2032" layer="1"/>
 <wire x1="73.947" y1="9.824" x2="73.992" y2="9.779" width="0.2032" layer="1"/>
 </signal>
-<signal name="Q0-DATASYNC">
+<signal name="Q0-TIME_SYNC">
 <contactref element="U1" pad="18"/>
 <contactref element="J5" pad="7"/>
 <contactref element="J5" pad="16"/>
@@ -4323,7 +4323,7 @@ einem neuen Namen ab.</description>
 <contactref element="U2" pad="38"/>
 <wire x1="57.026" y1="19.177" x2="58.166" y2="19.177" width="0.2032" layer="1"/>
 </signal>
-<signal name="Q1-TIMESYNC">
+<signal name="Q1-DATA_SYNC">
 <contactref element="U1" pad="17"/>
 <contactref element="J5" pad="6"/>
 <contactref element="J5" pad="17"/>
@@ -4340,33 +4340,34 @@ einem neuen Namen ab.</description>
 <wire x1="60.452" y1="17.653" x2="60.452" y2="17.272" width="0.2032" layer="1"/>
 <wire x1="60.452" y1="17.272" x2="61.595" y2="16.129" width="0.2032" layer="1"/>
 </signal>
-<signal name="I1-CLK_SER">
+<signal name="I1-DATA_OUT">
 <contactref element="U1" pad="21"/>
-<contactref element="J5" pad="10"/>
 <contactref element="J5" pad="13"/>
-<wire x1="61.595" y1="5.969" x2="64.643" y2="5.969" width="0.2032" layer="16"/>
 <wire x1="78.589" y1="12.917" x2="79.031" y2="12.917" width="0.2032" layer="1"/>
 <wire x1="79.031" y1="12.917" x2="80.899" y2="11.049" width="0.2032" layer="1"/>
 <wire x1="80.899" y1="11.049" x2="80.899" y2="9.525" width="0.2032" layer="1"/>
 <wire x1="80.899" y1="9.525" x2="77.343" y2="5.969" width="0.2032" layer="1"/>
 <wire x1="77.343" y1="5.969" x2="64.643" y2="5.969" width="0.2032" layer="1"/>
 <wire x1="64.389" y1="5.969" x2="64.643" y2="5.969" width="0.254" layer="1"/>
-<wire x1="59.69" y1="14.224" x2="59.69" y2="7.874" width="0.2032" layer="1"/>
-<wire x1="59.69" y1="7.874" x2="61.595" y2="5.969" width="0.2032" layer="1"/>
-<contactref element="U2" pad="30"/>
-<wire x1="59.69" y1="14.224" x2="58.547" y2="15.367" width="0.2032" layer="1"/>
-<wire x1="58.547" y1="15.367" x2="58.166" y2="15.367" width="0.2032" layer="1"/>
-<wire x1="58.166" y1="15.367" x2="57.976" y2="15.177" width="0.2032" layer="1"/>
-<wire x1="57.026" y1="15.177" x2="57.976" y2="15.177" width="0.2032" layer="1"/>
-</signal>
-<signal name="I0-DATA_OUT">
-<contactref element="U1" pad="20"/>
 <contactref element="J5" pad="11"/>
-<contactref element="J5" pad="12"/>
+<contactref element="U2" pad="91"/>
 <wire x1="59.309" y1="10.0965" x2="59.309" y2="4.699" width="0.2032" layer="1"/>
 <wire x1="59.309" y1="4.699" x2="60.579" y2="3.429" width="0.2032" layer="1"/>
 <wire x1="60.579" y1="3.429" x2="61.849" y2="3.429" width="0.2032" layer="1"/>
-<wire x1="61.849" y1="3.429" x2="64.389" y2="3.429" width="0.2032" layer="16"/>
+<wire x1="42.442" y1="17.677" x2="42.926" y2="18.161" width="0.2032" layer="1"/>
+<wire x1="42.926" y1="18.161" x2="54.991" y2="18.161" width="0.2032" layer="1"/>
+<via x="54.991" y="18.161" extent="1-16" drill="0.254"/>
+<wire x1="54.991" y1="18.161" x2="54.991" y2="12.573" width="0.2032" layer="16"/>
+<wire x1="54.991" y1="12.573" x2="56.261" y2="11.303" width="0.2032" layer="16"/>
+<via x="56.261" y="11.303" extent="1-16" drill="0.254"/>
+<wire x1="56.261" y1="11.303" x2="58.1025" y2="11.303" width="0.2032" layer="1"/>
+<wire x1="58.1025" y1="11.303" x2="59.309" y2="10.0965" width="0.2032" layer="1"/>
+<wire x1="41.526" y1="17.677" x2="42.442" y2="17.677" width="0.2032" layer="1"/>
+<wire x1="61.849" y1="3.429" x2="64.389" y2="5.969" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="I0-CLK_SER">
+<contactref element="U1" pad="20"/>
+<contactref element="J5" pad="12"/>
 <wire x1="78.089" y1="12.917" x2="78.089" y2="12.208" width="0.2032" layer="1"/>
 <wire x1="78.089" y1="12.208" x2="78.232" y2="12.065" width="0.2032" layer="1"/>
 <wire x1="78.232" y1="12.065" x2="79.375" y2="12.065" width="0.2032" layer="1"/>
@@ -4379,16 +4380,15 @@ einem neuen Namen ab.</description>
 <via x="76.835" y="5.207" extent="1-16" drill="0.254"/>
 <wire x1="76.835" y1="5.207" x2="75.057" y2="3.429" width="0.2032" layer="1"/>
 <wire x1="75.057" y1="3.429" x2="64.389" y2="3.429" width="0.2032" layer="1"/>
-<contactref element="U2" pad="91"/>
-<wire x1="42.442" y1="17.677" x2="42.926" y2="18.161" width="0.2032" layer="1"/>
-<wire x1="42.926" y1="18.161" x2="54.991" y2="18.161" width="0.2032" layer="1"/>
-<via x="54.991" y="18.161" extent="1-16" drill="0.254"/>
-<wire x1="54.991" y1="18.161" x2="54.991" y2="12.573" width="0.2032" layer="16"/>
-<wire x1="54.991" y1="12.573" x2="56.261" y2="11.303" width="0.2032" layer="16"/>
-<via x="56.261" y="11.303" extent="1-16" drill="0.254"/>
-<wire x1="56.261" y1="11.303" x2="58.1025" y2="11.303" width="0.2032" layer="1"/>
-<wire x1="58.1025" y1="11.303" x2="59.309" y2="10.0965" width="0.2032" layer="1"/>
-<wire x1="41.526" y1="17.677" x2="42.442" y2="17.677" width="0.2032" layer="1"/>
+<contactref element="J5" pad="10"/>
+<contactref element="U2" pad="30"/>
+<wire x1="59.69" y1="14.224" x2="59.69" y2="7.874" width="0.2032" layer="1"/>
+<wire x1="59.69" y1="7.874" x2="61.595" y2="5.969" width="0.2032" layer="1"/>
+<wire x1="59.69" y1="14.224" x2="58.547" y2="15.367" width="0.2032" layer="1"/>
+<wire x1="58.547" y1="15.367" x2="58.166" y2="15.367" width="0.2032" layer="1"/>
+<wire x1="58.166" y1="15.367" x2="57.976" y2="15.177" width="0.2032" layer="1"/>
+<wire x1="57.026" y1="15.177" x2="57.976" y2="15.177" width="0.2032" layer="1"/>
+<wire x1="61.595" y1="5.969" x2="64.389" y2="3.429" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SMA-RAW" class="2">
 <contactref element="L6" pad="1"/>
