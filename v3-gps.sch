@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="2" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -14498,7 +14498,7 @@ FEATURES&lt;p&gt;
 <part name="FRAME7" library="frames" deviceset="A3L-LOC" device=""/>
 <part name="C1" library="rcl_custom" deviceset="C-EU" device="0402-C-NOSILK" value="100p"/>
 <part name="U9" library="SparkFun-RF" deviceset="VENUS638FLPX-L" device=""/>
-<part name="U10" library="minicircuits-splitter" deviceset="MINICIRCUITS-BP2G" device=""/>
+<part name="U10" library="minicircuits-splitter" deviceset="MINICIRCUITS-BP2G" device="" value="BP2G+"/>
 <part name="DIG_GND36" library="supply" deviceset="GND_BAR" device="" value="GND"/>
 <part name="AGND1" library="supply1" deviceset="AGND" device=""/>
 <part name="GND24" library="supply1" deviceset="GND" device=""/>

@@ -3174,7 +3174,7 @@ einem neuen Namen ab.</description>
 <element name="TP20" library="Tova" package="2MM-TEST-POINT" value="TEST-POINT" x="74.295" y="25.527" smashed="yes"/>
 <element name="C1" library="rcl_custom" package="0402-C-NOSILK" value="100p" x="1.016" y="-2.413"/>
 <element name="U9" library="SparkFun-RF" package="VENUS638FLPX" value="VENUS638FLPX-L" x="16.891" y="-8.001"/>
-<element name="U10" library="minicircuits-splitter" package="MINICIRCUITS" value="MINICIRCUITS-BP2G" x="3.683" y="-19.685"/>
+<element name="U10" library="minicircuits-splitter" package="MINICIRCUITS" value="BP2G+" x="3.683" y="-19.685"/>
 <element name="LED7" library="led" package="CHIPLED_0603" value="YLW" x="-2.921" y="-21.717"/>
 <element name="C19" library="rcl_custom" package="0402-C-NOSILK" value="1u" x="-3.937" y="-25.654"/>
 <element name="C22" library="rcl_custom" package="0402-C-NOSILK" value="100p" x="-3.937" y="-30.099"/>
