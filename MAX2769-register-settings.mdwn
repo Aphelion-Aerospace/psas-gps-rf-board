@@ -1,0 +1,6 @@
+The register settings for the MAX2769 are in a google doc that you can view here:
+
+https://docs.google.com/document/d/1WI_2UTlYp_lzD1csRVcNZ12NdYTfWrzCtC3dIGFzvlU/edit?usp=sharing
+
+Feel free to contact us to get editing permissions if you want to change something! info@psas.pdx.edu.
+

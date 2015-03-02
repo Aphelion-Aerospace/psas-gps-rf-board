@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="2" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -16069,11 +16069,12 @@ Front End</text>
 <description>PWR</description>
 <plain>
 <text x="55.88" y="217.17" size="1.778" layer="97">4.5 - 26 Vin</text>
-<text x="246.38" y="149.86" size="1.778" layer="97">2.85V Analog and Digital to MAX2769 GPS Receiver</text>
+<text x="248.92" y="210.82" size="1.778" layer="97">2.85V Analog and Digital to MAX2769 GPS Receiver</text>
 <text x="86.36" y="218.44" size="1.778" layer="97">Aux supply from USB debug</text>
-<text x="261.62" y="88.9" size="1.778" layer="97">2.85V For SkyTraq supply</text>
+<text x="264.16" y="134.62" size="1.778" layer="97">2.85V For SkyTraq supply</text>
 <text x="314.96" y="157.48" size="1.778" layer="94">THIS SHOULD BE AGND?!?!</text>
 <text x="313.69" y="111.76" size="1.778" layer="94">THIS SHOULD BE AGND?!?!</text>
+<text x="256.54" y="88.9" size="1.778" layer="97">1.85V internal supply For CPLD</text>
 </plain>
 <instances>
 <instance part="U$2" gate="G$1" x="60.96" y="210.82" smashed="yes">
@@ -17656,8 +17657,12 @@ Front End</text>
 <text x="238.76" y="185.42" size="2.54" layer="97">CHECK RFIN WITH NO INDUCTIVE PULLUP</text>
 <text x="238.76" y="181.61" size="2.54" layer="97">WHERE SHOULD WE CONNECT GND/AGND</text>
 <text x="137.16" y="121.92" size="1.27" layer="97">1.2V LDO out</text>
-<text x="81.28" y="123.19" size="1.27" layer="97" rot="R90">DOUBLE CHECK THIS PACKAGE</text>
-<text x="91.44" y="134.62" size="1.778" layer="97">SuperCap</text>
+<text x="66.04" y="123.19" size="1.27" layer="97" rot="R90">DOUBLE CHECK THIS PACKAGE</text>
+<text x="76.2" y="134.62" size="1.778" layer="97">SuperCap</text>
+<text x="124.46" y="223.52" size="1.778" layer="97">2.85V-S is the skytraq specific power
+supply. Meant to decouple from other
+analog and main digital supplies</text>
+<text x="238.76" y="177.8" size="2.54" layer="97">DC BLOCKING CAP?</text>
 </plain>
 <instances>
 <instance part="FRAME6" gate="G$1" x="0" y="0"/>
@@ -17669,7 +17674,7 @@ Front End</text>
 </instance>
 <instance part="C19" gate="CE" x="124.46" y="187.96"/>
 <instance part="C22" gate="CE" x="132.08" y="187.96"/>
-<instance part="C24" gate="CE" x="111.76" y="167.64" rot="R180"/>
+<instance part="C24" gate="CE" x="111.76" y="170.18" rot="R180"/>
 <instance part="R21" gate="R" x="111.76" y="182.88" rot="MR90"/>
 <instance part="R22" gate="R" x="149.86" y="152.4" rot="MR90"/>
 <instance part="R23" gate="R" x="128.27" y="137.16" smashed="yes" rot="MR270">
@@ -17694,22 +17699,22 @@ Front End</text>
 <instance part="TP30" gate="G$1" x="154.94" y="127" smashed="yes">
 <attribute name="NAME" x="148.59" y="127" size="1.778" layer="95" font="vector"/>
 </instance>
-<instance part="D1" gate="G$1" x="86.36" y="157.48" smashed="yes" rot="R90">
-<attribute name="NAME" x="84.074" y="157.48" size="1.016" layer="95" rot="R90"/>
-<attribute name="VALUE" x="89.662" y="157.48" size="1.016" layer="96" rot="R90"/>
+<instance part="D1" gate="G$1" x="71.12" y="157.48" smashed="yes" rot="R90">
+<attribute name="NAME" x="68.834" y="157.48" size="1.016" layer="95" rot="R90"/>
+<attribute name="VALUE" x="74.422" y="157.48" size="1.016" layer="96" rot="R90"/>
 </instance>
-<instance part="R24" gate="R" x="86.36" y="149.86" rot="MR90"/>
-<instance part="C66" gate="G$1" x="86.36" y="137.16"/>
+<instance part="R24" gate="R" x="71.12" y="149.86" rot="MR90"/>
+<instance part="C66" gate="G$1" x="71.12" y="137.16"/>
 <instance part="SUPPLY2" gate="G$1" x="124.46" y="195.58"/>
 <instance part="SUPPLY3" gate="G$1" x="111.76" y="190.5"/>
-<instance part="SUPPLY4" gate="G$1" x="86.36" y="162.56"/>
+<instance part="SUPPLY4" gate="G$1" x="71.12" y="162.56"/>
 <instance part="SUPPLY5" gate="G$1" x="128.27" y="149.86"/>
-<instance part="GND44" gate="G1" x="86.36" y="129.54"/>
+<instance part="GND44" gate="G1" x="71.12" y="129.54"/>
 <instance part="GND24" gate="G1" x="154.94" y="99.06"/>
 <instance part="GND45" gate="G1" x="124.46" y="180.34"/>
 <instance part="GND46" gate="G1" x="132.08" y="180.34" rot="MR0"/>
 <instance part="GND47" gate="G1" x="149.86" y="144.78" rot="MR0"/>
-<instance part="GND48" gate="G1" x="111.76" y="162.56"/>
+<instance part="GND48" gate="G1" x="111.76" y="167.64"/>
 <instance part="C79" gate="CE" x="142.24" y="205.74"/>
 <instance part="C80" gate="CE" x="149.86" y="205.74"/>
 <instance part="SUPPLY6" gate="G$1" x="142.24" y="213.36"/>
@@ -17788,7 +17793,7 @@ Front End</text>
 </segment>
 <segment>
 <pinref part="C66" gate="G$1" pin="-"/>
-<wire x1="86.36" y1="132.08" x2="86.36" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="132.08" x2="71.12" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="GND44" gate="G1" pin="GND"/>
 </segment>
 <segment>
@@ -17829,7 +17834,6 @@ Front End</text>
 <segment>
 <pinref part="C24" gate="CE" pin="1"/>
 <pinref part="GND48" gate="G1" pin="GND"/>
-<wire x1="111.76" y1="162.56" x2="111.76" y2="165.1" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C79" gate="CE" pin="2"/>
@@ -17851,9 +17855,9 @@ Front End</text>
 </net>
 <net name="STM_USART6_TX" class="0">
 <segment>
-<label x="143.51" y="162.56" size="1.27" layer="95" rot="MR0" xref="yes"/>
+<label x="100.33" y="162.56" size="1.27" layer="95" rot="MR0" xref="yes"/>
 <pinref part="U9" gate="G$1" pin="RXD0"/>
-<wire x1="143.51" y1="162.56" x2="154.94" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="100.33" y1="162.56" x2="154.94" y2="162.56" width="0.1524" layer="91"/>
 <pinref part="TP25" gate="G$1" pin="1"/>
 <wire x1="154.94" y1="162.56" x2="160.02" y2="162.56" width="0.1524" layer="91"/>
 <junction x="154.94" y="162.56"/>
@@ -17861,11 +17865,11 @@ Front End</text>
 </net>
 <net name="STM_USART6_RX" class="0">
 <segment>
-<label x="143.51" y="160.02" size="1.27" layer="95" rot="MR0" xref="yes"/>
+<label x="100.33" y="160.02" size="1.27" layer="95" rot="MR0" xref="yes"/>
 <pinref part="U9" gate="G$1" pin="TXD0"/>
 <wire x1="160.02" y1="160.02" x2="154.94" y2="160.02" width="0.1524" layer="91"/>
 <pinref part="TP27" gate="G$1" pin="1"/>
-<wire x1="154.94" y1="160.02" x2="143.51" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="160.02" x2="100.33" y2="160.02" width="0.1524" layer="91"/>
 <junction x="154.94" y="160.02"/>
 </segment>
 </net>
@@ -17877,10 +17881,9 @@ Front End</text>
 <wire x1="119.38" y1="175.26" x2="111.76" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="175.26" x2="111.76" y2="177.8" width="0.1524" layer="91"/>
 <pinref part="C24" gate="CE" pin="2"/>
-<wire x1="111.76" y1="172.72" x2="111.76" y2="175.26" width="0.1524" layer="91"/>
 <junction x="111.76" y="175.26"/>
-<wire x1="111.76" y1="175.26" x2="93.98" y2="175.26" width="0.1524" layer="91"/>
-<label x="93.98" y="175.26" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="111.76" y1="175.26" x2="101.6" y2="175.26" width="0.1524" layer="91"/>
+<label x="101.6" y="175.26" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="TP28" gate="G$1" pin="1"/>
 <junction x="119.38" y="175.26"/>
 </segment>
@@ -17897,9 +17900,9 @@ Front End</text>
 <segment>
 <pinref part="U9" gate="G$1" pin="PPS"/>
 <wire x1="160.02" y1="127" x2="154.94" y2="127" width="0.1524" layer="91"/>
-<label x="144.78" y="127" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="101.6" y="127" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="TP30" gate="G$1" pin="1"/>
-<wire x1="154.94" y1="127" x2="144.78" y2="127" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="127" x2="101.6" y2="127" width="0.1524" layer="91"/>
 <junction x="154.94" y="127"/>
 </segment>
 </net>
@@ -17932,12 +17935,12 @@ Front End</text>
 <pinref part="U9" gate="G$1" pin="VBAT"/>
 <wire x1="160.02" y1="170.18" x2="119.38" y2="170.18" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="170.18" x2="119.38" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="142.24" x2="86.36" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="142.24" x2="71.12" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="R24" gate="R" pin="1"/>
-<wire x1="86.36" y1="144.78" x2="86.36" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="144.78" x2="71.12" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="C66" gate="G$1" pin="+"/>
-<wire x1="86.36" y1="139.7" x2="86.36" y2="142.24" width="0.1524" layer="91"/>
-<junction x="86.36" y="142.24"/>
+<wire x1="71.12" y1="139.7" x2="71.12" y2="142.24" width="0.1524" layer="91"/>
+<junction x="71.12" y="142.24"/>
 </segment>
 </net>
 <net name="N$39" class="0">
