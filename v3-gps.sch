@@ -15619,6 +15619,50 @@ Typical height 0.6&amp;nbsp;mm.</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="hw-laird-bmi-s-202">
+<packages>
+<package name="BMI-S-202">
+<smd name="P$1" x="-8.15" y="-6.375" dx="1" dy="4.55" layer="1"/>
+<smd name="P$2" x="-6.375" y="-8.15" dx="1" dy="4.55" layer="1" rot="R90"/>
+<smd name="P$3" x="-8.15" y="0" dx="1" dy="3.8" layer="1" rot="R180"/>
+<smd name="P$4" x="0" y="-8.15" dx="1" dy="3.8" layer="1" rot="R270"/>
+<smd name="P$6" x="8.15" y="0" dx="1" dy="3.8" layer="1"/>
+<smd name="P$5" x="0" y="8.15" dx="1" dy="3.8" layer="1" rot="R90"/>
+<smd name="P$7" x="-8.15" y="6.375" dx="1" dy="4.55" layer="1"/>
+<smd name="P$8" x="6.375" y="-8.15" dx="1" dy="4.55" layer="1" rot="R90"/>
+<smd name="P$9" x="-6.375" y="8.15" dx="1" dy="4.55" layer="1" rot="R90"/>
+<smd name="P$10" x="6.375" y="8.15" dx="1" dy="4.55" layer="1" rot="R90"/>
+<smd name="P$11" x="8.15" y="6.375" dx="1" dy="4.55" layer="1"/>
+<smd name="P$12" x="8.15" y="-6.375" dx="1" dy="4.55" layer="1"/>
+</package>
+</packages>
+<symbols>
+<symbol name="SHIELD">
+<wire x1="-2.54" y1="2.54" x2="2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
+<pin name="P$1" x="0" y="-5.08" visible="off" length="short" direction="pwr" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="BMI-S-202-SHIELD" prefix="SH">
+<gates>
+<gate name="G$1" symbol="SHIELD" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="BMI-S-202">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1 P$2 P$3 P$4 P$5 P$6 P$7 P$8 P$9 P$10 P$11 P$12"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -15629,8 +15673,8 @@ Typical height 0.6&amp;nbsp;mm.</description>
 </class>
 <class number="1" name="PWR" width="0" drill="0">
 </class>
-<class number="2" name="rf" width="0" drill="0">
-<clearance class="2" value="0.3302"/>
+<class number="2" name="RF" width="0" drill="0">
+<clearance class="2" value="0.635"/>
 </class>
 </classes>
 <parts>
@@ -15952,6 +15996,10 @@ Typical height 0.6&amp;nbsp;mm.</description>
 <part name="C81" library="rcl_custom" deviceset="C-EU" device="0402-C-NOSILK" value="47p"/>
 <part name="TP16" library="apdm" deviceset="PAD+X" device="-0.7"/>
 <part name="LED3" library="apdm" deviceset="LED-RGB-SEPARATE-*" device="3528"/>
+<part name="C82" library="rcl_custom" deviceset="C-EU" device="0402-C-NOSILK" value="100n"/>
+<part name="GND51" library="supply" deviceset="GND" device=""/>
+<part name="SH1" library="hw-laird-bmi-s-202" deviceset="BMI-S-202-SHIELD" device=""/>
+<part name="AGND20" library="supply1" deviceset="AGND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -16830,6 +16878,8 @@ Front End</text>
 <attribute name="NAME" x="124.46" y="129.54" size="1.778" layer="95"/>
 <attribute name="VALUE" x="124.46" y="127" size="1.778" layer="96"/>
 </instance>
+<instance part="SH1" gate="G$1" x="149.86" y="63.5"/>
+<instance part="AGND20" gate="VR1" x="149.86" y="55.88"/>
 </instances>
 <busses>
 </busses>
@@ -16875,25 +16925,21 @@ Front End</text>
 <junction x="160.02" y="129.54"/>
 </segment>
 </net>
-<net name="STQ-RF" class="0">
+<net name="STQ-RF" class="2">
 <segment>
-<wire x1="215.9" y1="104.14" x2="234.95" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="104.14" x2="234.95" y2="104.14" width="0.1524" layer="91"/>
 <label x="234.95" y="104.14" size="1.778" layer="95" xref="yes"/>
-<wire x1="215.9" y1="104.14" x2="210.82" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="U10" gate="G$1" pin="PORT1"/>
-<wire x1="210.82" y1="109.22" x2="208.28" y2="109.22" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="MAX-RF" class="0">
-<segment>
-<wire x1="215.9" y1="109.22" x2="234.95" y2="109.22" width="0.1524" layer="91"/>
-<label x="234.95" y="109.22" size="1.778" layer="95" xref="yes"/>
-<wire x1="215.9" y1="109.22" x2="210.82" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="U10" gate="G$1" pin="PORT2"/>
-<wire x1="210.82" y1="104.14" x2="208.28" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$14" class="0">
+<net name="MAX-RF" class="2">
+<segment>
+<wire x1="208.28" y1="109.22" x2="234.95" y2="109.22" width="0.1524" layer="91"/>
+<label x="234.95" y="109.22" size="1.778" layer="95" xref="yes"/>
+<pinref part="U10" gate="G$1" pin="PORT1"/>
+</segment>
+</net>
+<net name="N$14" class="2">
 <segment>
 <pinref part="U10" gate="G$1" pin="SUM"/>
 <pinref part="U12" gate="G$1" pin="RF-OUT"/>
@@ -16927,8 +16973,12 @@ Front End</text>
 <pinref part="AGND24" gate="VR1" pin="AGND"/>
 <wire x1="170.18" y1="121.92" x2="170.18" y2="120.65" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="SH1" gate="G$1" pin="P$1"/>
+<pinref part="AGND20" gate="VR1" pin="AGND"/>
+</segment>
 </net>
-<net name="N$5" class="0">
+<net name="N$5" class="2">
 <segment>
 <pinref part="J2" gate="G$1" pin="SIG"/>
 <pinref part="U12" gate="G$1" pin="RF-IN"/>
@@ -16966,12 +17016,13 @@ Front End</text>
 <wire x1="236.22" y1="218.44" x2="236.22" y2="165.1" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="236.22" y1="165.1" x2="149.86" y2="165.1" width="0.1524" layer="97" style="shortdash"/>
 <text x="58.42" y="127" size="1.27" layer="95" rot="R90">MAX2769 SPI CONFIG PORT</text>
-<wire x1="215.9" y1="104.14" x2="215.9" y2="93.98" width="0.1524" layer="97"/>
-<wire x1="215.9" y1="93.98" x2="231.14" y2="93.98" width="0.1524" layer="97"/>
-<wire x1="231.14" y1="93.98" x2="231.14" y2="104.14" width="0.1524" layer="97"/>
-<wire x1="231.14" y1="104.14" x2="215.9" y2="104.14" width="0.1524" layer="97"/>
-<text x="215.9" y="97.79" size="1.778" layer="97">clock cleanup</text>
-<text x="173.99" y="114.3" size="1.778" layer="97">TODO: WHAT DO WE DO WITH CLKOUT?</text>
+<wire x1="220.98" y1="114.3" x2="220.98" y2="104.14" width="0.1524" layer="97"/>
+<wire x1="220.98" y1="104.14" x2="236.22" y2="104.14" width="0.1524" layer="97"/>
+<wire x1="236.22" y1="104.14" x2="236.22" y2="114.3" width="0.1524" layer="97"/>
+<wire x1="236.22" y1="114.3" x2="220.98" y2="114.3" width="0.1524" layer="97"/>
+<text x="220.98" y="107.95" size="1.778" layer="97">clock cleanup</text>
+<text x="201.93" y="101.6" size="1.778" layer="97">TODO: WHAT DO WE DO WITH CLKOUT?</text>
+<text x="191.77" y="99.06" size="1.778" layer="97">ASSUME WE CAN USE CLKOUT AND NOT TCXO OUT?</text>
 </plain>
 <instances>
 <instance part="C3" gate="CE" x="134.62" y="50.8"/>
@@ -17207,19 +17258,6 @@ Front End</text>
 <pinref part="L8" gate="U1" pin="OUT"/>
 </segment>
 </net>
-<net name="TCXO-OUT" class="0">
-<segment>
-<pinref part="C2" gate="CE" pin="1"/>
-<pinref part="U4" gate="U$1" pin="OUT"/>
-<wire x1="78.74" y1="106.68" x2="73.66" y2="106.68" width="0.15" layer="91"/>
-<wire x1="73.66" y1="106.68" x2="64.77" y2="106.68" width="0.15" layer="91"/>
-<wire x1="73.66" y1="106.68" x2="73.66" y2="30.48" width="0.1524" layer="91"/>
-<junction x="73.66" y="106.68"/>
-<wire x1="73.66" y1="30.48" x2="200.66" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="200.66" y1="30.48" x2="200.66" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="200.66" y1="99.06" x2="215.9" y2="99.06" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="ANTFLAG" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="ANTFLAG"/>
@@ -17408,7 +17446,7 @@ Front End</text>
 <pinref part="U$11" gate="G$1" pin="2.85VD"/>
 </segment>
 </net>
-<net name="MAX-RF" class="0">
+<net name="MAX-RF" class="2">
 <segment>
 <wire x1="116.84" y1="88.9" x2="93.98" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="93.98" y1="88.9" x2="93.98" y2="55.88" width="0.1524" layer="91"/>
@@ -17579,7 +17617,7 @@ Front End</text>
 <junction x="279.4" y="170.18"/>
 </segment>
 </net>
-<net name="N$59" class="0">
+<net name="Q1" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="Q1"/>
 <wire x1="167.64" y1="116.84" x2="254" y2="116.84" width="0.1524" layer="91"/>
@@ -17588,7 +17626,7 @@ Front End</text>
 <wire x1="254" y1="114.3" x2="261.62" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$60" class="0">
+<net name="Q0" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="Q0"/>
 <wire x1="167.64" y1="119.38" x2="256.54" y2="119.38" width="0.1524" layer="91"/>
@@ -17597,28 +17635,20 @@ Front End</text>
 <wire x1="256.54" y1="116.84" x2="261.62" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$61" class="0">
+<net name="I1" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="I1"/>
 <wire x1="167.64" y1="121.92" x2="261.62" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="IO_9"/>
 </segment>
 </net>
-<net name="N$62" class="0">
+<net name="I0" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="I0"/>
 <wire x1="167.64" y1="124.46" x2="259.08" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="259.08" y1="124.46" x2="259.08" y2="127" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="IO_8"/>
 <wire x1="259.08" y1="127" x2="261.62" y2="127" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$63" class="0">
-<segment>
-<wire x1="231.14" y1="99.06" x2="248.92" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="248.92" y1="99.06" x2="248.92" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="G$1" pin="IO_14"/>
-<wire x1="248.92" y1="109.22" x2="261.62" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$64" class="0">
@@ -17649,6 +17679,13 @@ Front End</text>
 <pinref part="IC1" gate="G$1" pin="IO_3"/>
 </segment>
 </net>
+<net name="N$54" class="0">
+<segment>
+<pinref part="U4" gate="U$1" pin="OUT"/>
+<pinref part="C2" gate="CE" pin="1"/>
+<wire x1="78.74" y1="106.68" x2="64.77" y2="106.68" width="0.15" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -17663,6 +17700,8 @@ Front End</text>
 supply. Meant to decouple from other
 analog and main digital supplies</text>
 <text x="238.76" y="177.8" size="2.54" layer="97">DC BLOCKING CAP?</text>
+<text x="88.9" y="129.54" size="1.778" layer="97">Test point only</text>
+<text x="88.9" y="177.8" size="1.778" layer="97">Test point only</text>
 </plain>
 <instances>
 <instance part="FRAME6" gate="G$1" x="0" y="0"/>
@@ -17720,6 +17759,8 @@ analog and main digital supplies</text>
 <instance part="SUPPLY6" gate="G$1" x="142.24" y="213.36"/>
 <instance part="GND49" gate="G1" x="142.24" y="198.12"/>
 <instance part="GND50" gate="G1" x="149.86" y="198.12" rot="MR0"/>
+<instance part="C82" gate="CE" x="119.38" y="137.16" rot="R180"/>
+<instance part="GND51" gate="G1" x="119.38" y="134.62"/>
 </instances>
 <busses>
 </busses>
@@ -17845,8 +17886,12 @@ analog and main digital supplies</text>
 <wire x1="149.86" y1="198.12" x2="149.86" y2="200.66" width="0.1524" layer="91"/>
 <pinref part="GND50" gate="G1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="C82" gate="CE" pin="1"/>
+<pinref part="GND51" gate="G1" pin="GND"/>
+</segment>
 </net>
-<net name="STQ-RF" class="0">
+<net name="STQ-RF" class="2">
 <segment>
 <pinref part="U9" gate="G$1" pin="RFIN"/>
 <wire x1="195.58" y1="185.42" x2="210.82" y2="185.42" width="0.1524" layer="91"/>
@@ -17941,6 +17986,8 @@ analog and main digital supplies</text>
 <pinref part="C66" gate="G$1" pin="+"/>
 <wire x1="71.12" y1="139.7" x2="71.12" y2="142.24" width="0.1524" layer="91"/>
 <junction x="71.12" y="142.24"/>
+<pinref part="C82" gate="CE" pin="2"/>
+<junction x="119.38" y="142.24"/>
 </segment>
 </net>
 <net name="N$39" class="0">
