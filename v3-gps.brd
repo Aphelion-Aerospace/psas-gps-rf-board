@@ -9,7 +9,7 @@
 <grid distance="0.005" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.001" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="GND" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="GND" color="7" fill="1" visible="no" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
 <layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
@@ -1771,15 +1771,6 @@ http://pdfserv.maxim-ic.com/land_patterns/90-0023.PDF</description>
 </library>
 <library name="Tova">
 <packages>
-<package name="2MM-TEST-POINT">
-<wire x1="-0.85" y1="-0.9" x2="0.85" y2="-0.9" width="0.2032" layer="21"/>
-<wire x1="0.85" y1="-0.9" x2="0.85" y2="0.9" width="0.2032" layer="21"/>
-<wire x1="0.85" y1="0.9" x2="-0.85" y2="0.9" width="0.2032" layer="21"/>
-<wire x1="-0.85" y1="0.9" x2="-0.85" y2="-0.9" width="0.2032" layer="21"/>
-<pad name="1" x="0" y="0" drill="0.7366"/>
-<rectangle x1="-0.25" y1="-0.25" x2="0.25" y2="0.25" layer="51"/>
-<text x="-1.6" y="1.5" size="0.8" layer="25" font="vector" ratio="20">&gt;NAME</text>
-</package>
 <package name="SOT23">
 <wire x1="1.4" y1="0.6" x2="-1.4" y2="0.6" width="0.3" layer="51"/>
 <wire x1="-1.4" y1="0.6" x2="-1.4" y2="-0.6" width="0.3" layer="51"/>
@@ -1806,6 +1797,16 @@ http://pdfserv.maxim-ic.com/land_patterns/90-0023.PDF</description>
 <rectangle x1="-0.25" y1="0.65" x2="0.25" y2="1.3" layer="51"/>
 <rectangle x1="-1.2" y1="-1.3" x2="-0.7" y2="-0.65" layer="51"/>
 <rectangle x1="0.7" y1="-1.3" x2="1.2" y2="-0.65" layer="51"/>
+</package>
+<package name="15MIL-TEST-POINT">
+<description>15mil test point</description>
+<pad name="P$1" x="0" y="0" drill="0.381"/>
+<wire x1="-0.6" y1="-0.6" x2="-0.6" y2="0.6" width="0.127" layer="21"/>
+<wire x1="-0.6" y1="0.6" x2="0.6" y2="0.6" width="0.127" layer="21"/>
+<wire x1="0.6" y1="0.6" x2="0.6" y2="-0.6" width="0.127" layer="21"/>
+<wire x1="0.6" y1="-0.6" x2="-0.6" y2="-0.6" width="0.127" layer="21"/>
+<rectangle x1="-0.1" y1="-0.1" x2="0.1" y2="0.1" layer="51"/>
+<text x="-1.1" y="0.8" size="0.8" layer="25" font="vector" ratio="20">&gt;NAME</text>
 </package>
 </packages>
 </library>
@@ -2868,7 +2869,7 @@ Typical height 0.6&amp;nbsp;mm.</description>
 <class number="1" name="PWR" width="0" drill="0">
 </class>
 <class number="2" name="RF" width="0" drill="0">
-<clearance class="2" value="0.127"/>
+<clearance class="2" value="0.635"/>
 </class>
 </classes>
 <designrules name="osh-park-4layer *">
@@ -3258,10 +3259,10 @@ einem neuen Namen ab.</description>
 <attribute name="NAME" x="55.5625" y="60.7695" size="0.762" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="54.9275" y="57.8485" size="0.508" layer="27" font="vector" ratio="20" rot="R270"/>
 </element>
-<element name="TP22" library="Tova" package="2MM-TEST-POINT" value="TEST-POINT" x="1.778" y="34.29" smashed="yes"/>
-<element name="TP26" library="Tova" package="2MM-TEST-POINT" value="TEST-POINT" x="1.778" y="36.068" smashed="yes"/>
-<element name="TP32" library="Tova" package="2MM-TEST-POINT" value="TEST-POINT" x="1.778" y="38.1" smashed="yes"/>
-<element name="TP33" library="Tova" package="2MM-TEST-POINT" value="TEST-POINT" x="1.778" y="39.878" smashed="yes"/>
+<element name="TP22" library="Tova" package="15MIL-TEST-POINT" value="TEST-POINT15MIL-TEST-POINT" x="1.778" y="34.29" smashed="yes"/>
+<element name="TP26" library="Tova" package="15MIL-TEST-POINT" value="TEST-POINT15MIL-TEST-POINT" x="1.778" y="36.068" smashed="yes"/>
+<element name="TP32" library="Tova" package="15MIL-TEST-POINT" value="TEST-POINT15MIL-TEST-POINT" x="1.778" y="38.1" smashed="yes"/>
+<element name="TP33" library="Tova" package="15MIL-TEST-POINT" value="TEST-POINT15MIL-TEST-POINT" x="1.778" y="39.878" smashed="yes"/>
 <element name="J7" library="con-usd-hirose-dm3-gpsboard" package="HIROSE_DM3D(MICRO-SD)" value="CON_HIROSE_DM3D(MICROSD)" x="63.627" y="47.244" smashed="yes">
 <attribute name="NAME" x="66.119" y="46.061" size="0.762" layer="25" font="vector" ratio="20" rot="R180"/>
 <attribute name="VALUE" x="64.595" y="54.404" size="1" layer="27" font="vector" rot="R180"/>
@@ -3488,7 +3489,7 @@ einem neuen Namen ab.</description>
 <attribute name="NAME" x="42.964" y="18.177" size="0.762" layer="25" font="vector" ratio="20" rot="R180"/>
 <attribute name="VALUE" x="39.789" y="19.83" size="1" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="TP10" library="Tova" package="2MM-TEST-POINT" value="TEST-POINT" x="32.893" y="7.112" smashed="yes" rot="R270">
+<element name="TP10" library="Tova" package="15MIL-TEST-POINT" value="TEST-POINT15MIL-TEST-POINT" x="32.893" y="7.112" smashed="yes" rot="R270">
 <attribute name="NAME" x="30.964" y="9.474" size="0.762" layer="25" font="vector" ratio="20" rot="R270"/>
 </element>
 <element name="C58" library="rcl_custom" package=".0603-B-NOSILK" value="2.2u" x="27.178" y="16.764" smashed="yes" rot="R90">
@@ -3507,25 +3508,25 @@ einem neuen Namen ab.</description>
 <attribute name="NAME" x="7.382" y="52.54" size="0.762" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="9.035" y="49.746" size="1" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="TP11" library="Tova" package="2MM-TEST-POINT" value="TEST-POINT" x="2.032" y="52.832" smashed="yes" rot="R180">
+<element name="TP11" library="Tova" package="15MIL-TEST-POINT" value="TEST-POINT15MIL-TEST-POINT" x="2.032" y="52.832" smashed="yes" rot="R180">
 <attribute name="NAME" x="0.103" y="53.924" size="0.8" layer="25" font="vector" ratio="20" rot="R270"/>
 </element>
-<element name="TP12" library="Tova" package="2MM-TEST-POINT" value="TEST-POINT" x="3.81" y="47.752" smashed="yes">
+<element name="TP12" library="Tova" package="15MIL-TEST-POINT" value="TEST-POINT15MIL-TEST-POINT" x="3.81" y="47.752" smashed="yes">
 <attribute name="NAME" x="2.667" y="46.99" size="0.8" layer="25" font="vector" ratio="20" rot="R90"/>
 </element>
-<element name="TP13" library="Tova" package="2MM-TEST-POINT" value="TEST-POINT" x="20.32" y="47.244" smashed="yes">
+<element name="TP13" library="Tova" package="15MIL-TEST-POINT" value="TEST-POINT15MIL-TEST-POINT" x="20.32" y="47.244" smashed="yes">
 <attribute name="NAME" x="20.701" y="45.339" size="0.8" layer="25" font="vector" ratio="20"/>
 </element>
-<element name="TP14" library="Tova" package="2MM-TEST-POINT" value="TEST-POINT" x="47.498" y="18.923" smashed="yes" rot="R180">
+<element name="TP14" library="Tova" package="15MIL-TEST-POINT" value="TEST-POINT15MIL-TEST-POINT" x="47.498" y="18.923" smashed="yes" rot="R180">
 <attribute name="NAME" x="45.466" y="20.32" size="0.8" layer="25" font="vector" ratio="20" rot="R270"/>
 </element>
-<element name="TP15" library="Tova" package="2MM-TEST-POINT" value="TEST-POINT" x="19.431" y="21.209" smashed="yes" rot="R180">
+<element name="TP15" library="Tova" package="15MIL-TEST-POINT" value="TEST-POINT15MIL-TEST-POINT" x="19.431" y="21.209" smashed="yes" rot="R180">
 <attribute name="NAME" x="17.399" y="22.733" size="0.8" layer="25" font="vector" ratio="20" rot="R270"/>
 </element>
-<element name="TP17" library="Tova" package="2MM-TEST-POINT" value="TEST-POINT" x="20.32" y="43.688" smashed="yes"/>
-<element name="TP18" library="Tova" package="2MM-TEST-POINT" value="TEST-POINT" x="47.371" y="23.114" smashed="yes" rot="R270"/>
-<element name="TP19" library="Tova" package="2MM-TEST-POINT" value="TEST-POINT" x="16.51" y="23.368" smashed="yes" rot="R180"/>
-<element name="TP20" library="Tova" package="2MM-TEST-POINT" value="TEST-POINT" x="37.211" y="8.636" smashed="yes" rot="R180"/>
+<element name="TP17" library="Tova" package="15MIL-TEST-POINT" value="TEST-POINT15MIL-TEST-POINT" x="20.32" y="43.688" smashed="yes"/>
+<element name="TP18" library="Tova" package="15MIL-TEST-POINT" value="TEST-POINT15MIL-TEST-POINT" x="47.371" y="23.114" smashed="yes" rot="R270"/>
+<element name="TP19" library="Tova" package="15MIL-TEST-POINT" value="TEST-POINT15MIL-TEST-POINT" x="16.51" y="23.368" smashed="yes" rot="R180"/>
+<element name="TP20" library="Tova" package="15MIL-TEST-POINT" value="TEST-POINT15MIL-TEST-POINT" x="37.211" y="8.636" smashed="yes" rot="R180"/>
 <element name="U9" library="SparkFun-RF" package="VENUS638FLPX" value="VENUS638FLPX-L" x="49.784" y="7.874" rot="R180"/>
 <element name="U10" library="minicircuits-splitter" package="MINICIRCUITS" value="BP2G+" x="18.669" y="10.922" rot="R270"/>
 <element name="LED7" library="led" package="CHIPLED_0603" value="YLW" x="58.42" y="8.636" rot="R90"/>
@@ -3535,22 +3536,22 @@ einem neuen Namen ab.</description>
 <element name="R21" library="rcl_custom" package="0402-C-NOSILK@1" value="10k" x="57.023" y="3.429" rot="R270"/>
 <element name="R22" library="rcl_custom" package="0402-C-NOSILK@1" value="10k" x="56.515" y="10.287" rot="R180"/>
 <element name="R23" library="rcl_custom" package="0402-C-NOSILK@1" value="1k" x="56.388" y="8.636" rot="R180"/>
-<element name="TP8" library="Tova" package="2MM-TEST-POINT" value="TEST-POINT" x="51.181" y="15.113" rot="R90"/>
-<element name="TP25" library="Tova" package="2MM-TEST-POINT" value="TEST-POINT" x="46.863" y="16.637" rot="R90"/>
-<element name="TP27" library="Tova" package="2MM-TEST-POINT" value="TEST-POINT" x="48.641" y="16.637" rot="R90"/>
-<element name="TP28" library="Tova" package="2MM-TEST-POINT" value="TEST-POINT" x="58.674" y="3.81" rot="R180"/>
-<element name="TP29" library="Tova" package="2MM-TEST-POINT" value="TEST-POINT" x="56.388" y="7.112" rot="R90"/>
-<element name="TP30" library="Tova" package="2MM-TEST-POINT" value="TEST-POINT" x="50.546" y="1.397" rot="R90"/>
+<element name="TP8" library="Tova" package="15MIL-TEST-POINT" value="TEST-POINT15MIL-TEST-POINT" x="51.181" y="15.113" rot="R90"/>
+<element name="TP25" library="Tova" package="15MIL-TEST-POINT" value="TEST-POINT15MIL-TEST-POINT" x="46.863" y="16.637" rot="R90"/>
+<element name="TP27" library="Tova" package="15MIL-TEST-POINT" value="TEST-POINT15MIL-TEST-POINT" x="48.641" y="16.637" rot="R90"/>
+<element name="TP28" library="Tova" package="15MIL-TEST-POINT" value="TEST-POINT15MIL-TEST-POINT" x="58.674" y="3.81" rot="R180"/>
+<element name="TP29" library="Tova" package="15MIL-TEST-POINT" value="TEST-POINT15MIL-TEST-POINT" x="56.388" y="7.112" rot="R90"/>
+<element name="TP30" library="Tova" package="15MIL-TEST-POINT" value="TEST-POINT15MIL-TEST-POINT" x="50.546" y="1.397" rot="R90"/>
 <element name="D1" library="diode-0603" package="0603-B-NOSILK-DIODE" value="DIODE-0603" x="62.23" y="14.224" rot="R90"/>
 <element name="R24" library="rcl_custom" package="0402-C-NOSILK@1" value="10k" x="62.23" y="16.637" rot="R270"/>
 <element name="C66" library="SparkFun-Passives" package="EN_J2" value="" x="59.944" y="20.701" rot="R270"/>
-<element name="TP1" library="Tova" package="2MM-TEST-POINT" value="TEST-POINT" x="35.306" y="20.828" rot="R270"/>
+<element name="TP1" library="Tova" package="15MIL-TEST-POINT" value="TEST-POINT15MIL-TEST-POINT" x="35.306" y="20.828" rot="R270"/>
 <element name="U11" library="SparkFun-PowerIC" package="SC70" value="MAX8510EXK29+T" x="57.785" y="14.859" rot="R90"/>
 <element name="C67" library="rcl_custom" package=".0603-B-NOSILK" value="1u" x="60.325" y="14.605" rot="R270"/>
 <element name="C68" library="rcl_custom" package=".0603-B-NOSILK" value="1u" x="57.912" y="12.065"/>
 <element name="C69" library="rcl_custom" package=".0402-C-NOSILK" value="10n" x="55.372" y="15.113" rot="R90"/>
 <element name="C70" library="rcl_custom" package=".0402-C-NOSILK" value="100n" x="57.658" y="13.208"/>
-<element name="TP9" library="Tova" package="2MM-TEST-POINT" value="TEST-POINT" x="53.975" y="15.113" rot="R180"/>
+<element name="TP9" library="Tova" package="15MIL-TEST-POINT" value="TEST-POINT15MIL-TEST-POINT" x="53.975" y="15.113" rot="R180"/>
 <element name="IC1" library="dp_devices" package="VQ44" value="XC2C32A_VQ44_2" x="57.785" y="34.29" rot="R180"/>
 <element name="C71" library="rcl_custom" package=".0402-C-NOSILK" value="100n" x="64.897" y="34.417" rot="R270"/>
 <element name="C72" library="rcl_custom" package=".0402-C-NOSILK" value="100n" x="54.229" y="27.178" rot="R180"/>
@@ -3562,7 +3563,7 @@ einem neuen Namen ab.</description>
 <element name="C76" library="rcl_custom" package=".0603-B-NOSILK" value="1u" x="58.547" y="42.799" rot="R180"/>
 <element name="C77" library="rcl_custom" package=".0402-C-NOSILK" value="10n" x="59.436" y="44.577" rot="R90"/>
 <element name="C78" library="rcl_custom" package=".0402-C-NOSILK" value="100n" x="58.166" y="44.069" rot="R180"/>
-<element name="TP21" library="Tova" package="2MM-TEST-POINT" value="TEST-POINT" x="58.166" y="45.593" rot="R180"/>
+<element name="TP21" library="Tova" package="15MIL-TEST-POINT" value="TEST-POINT15MIL-TEST-POINT" x="58.166" y="45.593" rot="R180"/>
 <element name="C79" library="rcl_custom" package=".0402-C-NOSILK" value="1u" x="46.863" y="1.397" rot="R270"/>
 <element name="C80" library="rcl_custom" package=".0402-C-NOSILK" value="100p" x="47.752" y="1.397" rot="R270"/>
 <element name="U12" library="ic-lna-ALM-GPxx-Avago" package="AVAGO+SAW+LNA" value="AVAGO-ALM-GPXX" x="11.303" y="13.208"/>
@@ -3580,6 +3581,19 @@ einem neuen Namen ab.</description>
 <element name="C83" library="rcl_custom" package=".0402-C-NOSILK" value="100n" x="51.181" y="26.162" rot="R180"/>
 <element name="C84" library="rcl_custom" package=".0402-C-NOSILK" value="100n" x="47.752" y="28.575" rot="R270"/>
 <element name="R27" library="rcl_custom" package="0402-C-NOSILK@1" value="10k" x="49.53" y="30.48"/>
+<element name="TP3" library="Tova" package="15MIL-TEST-POINT" value="TEST-POINT15MIL-TEST-POINT" x="34.925" y="24.511"/>
+<element name="TP6" library="Tova" package="15MIL-TEST-POINT" value="TEST-POINT15MIL-TEST-POINT" x="47.879" y="38.608"/>
+<element name="TP7" library="Tova" package="15MIL-TEST-POINT" value="TEST-POINT15MIL-TEST-POINT" x="60.452" y="11.938"/>
+<element name="TP23" library="Tova" package="15MIL-TEST-POINT" value="TEST-POINT15MIL-TEST-POINT" x="60.198" y="26.924"/>
+<element name="TP24" library="Tova" package="15MIL-TEST-POINT" value="TEST-POINT15MIL-TEST-POINT" x="61.849" y="26.924"/>
+<element name="TP31" library="Tova" package="15MIL-TEST-POINT" value="TEST-POINT15MIL-TEST-POINT" x="58.547" y="26.924"/>
+<element name="TP34" library="Tova" package="15MIL-TEST-POINT" value="TEST-POINT15MIL-TEST-POINT" x="56.896" y="26.924"/>
+<element name="TP35" library="Tova" package="15MIL-TEST-POINT" value="TEST-POINT15MIL-TEST-POINT" x="41.021" y="60.071"/>
+<element name="TP36" library="Tova" package="15MIL-TEST-POINT" value="TEST-POINT15MIL-TEST-POINT" x="39.624" y="60.071"/>
+<element name="TP37" library="Tova" package="15MIL-TEST-POINT" value="TEST-POINT15MIL-TEST-POINT" x="42.418" y="60.071"/>
+<element name="TP38" library="Tova" package="15MIL-TEST-POINT" value="TEST-POINT15MIL-TEST-POINT" x="37.846" y="40.259"/>
+<element name="TP39" library="Tova" package="15MIL-TEST-POINT" value="TEST-POINT15MIL-TEST-POINT" x="30.226" y="55.626"/>
+<element name="TP40" library="Tova" package="15MIL-TEST-POINT" value="TEST-POINT15MIL-TEST-POINT" x="28.956" y="54.737"/>
 </elements>
 <signals>
 <signal name="VIN">
@@ -3620,7 +3634,7 @@ einem neuen Namen ab.</description>
 <via x="9.017" y="48.768" extent="1-16" drill="0.254"/>
 <via x="3.81" y="49.149" extent="1-16" drill="0.254"/>
 <via x="8.255" y="44.323" extent="1-16" drill="0.254"/>
-<contactref element="TP12" pad="1"/>
+<contactref element="TP12" pad="P$1"/>
 </signal>
 <signal name="MAX_ANTFLAG">
 <contactref element="U1" pad="1"/>
@@ -3636,16 +3650,18 @@ einem neuen Namen ab.</description>
 <wire x1="37.719" y1="10.922" x2="41.148" y2="10.922" width="0.127" layer="1"/>
 <wire x1="41.148" y1="10.922" x2="45.212" y2="14.986" width="0.127" layer="1"/>
 <wire x1="45.212" y1="14.986" x2="45.212" y2="27.432" width="0.127" layer="1"/>
-<wire x1="45.212" y1="27.432" x2="47.117" y2="29.337" width="0.127" layer="1"/>
-<wire x1="47.117" y1="29.337" x2="47.117" y2="30.353" width="0.127" layer="1"/>
-<via x="47.117" y="30.353" extent="1-16" drill="0.254"/>
-<wire x1="47.117" y1="30.353" x2="47.117" y2="35.306" width="0.127" layer="16"/>
+<wire x1="45.212" y1="27.432" x2="45.974" y2="28.194" width="0.127" layer="1"/>
+<via x="45.974" y="28.194" extent="1-16" drill="0.254"/>
+<wire x1="45.974" y1="28.194" x2="46.482" y2="27.686" width="0.127" layer="16"/>
+<wire x1="46.482" y1="27.686" x2="46.482" y2="27.051" width="0.127" layer="16"/>
+<wire x1="46.482" y1="27.051" x2="46.101" y2="26.67" width="0.127" layer="16"/>
+<wire x1="46.101" y1="26.67" x2="44.831" y2="26.67" width="0.127" layer="16"/>
+<wire x1="44.831" y1="26.67" x2="42.164" y2="29.337" width="0.127" layer="16"/>
+<wire x1="42.164" y1="29.337" x2="42.164" y2="35.941" width="0.127" layer="16"/>
 <wire x1="38.497" y1="42.542" x2="38.497" y2="40.243" width="0.127" layer="1"/>
-<wire x1="44.196" y1="35.306" x2="44.323" y2="35.306" width="0.127" layer="1"/>
-<via x="47.117" y="35.306" extent="1-16" drill="0.254"/>
-<wire x1="44.323" y1="35.306" x2="47.117" y2="35.306" width="0.127" layer="1"/>
-<wire x1="38.497" y1="40.243" x2="43.434" y2="35.306" width="0.127" layer="1"/>
-<wire x1="43.434" y1="35.306" x2="44.196" y2="35.306" width="0.127" layer="1"/>
+<via x="42.164" y="35.941" extent="1-16" drill="0.254"/>
+<wire x1="42.164" y1="36.576" x2="42.164" y2="35.941" width="0.127" layer="1"/>
+<wire x1="38.497" y1="40.243" x2="42.164" y2="36.576" width="0.127" layer="1"/>
 </signal>
 <signal name="MAX_LD">
 <contactref element="U1" pad="6"/>
@@ -3878,7 +3894,7 @@ einem neuen Namen ab.</description>
 <vertex x="45.339" y="41.656"/>
 <vertex x="46.482" y="41.656"/>
 </polygon>
-<contactref element="TP13" pad="1"/>
+<contactref element="TP13" pad="P$1"/>
 <contactref element="C67" pad="1"/>
 <contactref element="U11" pad="1"/>
 <contactref element="U11" pad="3"/>
@@ -4366,7 +4382,7 @@ einem neuen Namen ab.</description>
 <wire x1="35.364" y1="19.431" x2="34.925" y2="19.431" width="0.2032" layer="1"/>
 <wire x1="34.647" y1="16.293" x2="34.647" y2="19.153" width="0.2032" layer="1"/>
 <wire x1="34.647" y1="19.153" x2="34.925" y2="19.431" width="0.2032" layer="1"/>
-<contactref element="TP1" pad="1"/>
+<contactref element="TP1" pad="P$1"/>
 <wire x1="35.306" y1="20.828" x2="35.364" y2="20.124" width="0.254" layer="1"/>
 <wire x1="35.364" y1="20.124" x2="35.364" y2="19.431" width="0.254" layer="1"/>
 </signal>
@@ -4506,25 +4522,25 @@ einem neuen Namen ab.</description>
 </signal>
 <signal name="AUX1">
 <contactref element="J3" pad="A1"/>
-<contactref element="TP22" pad="1"/>
+<contactref element="TP22" pad="P$1"/>
 <wire x1="4.699" y1="35.179" x2="2.921" y2="35.179" width="0.254" layer="16"/>
 <wire x1="2.921" y1="35.179" x2="1.778" y2="34.29" width="0.254" layer="16"/>
 </signal>
 <signal name="AUX2">
 <contactref element="J3" pad="A2"/>
-<contactref element="TP26" pad="1"/>
+<contactref element="TP26" pad="P$1"/>
 <wire x1="4.699" y1="36.449" x2="2.413" y2="36.449" width="0.254" layer="16"/>
 <wire x1="2.413" y1="36.449" x2="1.778" y2="36.068" width="0.254" layer="16"/>
 </signal>
 <signal name="AUX3">
 <contactref element="J3" pad="A3"/>
-<contactref element="TP32" pad="1"/>
+<contactref element="TP32" pad="P$1"/>
 <wire x1="4.699" y1="37.719" x2="2.413" y2="37.719" width="0.254" layer="16"/>
 <wire x1="2.413" y1="37.719" x2="1.778" y2="38.1" width="0.254" layer="16"/>
 </signal>
 <signal name="AUX4">
 <contactref element="J3" pad="A4"/>
-<contactref element="TP33" pad="1"/>
+<contactref element="TP33" pad="P$1"/>
 <wire x1="4.699" y1="38.989" x2="2.921" y2="38.989" width="0.254" layer="16"/>
 <wire x1="2.921" y1="38.989" x2="1.778" y2="39.878" width="0.254" layer="16"/>
 </signal>
@@ -4571,11 +4587,11 @@ einem neuen Namen ab.</description>
 <wire x1="38.608" y1="10.668" x2="39.116" y2="10.668" width="0.127" layer="1"/>
 <wire x1="39.116" y1="10.668" x2="41.275" y2="10.668" width="0.127" layer="1"/>
 <wire x1="41.275" y1="10.668" x2="45.466" y2="14.859" width="0.127" layer="1"/>
-<wire x1="45.466" y1="14.859" x2="45.466" y2="26.924" width="0.127" layer="1"/>
-<wire x1="45.466" y1="26.924" x2="45.847" y2="27.305" width="0.127" layer="1"/>
-<via x="45.847" y="27.305" extent="1-16" drill="0.254"/>
-<wire x1="45.847" y1="27.305" x2="44.577" y2="27.305" width="0.127" layer="16"/>
-<wire x1="44.577" y1="27.305" x2="43.053" y2="28.829" width="0.127" layer="16"/>
+<wire x1="45.466" y1="14.859" x2="45.466" y2="26.67" width="0.127" layer="1"/>
+<wire x1="45.466" y1="26.67" x2="45.847" y2="27.051" width="0.127" layer="1"/>
+<via x="45.847" y="27.051" extent="1-16" drill="0.254"/>
+<wire x1="45.847" y1="27.051" x2="44.831" y2="27.051" width="0.127" layer="16"/>
+<wire x1="44.831" y1="27.051" x2="43.053" y2="28.829" width="0.127" layer="16"/>
 <wire x1="43.053" y1="28.829" x2="43.053" y2="38.862" width="0.127" layer="16"/>
 <wire x1="41.497" y1="42.542" x2="41.497" y2="40.418" width="0.127" layer="1"/>
 <via x="43.053" y="38.862" extent="1-16" drill="0.254"/>
@@ -4924,10 +4940,10 @@ einem neuen Namen ab.</description>
 <wire x1="47.247" y1="55.792" x2="46.14" y2="55.792" width="0.254" layer="1"/>
 <wire x1="46.14" y1="55.792" x2="45.974" y2="55.499" width="0.254" layer="1"/>
 <via x="45.974" y="56.007" extent="1-16" drill="0.254"/>
-<contactref element="TP17" pad="1"/>
-<contactref element="TP18" pad="1"/>
-<contactref element="TP19" pad="1"/>
-<contactref element="TP20" pad="1"/>
+<contactref element="TP17" pad="P$1"/>
+<contactref element="TP18" pad="P$1"/>
+<contactref element="TP19" pad="P$1"/>
+<contactref element="TP20" pad="P$1"/>
 <contactref element="C19" pad="2"/>
 <contactref element="C22" pad="2"/>
 <contactref element="C67" pad="2"/>
@@ -5178,6 +5194,9 @@ einem neuen Namen ab.</description>
 <contactref element="U5" pad="6"/>
 <via x="47.752" y="27.559" extent="1-16" drill="0.254"/>
 <via x="47.117" y="28.194" extent="1-16" drill="0.254"/>
+<contactref element="TP3" pad="P$1"/>
+<contactref element="TP6" pad="P$1"/>
+<contactref element="TP7" pad="P$1"/>
 </signal>
 <signal name="SD-VDD">
 <contactref element="C20" pad="2"/>
@@ -5307,7 +5326,7 @@ einem neuen Namen ab.</description>
 <contactref element="C53" pad="1"/>
 <via x="40.64" y="17.4625" extent="1-16" drill="0.254"/>
 <via x="40.64" y="18.0975" extent="1-16" drill="0.254"/>
-<contactref element="TP14" pad="1"/>
+<contactref element="TP14" pad="P$1"/>
 <polygon width="0.127" layer="15">
 <vertex x="51.054" y="15.621"/>
 <vertex x="51.054" y="22.479"/>
@@ -5387,7 +5406,7 @@ einem neuen Namen ab.</description>
 <via x="27.686" y="15.113" extent="1-16" drill="0.254"/>
 <via x="27.178" y="15.113" extent="1-16" drill="0.254"/>
 <via x="26.67" y="15.113" extent="1-16" drill="0.254"/>
-<contactref element="TP15" pad="1"/>
+<contactref element="TP15" pad="P$1"/>
 <contactref element="C1" pad="1"/>
 <contactref element="R25" pad="1"/>
 <contactref element="L2" pad="2"/>
@@ -5439,7 +5458,7 @@ einem neuen Namen ab.</description>
 <via x="32.639" y="10.287" extent="1-16" drill="0.254"/>
 <wire x1="32.647" y1="11.393" x2="32.647" y2="10.422" width="0.254" layer="1"/>
 <wire x1="32.647" y1="10.422" x2="32.639" y2="10.287" width="0.254" layer="1"/>
-<contactref element="TP10" pad="1"/>
+<contactref element="TP10" pad="P$1"/>
 <contactref element="C63" pad="1"/>
 <contactref element="C64" pad="1"/>
 <wire x1="32.893" y1="7.112" x2="34.29" y2="7.112" width="0.508" layer="1"/>
@@ -5606,7 +5625,7 @@ einem neuen Namen ab.</description>
 <signal name="STM_USART6_TX">
 <contactref element="U2" pad="63"/>
 <contactref element="U9" pad="42"/>
-<contactref element="TP25" pad="1"/>
+<contactref element="TP25" pad="P$1"/>
 <wire x1="45.847" y1="18.288" x2="39.624" y2="24.13" width="0.127" layer="16"/>
 <via x="39.624" y="24.13" extent="1-16" drill="0.254"/>
 <wire x1="40.64" y1="25.146" x2="40.64" y2="31.242" width="0.127" layer="1"/>
@@ -5634,7 +5653,7 @@ einem neuen Namen ab.</description>
 <signal name="STM_USART6_RX">
 <contactref element="U2" pad="64"/>
 <contactref element="U9" pad="44"/>
-<contactref element="TP27" pad="1"/>
+<contactref element="TP27" pad="P$1"/>
 <wire x1="46.228" y1="18.669" x2="40.259" y2="24.13" width="0.127" layer="16"/>
 <via x="40.259" y="24.13" extent="1-16" drill="0.254"/>
 <wire x1="40.894" y1="24.765" x2="40.894" y2="32.639" width="0.127" layer="1"/>
@@ -5660,7 +5679,7 @@ einem neuen Namen ab.</description>
 </signal>
 <signal name="N$1">
 <contactref element="U8" pad="3"/>
-<contactref element="TP11" pad="1"/>
+<contactref element="TP11" pad="P$1"/>
 <wire x1="12.446" y1="48.758" x2="12.446" y2="50.419" width="0.2032" layer="1"/>
 <wire x1="12.446" y1="50.419" x2="11.938" y2="50.927" width="0.2032" layer="1"/>
 <via x="11.938" y="50.927" extent="1-16" drill="0.254"/>
@@ -5816,7 +5835,7 @@ einem neuen Namen ab.</description>
 <contactref element="U9" pad="1"/>
 <contactref element="R21" pad="1"/>
 <contactref element="C24" pad="2"/>
-<contactref element="TP28" pad="1"/>
+<contactref element="TP28" pad="P$1"/>
 <wire x1="56.007" y1="3.879" x2="57.003" y2="3.879" width="0.3556" layer="1"/>
 <wire x1="57.003" y1="3.879" x2="57.023" y2="3.859" width="0.3556" layer="1"/>
 <wire x1="57.023" y1="3.859" x2="58.625" y2="3.859" width="0.3556" layer="1"/>
@@ -5832,7 +5851,7 @@ einem neuen Namen ab.</description>
 </signal>
 <signal name="STQ-PPS">
 <contactref element="U9" pad="40"/>
-<contactref element="TP30" pad="1"/>
+<contactref element="TP30" pad="P$1"/>
 <wire x1="50.584" y1="2.974" x2="50.584" y2="1.397" width="0.254" layer="1"/>
 <wire x1="50.584" y1="1.397" x2="50.546" y2="1.397" width="0.254" layer="1"/>
 </signal>
@@ -5844,14 +5863,14 @@ einem neuen Namen ab.</description>
 <signal name="N$22">
 <contactref element="R23" pad="2"/>
 <contactref element="U9" pad="7"/>
-<contactref element="TP29" pad="1"/>
+<contactref element="TP29" pad="P$1"/>
 <wire x1="54.684" y1="8.674" x2="55.92" y2="8.674" width="0.254" layer="1"/>
 <wire x1="55.92" y1="8.674" x2="55.958" y2="8.636" width="0.3556" layer="1"/>
 <wire x1="55.958" y1="8.636" x2="55.958" y2="7.542" width="0.254" layer="1"/>
 <wire x1="55.958" y1="7.542" x2="56.388" y2="7.112" width="0.254" layer="1"/>
 </signal>
 <signal name="N$25">
-<contactref element="TP8" pad="1"/>
+<contactref element="TP8" pad="P$1"/>
 <contactref element="U9" pad="17"/>
 <wire x1="49.784" y1="12.774" x2="49.784" y2="13.716" width="0.254" layer="1"/>
 <wire x1="49.784" y1="13.716" x2="51.181" y2="15.113" width="0.254" layer="1"/>
@@ -5887,7 +5906,7 @@ einem neuen Namen ab.</description>
 <wire x1="55.426" y1="15.509" x2="55.372" y2="15.563" width="0.254" layer="1"/>
 </signal>
 <signal name="2.85V-S">
-<contactref element="TP9" pad="1"/>
+<contactref element="TP9" pad="P$1"/>
 <contactref element="C70" pad="1"/>
 <contactref element="U11" pad="5"/>
 <contactref element="C68" pad="1"/>
@@ -6020,7 +6039,7 @@ einem neuen Namen ab.</description>
 <signal name="V18">
 <contactref element="C76" pad="1"/>
 <contactref element="VR1" pad="5"/>
-<contactref element="TP21" pad="1"/>
+<contactref element="TP21" pad="P$1"/>
 <contactref element="C78" pad="1"/>
 <contactref element="C77" pad="1"/>
 <contactref element="IC1" pad="15"/>
@@ -6100,7 +6119,7 @@ einem neuen Namen ab.</description>
 <wire x1="50.546" y1="28.321" x2="50.8" y2="28.067" width="0.127" layer="1"/>
 <wire x1="50.8" y1="28.067" x2="51.592" y2="28.067" width="0.127" layer="1"/>
 </signal>
-<signal name="MAX_OUT_SPI1_SCK">
+<signal name="CPLD_OUT_SPI1_SCK">
 <contactref element="U2" pad="30"/>
 <wire x1="35.497" y1="42.542" x2="35.497" y2="43.879" width="0.127" layer="1"/>
 <wire x1="35.497" y1="43.879" x2="37.465" y2="45.847" width="0.127" layer="1"/>
@@ -6116,7 +6135,7 @@ einem neuen Namen ab.</description>
 <wire x1="52.07" y1="38.989" x2="52.07" y2="38.305" width="0.127" layer="1"/>
 <wire x1="52.07" y1="38.305" x2="52.085" y2="38.29" width="0.127" layer="1"/>
 </signal>
-<signal name="MAX_OUT_SPI1_MOSI">
+<signal name="CPLD_OUT_SPI1_MOSI">
 <contactref element="U2" pad="91"/>
 <wire x1="37.997" y1="58.042" x2="37.997" y2="55.65" width="0.127" layer="1"/>
 <wire x1="37.997" y1="55.65" x2="37.973" y2="55.626" width="0.127" layer="1"/>
@@ -6131,7 +6150,7 @@ einem neuen Namen ab.</description>
 <wire x1="55.385" y1="41.389" x2="55.372" y2="41.402" width="0.127" layer="1"/>
 <wire x1="55.372" y1="41.402" x2="55.372" y2="41.783" width="0.127" layer="16"/>
 </signal>
-<signal name="MAX_OUT_SPI1_NSS">
+<signal name="CPLD_OUT_SPI1_NSS">
 <contactref element="U2" pad="29"/>
 <wire x1="34.997" y1="42.542" x2="34.997" y2="44.141" width="0.127" layer="1"/>
 <wire x1="34.997" y1="44.141" x2="37.211" y2="46.355" width="0.127" layer="1"/>
@@ -6319,7 +6338,7 @@ einem neuen Namen ab.</description>
 <wire x1="44.196" y1="41.529" x2="44.196" y2="40.259" width="0.127" layer="1"/>
 <wire x1="43.997" y1="41.728" x2="43.997" y2="42.542" width="0.127" layer="1"/>
 </signal>
-<signal name="MAX_OUT_SPI_CLK" class="2">
+<signal name="CPLD_OUT_SPI_CLK" class="2">
 <contactref element="U2" pad="53"/>
 <wire x1="47.247" y1="45.292" x2="48.434" y2="45.292" width="0.2032" layer="1"/>
 <wire x1="48.434" y1="45.292" x2="48.768" y2="44.958" width="0.2032" layer="1"/>
@@ -6354,6 +6373,89 @@ einem neuen Namen ab.</description>
 <wire x1="49.96" y1="30.48" x2="49.96" y2="27.481" width="0.127" layer="1"/>
 <wire x1="48.992" y1="27.117" x2="49.596" y2="27.117" width="0.127" layer="1"/>
 <wire x1="49.596" y1="27.117" x2="49.96" y2="27.481" width="0.127" layer="1"/>
+</signal>
+<signal name="N$9">
+<contactref element="IC1" pad="44"/>
+<contactref element="TP24" pad="P$1"/>
+<wire x1="61.785" y1="28.59" x2="61.785" y2="26.988" width="0.127" layer="1"/>
+<wire x1="61.785" y1="26.988" x2="61.849" y2="26.924" width="0.127" layer="1"/>
+</signal>
+<signal name="N$11">
+<contactref element="TP23" pad="P$1"/>
+<contactref element="IC1" pad="42"/>
+<wire x1="60.185" y1="28.59" x2="60.185" y2="26.937" width="0.127" layer="1"/>
+<wire x1="60.185" y1="26.937" x2="60.198" y2="26.924" width="0.127" layer="1"/>
+</signal>
+<signal name="N$34">
+<contactref element="TP31" pad="P$1"/>
+<contactref element="IC1" pad="40"/>
+<wire x1="58.585" y1="28.59" x2="58.585" y2="26.962" width="0.127" layer="1"/>
+<wire x1="58.585" y1="26.962" x2="58.547" y2="26.924" width="0.127" layer="1"/>
+</signal>
+<signal name="N$49">
+<contactref element="TP34" pad="P$1"/>
+<contactref element="IC1" pad="38"/>
+<wire x1="56.985" y1="28.59" x2="56.985" y2="27.013" width="0.127" layer="1"/>
+<wire x1="56.985" y1="27.013" x2="56.896" y2="26.924" width="0.127" layer="1"/>
+</signal>
+<signal name="CPLD_DEBUG">
+<contactref element="U2" pad="59"/>
+<wire x1="47.247" y1="48.292" x2="46.006" y2="48.292" width="0.127" layer="1"/>
+<wire x1="46.006" y1="48.292" x2="45.974" y2="48.26" width="0.127" layer="1"/>
+<via x="45.974" y="48.26" extent="1-16" drill="0.254"/>
+<wire x1="45.974" y1="48.26" x2="45.974" y2="48.133" width="0.127" layer="16"/>
+<wire x1="45.974" y1="48.133" x2="46.736" y2="47.371" width="0.127" layer="16"/>
+<wire x1="46.736" y1="47.371" x2="52.197" y2="47.371" width="0.127" layer="16"/>
+<wire x1="52.197" y1="47.371" x2="54.102" y2="45.466" width="0.127" layer="16"/>
+<wire x1="54.102" y1="45.466" x2="55.245" y2="45.466" width="0.127" layer="16"/>
+<wire x1="55.245" y1="45.466" x2="56.388" y2="44.323" width="0.127" layer="16"/>
+<wire x1="56.388" y1="44.323" x2="56.388" y2="38.227" width="0.127" layer="16"/>
+<contactref element="IC1" pad="19"/>
+<wire x1="56.185" y1="39.99" x2="56.185" y2="38.43" width="0.127" layer="1"/>
+<wire x1="56.185" y1="38.43" x2="56.388" y2="38.227" width="0.127" layer="1"/>
+<via x="56.388" y="38.227" extent="1-16" drill="0.254"/>
+</signal>
+<signal name="N$50">
+<contactref element="U2" pad="86"/>
+<contactref element="TP35" pad="P$1"/>
+<wire x1="40.497" y1="58.042" x2="40.497" y2="58.785" width="0.127" layer="1"/>
+<wire x1="40.497" y1="58.785" x2="41.021" y2="59.309" width="0.127" layer="1"/>
+<wire x1="41.021" y1="59.309" x2="41.021" y2="60.071" width="0.127" layer="1"/>
+</signal>
+<signal name="N$55">
+<contactref element="U2" pad="88"/>
+<contactref element="TP36" pad="P$1"/>
+<wire x1="39.497" y1="58.042" x2="39.497" y2="59.309" width="0.127" layer="1"/>
+<wire x1="39.497" y1="59.309" x2="39.624" y2="59.436" width="0.127" layer="1"/>
+<wire x1="39.624" y1="59.436" x2="39.624" y2="60.071" width="0.127" layer="1"/>
+</signal>
+<signal name="N$56">
+<contactref element="U2" pad="82"/>
+<contactref element="TP37" pad="P$1"/>
+<wire x1="42.497" y1="58.042" x2="42.497" y2="59.103" width="0.127" layer="1"/>
+<wire x1="42.497" y1="59.103" x2="42.418" y2="59.182" width="0.127" layer="1"/>
+<wire x1="42.418" y1="59.182" x2="42.418" y2="60.071" width="0.127" layer="1"/>
+</signal>
+<signal name="N$59">
+<contactref element="U2" pad="35"/>
+<contactref element="TP38" pad="P$1"/>
+<wire x1="37.997" y1="42.542" x2="37.997" y2="40.918" width="0.127" layer="1"/>
+<wire x1="37.997" y1="40.918" x2="37.846" y2="40.767" width="0.127" layer="1"/>
+<wire x1="37.846" y1="40.767" x2="37.846" y2="40.259" width="0.127" layer="1"/>
+</signal>
+<signal name="N$60">
+<contactref element="U2" pad="2"/>
+<contactref element="TP39" pad="P$1"/>
+<wire x1="31.747" y1="55.792" x2="30.9" y2="55.792" width="0.127" layer="1"/>
+<wire x1="30.9" y1="55.792" x2="30.734" y2="55.626" width="0.127" layer="1"/>
+<wire x1="30.734" y1="55.626" x2="30.226" y2="55.626" width="0.127" layer="1"/>
+</signal>
+<signal name="N$61">
+<contactref element="U2" pad="4"/>
+<contactref element="TP40" pad="P$1"/>
+<wire x1="31.747" y1="54.792" x2="30.027" y2="54.792" width="0.127" layer="1"/>
+<wire x1="30.027" y1="54.792" x2="29.972" y2="54.737" width="0.127" layer="1"/>
+<wire x1="29.972" y1="54.737" x2="28.956" y2="54.737" width="0.127" layer="1"/>
 </signal>
 </signals>
 <errors>

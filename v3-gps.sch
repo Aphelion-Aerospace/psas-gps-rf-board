@@ -8,34 +8,34 @@
 </settings>
 <grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="2" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
-<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
-<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
-<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
-<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
-<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
-<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
-<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
-<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
-<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
-<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
-<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
+<layer number="2" name="Route2" color="7" fill="1" visible="yes" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="yes" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="yes" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="yes" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="yes" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="yes" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="yes" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="yes" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="yes" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="yes" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="yes" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="yes" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="yes" active="no"/>
+<layer number="15" name="Route15" color="14" fill="1" visible="yes" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -44,8 +44,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -53,19 +53,19 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
-<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
-<layer number="59" name="Invisible" color="7" fill="1" visible="no" active="no"/>
-<layer number="61" name="stand" color="7" fill="1" visible="no" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="yes" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="yes" active="no"/>
+<layer number="59" name="Invisible" color="7" fill="1" visible="yes" active="no"/>
+<layer number="61" name="stand" color="7" fill="1" visible="yes" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -12840,8 +12840,8 @@ http://www.maxim-ic.com/datasheet/index.mvp/id/5241</description>
 <wire x1="0.85" y1="-0.9" x2="0.85" y2="0.9" width="0.2032" layer="21"/>
 <wire x1="0.85" y1="0.9" x2="-0.85" y2="0.9" width="0.2032" layer="21"/>
 <wire x1="-0.85" y1="0.9" x2="-0.85" y2="-0.9" width="0.2032" layer="21"/>
-<pad name="1" x="0" y="0" drill="0.7366"/>
 <rectangle x1="-0.25" y1="-0.25" x2="0.25" y2="0.25" layer="51"/>
+<pad name="1" x="0" y="0" drill="0.7366"/>
 <text x="-1.6" y="1.5" size="0.8" layer="25" font="vector" ratio="20">&gt;NAME</text>
 </package>
 <package name="SOT23">
@@ -12871,6 +12871,45 @@ http://www.maxim-ic.com/datasheet/index.mvp/id/5241</description>
 <rectangle x1="-1.2" y1="-1.3" x2="-0.7" y2="-0.65" layer="51"/>
 <rectangle x1="0.7" y1="-1.3" x2="1.2" y2="-0.65" layer="51"/>
 </package>
+<package name="20MIL-TEST-POINT">
+<description>20mil diameter test pad</description>
+<pad name="P$1" x="0" y="0" drill="0.508"/>
+<wire x1="-0.75" y1="0.75" x2="0.75" y2="0.75" width="0.127" layer="21"/>
+<wire x1="0.75" y1="0.75" x2="0.75" y2="-0.75" width="0.127" layer="21"/>
+<wire x1="0.75" y1="-0.75" x2="-0.75" y2="-0.75" width="0.127" layer="21"/>
+<wire x1="-0.75" y1="-0.75" x2="-0.75" y2="0.75" width="0.127" layer="21"/>
+<text x="-1.25" y="1" size="0.8" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<rectangle x1="-0.15" y1="-0.15" x2="0.15" y2="0.15" layer="51"/>
+</package>
+<package name="15MIL-TEST-POINT">
+<description>15mil test point</description>
+<pad name="P$1" x="0" y="0" drill="0.381"/>
+<wire x1="-0.6" y1="-0.6" x2="-0.6" y2="0.6" width="0.127" layer="21"/>
+<wire x1="-0.6" y1="0.6" x2="0.6" y2="0.6" width="0.127" layer="21"/>
+<wire x1="0.6" y1="0.6" x2="0.6" y2="-0.6" width="0.127" layer="21"/>
+<wire x1="0.6" y1="-0.6" x2="-0.6" y2="-0.6" width="0.127" layer="21"/>
+<rectangle x1="-0.1" y1="-0.1" x2="0.1" y2="0.1" layer="51"/>
+<text x="-1.1" y="0.8" size="0.8" layer="25" font="vector" ratio="20">&gt;NAME</text>
+</package>
+<package name="10MIL-TEST-POINT">
+<description>10mil diameter test pad</description>
+<pad name="P$1" x="0" y="0" drill="0.254"/>
+<wire x1="-0.573" y1="-0.573" x2="-0.573" y2="0.573" width="0.127" layer="21"/>
+<wire x1="-0.573" y1="0.573" x2="0.573" y2="0.573" width="0.127" layer="21"/>
+<wire x1="0.573" y1="0.573" x2="0.573" y2="-0.573" width="0.127" layer="21"/>
+<wire x1="0.573" y1="-0.573" x2="-0.573" y2="-0.573" width="0.127" layer="21"/>
+<rectangle x1="-0.15" y1="-0.15" x2="0.15" y2="0.15" layer="51"/>
+<text x="-1.073" y="0.746" size="0.8" layer="25" font="vector" ratio="20">&gt;NAME</text>
+</package>
+<package name="8MIL-TEST-POINT">
+<description>8mil test point</description>
+<pad name="P$1" x="0" y="0" drill="0.2032"/>
+<wire x1="-0.5" y1="-0.5" x2="-0.5" y2="0.5" width="0.127" layer="21"/>
+<wire x1="-0.5" y1="0.5" x2="0.5" y2="0.5" width="0.127" layer="21"/>
+<wire x1="0.5" y1="0.5" x2="0.5" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="0.5" y1="-0.5" x2="-0.5" y2="-0.5" width="0.127" layer="21"/>
+<text x="-0.9" y="0.7" size="0.8" layer="25" font="vector" ratio="20">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="TEST-POINT">
@@ -12878,8 +12917,8 @@ http://www.maxim-ic.com/datasheet/index.mvp/id/5241</description>
 <wire x1="1.27" y1="1.27" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
 <wire x1="1.27" y1="-1.27" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
 <wire x1="-1.27" y1="-1.27" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
-<text x="-5.08" y="2.54" size="1.778" layer="95" font="vector">&gt;NAME</text>
 <pin name="1" x="0" y="0" visible="off" length="point" direction="pas"/>
+<text x="-5.08" y="2.54" size="1.778" layer="95" font="vector">&gt;NAME</text>
 </symbol>
 <symbol name="P_MOSFET">
 <wire x1="-1.524" y1="2.159" x2="0" y2="2.159" width="0.1524" layer="94"/>
@@ -12923,6 +12962,38 @@ http://www.maxim-ic.com/datasheet/index.mvp/id/5241</description>
 <device name="" package="2MM-TEST-POINT">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="20MIL-TEST-POINT" package="20MIL-TEST-POINT">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="15MIL-TEST-POINT" package="15MIL-TEST-POINT">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="10MIL-TEST-POINT" package="10MIL-TEST-POINT">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="8MIL-TEST-POINT" package="8MIL-TEST-POINT">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -15757,7 +15828,7 @@ Typical height 0.6&amp;nbsp;mm.</description>
 <class number="1" name="PWR" width="0" drill="0">
 </class>
 <class number="2" name="RF" width="0" drill="0">
-<clearance class="2" value="0.127"/>
+<clearance class="2" value="0.635"/>
 </class>
 </classes>
 <parts>
@@ -15840,10 +15911,10 @@ Typical height 0.6&amp;nbsp;mm.</description>
 <part name="Q1" library="Tova" deviceset="NTR4101P" device=""/>
 <part name="R12" library="rcl_custom" deviceset="R-US_" device="0402-C-NOSILK" value="1.5k"/>
 <part name="C10" library="rcl_custom" deviceset="C-EU" device="0402-C-NOSILK" value="100n"/>
-<part name="TP22" library="Tova" deviceset="TEST-POINT" device=""/>
-<part name="TP26" library="Tova" deviceset="TEST-POINT" device=""/>
-<part name="TP32" library="Tova" deviceset="TEST-POINT" device=""/>
-<part name="TP33" library="Tova" deviceset="TEST-POINT" device=""/>
+<part name="TP22" library="Tova" deviceset="TEST-POINT" device="15MIL-TEST-POINT" value="TEST-POINT15MIL-TEST-POINT"/>
+<part name="TP26" library="Tova" deviceset="TEST-POINT" device="15MIL-TEST-POINT" value="TEST-POINT15MIL-TEST-POINT"/>
+<part name="TP32" library="Tova" deviceset="TEST-POINT" device="15MIL-TEST-POINT" value="TEST-POINT15MIL-TEST-POINT"/>
+<part name="TP33" library="Tova" deviceset="TEST-POINT" device="15MIL-TEST-POINT" value="TEST-POINT15MIL-TEST-POINT"/>
 <part name="J7" library="con-usd-hirose-dm3-gpsboard" deviceset="CON_HIROSE_DM3*" device="D(MICROSD)"/>
 <part name="J4" library="con-hirose-microusb" deviceset="ZX62D-B-5P8" device=""/>
 <part name="C62" library="rcl_custom" deviceset="C-EU" device="0402-C-NOSILK" value="100n 50V"/>
@@ -15932,23 +16003,23 @@ Typical height 0.6&amp;nbsp;mm.</description>
 <part name="X1" library="8Y_25MHzCrystal" deviceset="8Y" device="" value="25 MHz"/>
 <part name="C31" library="rcl_custom" deviceset="C-EU" device="0402-C-NOSILK" value="100n"/>
 <part name="C53" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="2.2u"/>
-<part name="TP10" library="Tova" deviceset="TEST-POINT" device=""/>
+<part name="TP10" library="Tova" deviceset="TEST-POINT" device="15MIL-TEST-POINT" value="TEST-POINT15MIL-TEST-POINT"/>
 <part name="U$19" library="SparkFun-Aesthetics" deviceset="2.85VA" device=""/>
 <part name="C58" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="2.2u"/>
 <part name="U$22" library="SparkFun-Aesthetics" deviceset="2.85VA" device=""/>
 <part name="C63" library="rcl_custom" deviceset="C-EU" device="0402-C-NOSILK" value="100p"/>
 <part name="C64" library="rcl_custom" deviceset="C-EU" device="0402-C-NOSILK" value="100n"/>
 <part name="C65" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="1u 50V"/>
-<part name="TP11" library="Tova" deviceset="TEST-POINT" device=""/>
-<part name="TP12" library="Tova" deviceset="TEST-POINT" device=""/>
-<part name="TP13" library="Tova" deviceset="TEST-POINT" device=""/>
-<part name="TP14" library="Tova" deviceset="TEST-POINT" device=""/>
-<part name="TP15" library="Tova" deviceset="TEST-POINT" device=""/>
+<part name="TP11" library="Tova" deviceset="TEST-POINT" device="15MIL-TEST-POINT" value="TEST-POINT15MIL-TEST-POINT"/>
+<part name="TP12" library="Tova" deviceset="TEST-POINT" device="15MIL-TEST-POINT" value="TEST-POINT15MIL-TEST-POINT"/>
+<part name="TP13" library="Tova" deviceset="TEST-POINT" device="15MIL-TEST-POINT" value="TEST-POINT15MIL-TEST-POINT"/>
+<part name="TP14" library="Tova" deviceset="TEST-POINT" device="15MIL-TEST-POINT" value="TEST-POINT15MIL-TEST-POINT"/>
+<part name="TP15" library="Tova" deviceset="TEST-POINT" device="15MIL-TEST-POINT" value="TEST-POINT15MIL-TEST-POINT"/>
 <part name="GND23" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="TP17" library="Tova" deviceset="TEST-POINT" device=""/>
-<part name="TP18" library="Tova" deviceset="TEST-POINT" device=""/>
-<part name="TP19" library="Tova" deviceset="TEST-POINT" device=""/>
-<part name="TP20" library="Tova" deviceset="TEST-POINT" device=""/>
+<part name="TP17" library="Tova" deviceset="TEST-POINT" device="15MIL-TEST-POINT" value="TEST-POINT15MIL-TEST-POINT"/>
+<part name="TP18" library="Tova" deviceset="TEST-POINT" device="15MIL-TEST-POINT" value="TEST-POINT15MIL-TEST-POINT"/>
+<part name="TP19" library="Tova" deviceset="TEST-POINT" device="15MIL-TEST-POINT" value="TEST-POINT15MIL-TEST-POINT"/>
+<part name="TP20" library="Tova" deviceset="TEST-POINT" device="15MIL-TEST-POINT" value="TEST-POINT15MIL-TEST-POINT"/>
 <part name="FRAME5" library="frames" deviceset="FRAME_A_L" device=""/>
 <part name="FRAME6" library="frames" deviceset="A3L-LOC" device=""/>
 <part name="FRAME7" library="frames" deviceset="A3L-LOC" device=""/>
@@ -15962,16 +16033,16 @@ Typical height 0.6&amp;nbsp;mm.</description>
 <part name="R21" library="rcl_custom" deviceset="R-US_" device="0402-C-NOSILK" value="10k"/>
 <part name="R22" library="rcl_custom" deviceset="R-US_" device="0402-C-NOSILK" value="10k"/>
 <part name="R23" library="rcl_custom" deviceset="R-US_" device="0402-C-NOSILK" value="1k"/>
-<part name="TP8" library="Tova" deviceset="TEST-POINT" device=""/>
-<part name="TP25" library="Tova" deviceset="TEST-POINT" device=""/>
-<part name="TP27" library="Tova" deviceset="TEST-POINT" device=""/>
-<part name="TP28" library="Tova" deviceset="TEST-POINT" device=""/>
-<part name="TP29" library="Tova" deviceset="TEST-POINT" device=""/>
-<part name="TP30" library="Tova" deviceset="TEST-POINT" device=""/>
+<part name="TP8" library="Tova" deviceset="TEST-POINT" device="15MIL-TEST-POINT" value="TEST-POINT15MIL-TEST-POINT"/>
+<part name="TP25" library="Tova" deviceset="TEST-POINT" device="15MIL-TEST-POINT" value="TEST-POINT15MIL-TEST-POINT"/>
+<part name="TP27" library="Tova" deviceset="TEST-POINT" device="15MIL-TEST-POINT" value="TEST-POINT15MIL-TEST-POINT"/>
+<part name="TP28" library="Tova" deviceset="TEST-POINT" device="15MIL-TEST-POINT" value="TEST-POINT15MIL-TEST-POINT"/>
+<part name="TP29" library="Tova" deviceset="TEST-POINT" device="15MIL-TEST-POINT" value="TEST-POINT15MIL-TEST-POINT"/>
+<part name="TP30" library="Tova" deviceset="TEST-POINT" device="15MIL-TEST-POINT" value="TEST-POINT15MIL-TEST-POINT"/>
 <part name="D1" library="diode-0603" deviceset="DIODE-0603" device=""/>
 <part name="R24" library="rcl_custom" deviceset="R-US_" device="0402-C-NOSILK" value="10k"/>
 <part name="C66" library="SparkFun-Passives" deviceset="CAP_POL" device="EN_J2"/>
-<part name="TP1" library="Tova" deviceset="TEST-POINT" device=""/>
+<part name="TP1" library="Tova" deviceset="TEST-POINT" device="15MIL-TEST-POINT" value="TEST-POINT15MIL-TEST-POINT"/>
 <part name="U11" library="SparkFun-PowerIC" deviceset="V_REG_LDO" device="SMD2" value="MAX8510EXK29+T"/>
 <part name="C67" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="1u"/>
 <part name="GND25" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -15981,7 +16052,7 @@ Typical height 0.6&amp;nbsp;mm.</description>
 <part name="GND27" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C70" library="rcl_custom" deviceset="C-EU" device="0402-C-NOSILK" value="100n"/>
 <part name="GND28" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="TP9" library="Tova" deviceset="TEST-POINT" device=""/>
+<part name="TP9" library="Tova" deviceset="TEST-POINT" device="15MIL-TEST-POINT" value="TEST-POINT15MIL-TEST-POINT"/>
 <part name="SUPPLY1" library="2.85V-S" deviceset="2.85V-S" device=""/>
 <part name="SUPPLY2" library="2.85V-S" deviceset="2.85V-S" device=""/>
 <part name="SUPPLY3" library="2.85V-S" deviceset="2.85V-S" device=""/>
@@ -16030,7 +16101,7 @@ Typical height 0.6&amp;nbsp;mm.</description>
 <part name="GND42" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C78" library="rcl_custom" deviceset="C-EU" device="0402-C-NOSILK" value="100n"/>
 <part name="GND43" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="TP21" library="Tova" deviceset="TEST-POINT" device=""/>
+<part name="TP21" library="Tova" deviceset="TEST-POINT" device="15MIL-TEST-POINT" value="TEST-POINT15MIL-TEST-POINT"/>
 <part name="S1" library="supply" deviceset="V18" device=""/>
 <part name="S2" library="supply" deviceset="V18" device=""/>
 <part name="GND44" library="supply" deviceset="GND" device=""/>
@@ -16094,6 +16165,19 @@ Typical height 0.6&amp;nbsp;mm.</description>
 <part name="R27" library="rcl_custom" deviceset="R-US_" device="0402-C-NOSILK" value="10k"/>
 <part name="GND75" library="supply" deviceset="GND" device=""/>
 <part name="GND76" library="supply" deviceset="GND" device=""/>
+<part name="TP3" library="Tova" deviceset="TEST-POINT" device="15MIL-TEST-POINT" value="TEST-POINT15MIL-TEST-POINT"/>
+<part name="TP6" library="Tova" deviceset="TEST-POINT" device="15MIL-TEST-POINT" value="TEST-POINT15MIL-TEST-POINT"/>
+<part name="TP7" library="Tova" deviceset="TEST-POINT" device="15MIL-TEST-POINT" value="TEST-POINT15MIL-TEST-POINT"/>
+<part name="TP23" library="Tova" deviceset="TEST-POINT" device="15MIL-TEST-POINT"/>
+<part name="TP24" library="Tova" deviceset="TEST-POINT" device="15MIL-TEST-POINT"/>
+<part name="TP31" library="Tova" deviceset="TEST-POINT" device="15MIL-TEST-POINT"/>
+<part name="TP34" library="Tova" deviceset="TEST-POINT" device="15MIL-TEST-POINT"/>
+<part name="TP35" library="Tova" deviceset="TEST-POINT" device="15MIL-TEST-POINT"/>
+<part name="TP36" library="Tova" deviceset="TEST-POINT" device="15MIL-TEST-POINT"/>
+<part name="TP37" library="Tova" deviceset="TEST-POINT" device="15MIL-TEST-POINT"/>
+<part name="TP38" library="Tova" deviceset="TEST-POINT" device="15MIL-TEST-POINT"/>
+<part name="TP39" library="Tova" deviceset="TEST-POINT" device="15MIL-TEST-POINT"/>
+<part name="TP40" library="Tova" deviceset="TEST-POINT" device="15MIL-TEST-POINT"/>
 </parts>
 <sheets>
 <sheet>
@@ -16485,6 +16569,15 @@ Front End</text>
 <attribute name="NAME" x="312.42" y="83.82" size="1.778" layer="95" font="vector"/>
 </instance>
 <instance part="S1" gate="G1" x="320.04" y="83.82"/>
+<instance part="TP3" gate="G$1" x="114.3" y="111.76" smashed="yes" rot="R180">
+<attribute name="NAME" x="116.84" y="110.49" size="1.778" layer="95" font="vector"/>
+</instance>
+<instance part="TP6" gate="G$1" x="114.3" y="116.84" smashed="yes" rot="R180">
+<attribute name="NAME" x="116.84" y="115.57" size="1.778" layer="95" font="vector"/>
+</instance>
+<instance part="TP7" gate="G$1" x="114.3" y="121.92" smashed="yes" rot="R180">
+<attribute name="NAME" x="116.84" y="120.65" size="1.778" layer="95" font="vector"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -16594,6 +16687,15 @@ Front End</text>
 <pinref part="GND23" gate="1" pin="GND"/>
 <wire x1="114.3" y1="91.44" x2="114.3" y2="88.9" width="0.1524" layer="91"/>
 <junction x="114.3" y="91.44"/>
+<pinref part="TP3" gate="G$1" pin="1"/>
+<wire x1="114.3" y1="106.68" x2="114.3" y2="111.76" width="0.1524" layer="91"/>
+<junction x="114.3" y="106.68"/>
+<pinref part="TP6" gate="G$1" pin="1"/>
+<wire x1="114.3" y1="111.76" x2="114.3" y2="116.84" width="0.1524" layer="91"/>
+<junction x="114.3" y="111.76"/>
+<pinref part="TP7" gate="G$1" pin="1"/>
+<wire x1="114.3" y1="116.84" x2="114.3" y2="121.92" width="0.1524" layer="91"/>
+<junction x="114.3" y="116.84"/>
 </segment>
 <segment>
 <pinref part="C67" gate="CE" pin="2"/>
@@ -16926,6 +17028,7 @@ Front End</text>
 <plain>
 <text x="96.52" y="114.3" size="1.778" layer="97">SMA Connector</text>
 <text x="191.77" y="116.84" size="1.778" layer="97">Splitter</text>
+<text x="139.7" y="67.31" size="1.778" layer="97">COVERED SHIELD</text>
 </plain>
 <instances>
 <instance part="C56" gate="CE" x="137.16" y="129.54" smashed="yes">
@@ -17249,6 +17352,18 @@ Front End</text>
 </instance>
 <instance part="GND75" gate="G1" x="207.01" y="99.06"/>
 <instance part="GND76" gate="G1" x="219.71" y="113.03"/>
+<instance part="TP23" gate="G$1" x="256.54" y="83.82" smashed="yes">
+<attribute name="NAME" x="246.38" y="83.82" size="1.778" layer="95" font="vector"/>
+</instance>
+<instance part="TP24" gate="G$1" x="256.54" y="78.74" smashed="yes">
+<attribute name="NAME" x="246.38" y="78.74" size="1.778" layer="95" font="vector"/>
+</instance>
+<instance part="TP31" gate="G$1" x="256.54" y="88.9" smashed="yes">
+<attribute name="NAME" x="246.38" y="88.9" size="1.778" layer="95" font="vector"/>
+</instance>
+<instance part="TP34" gate="G$1" x="256.54" y="137.16" smashed="yes">
+<attribute name="NAME" x="246.38" y="137.16" size="1.778" layer="95" font="vector"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -17813,21 +17928,21 @@ Front End</text>
 <wire x1="220.98" y1="109.22" x2="228.6" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="MAX_OUT_SPI1_SCK" class="0">
+<net name="CPLD_OUT_SPI1_SCK" class="0">
 <segment>
 <wire x1="261.62" y1="106.68" x2="248.92" y2="106.68" width="0.1524" layer="91"/>
 <label x="248.92" y="106.68" size="1.27" layer="95" rot="MR0" xref="yes"/>
 <pinref part="IC1" gate="G$1" pin="IO_11"/>
 </segment>
 </net>
-<net name="MAX_OUT_SPI1_MOSI" class="0">
+<net name="CPLD_OUT_SPI1_MOSI" class="0">
 <segment>
 <label x="248.92" y="99.06" size="1.27" layer="95" rot="MR0" xref="yes"/>
 <pinref part="IC1" gate="G$1" pin="IO_14"/>
 <wire x1="248.92" y1="99.06" x2="261.62" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="MAX_OUT_SPI1_NSS" class="0">
+<net name="CPLD_OUT_SPI1_NSS" class="0">
 <segment>
 <label x="248.92" y="101.6" size="1.27" layer="95" rot="MR0" xref="yes"/>
 <pinref part="IC1" gate="G$1" pin="IO_13"/>
@@ -17848,7 +17963,7 @@ Front End</text>
 <wire x1="261.62" y1="48.26" x2="256.54" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="MAX_OUT_SPI_CLK" class="2">
+<net name="CPLD_OUT_SPI_CLK" class="2">
 <segment>
 <wire x1="248.92" y1="104.14" x2="261.62" y2="104.14" width="0.1524" layer="91"/>
 <label x="248.92" y="104.14" size="1.27" layer="95" rot="R180" xref="yes"/>
@@ -17874,6 +17989,41 @@ Front End</text>
 <pinref part="U1" gate="G$1" pin="CLKOUT"/>
 <wire x1="167.64" y1="111.76" x2="194.31" y2="111.76" width="0.1524" layer="91"/>
 <junction x="194.31" y="111.76"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="IO_21"/>
+<wire x1="261.62" y1="78.74" x2="256.54" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="TP24" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="TP23" gate="G$1" pin="1"/>
+<pinref part="IC1" gate="G$1" pin="IO_19"/>
+<wire x1="256.54" y1="83.82" x2="261.62" y2="83.82" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$34" class="0">
+<segment>
+<pinref part="TP31" gate="G$1" pin="1"/>
+<pinref part="IC1" gate="G$1" pin="IO_17"/>
+<wire x1="256.54" y1="88.9" x2="261.62" y2="88.9" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$49" class="0">
+<segment>
+<pinref part="TP34" gate="G$1" pin="1"/>
+<pinref part="IC1" gate="G$1" pin="IO_0"/>
+<wire x1="256.54" y1="137.16" x2="261.62" y2="137.16" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="CPLD_DEBUG" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="IO_15"/>
+<wire x1="261.62" y1="96.52" x2="248.92" y2="96.52" width="0.1524" layer="91"/>
+<label x="248.92" y="96.52" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
@@ -18402,6 +18552,24 @@ Programmer</text>
 <instance part="GND71" gate="G1" x="129.54" y="218.44"/>
 <instance part="GND72" gate="G1" x="114.3" y="218.44"/>
 <instance part="GND73" gate="G1" x="99.06" y="218.44"/>
+<instance part="TP35" gate="G$1" x="243.84" y="147.32" smashed="yes" rot="R180">
+<attribute name="NAME" x="246.38" y="146.05" size="1.778" layer="95" font="vector"/>
+</instance>
+<instance part="TP36" gate="G$1" x="243.84" y="142.24" smashed="yes" rot="R180">
+<attribute name="NAME" x="246.38" y="140.97" size="1.778" layer="95" font="vector"/>
+</instance>
+<instance part="TP37" gate="G$1" x="243.84" y="157.48" smashed="yes" rot="R180">
+<attribute name="NAME" x="246.38" y="156.21" size="1.778" layer="95" font="vector"/>
+</instance>
+<instance part="TP38" gate="G$1" x="157.48" y="160.02" smashed="yes">
+<attribute name="NAME" x="148.59" y="160.02" size="1.778" layer="95" font="vector"/>
+</instance>
+<instance part="TP39" gate="G$1" x="243.84" y="106.68" smashed="yes" rot="R180">
+<attribute name="NAME" x="252.73" y="106.68" size="1.778" layer="95" font="vector" rot="R180"/>
+</instance>
+<instance part="TP40" gate="G$1" x="243.84" y="101.6" smashed="yes" rot="R180">
+<attribute name="NAME" x="252.73" y="101.6" size="1.778" layer="95" font="vector" rot="R180"/>
+</instance>
 </instances>
 <busses>
 <bus name="ETHERNET:ETH_DEBUG,ETH_TX_EN,ETH_TXD0,ETH_TXD1,ETH_RXD0,ETH_RXD1,ETH_CRS_DV,ETH_CRS_DV,ETH_MCO1_CLK,ETH_MDC,ETH_MDINT,ETH_MDIO,ETH_RMII_REF_CLK,ETH_PHY_NRST">
@@ -19144,21 +19312,21 @@ Programmer</text>
 <label x="289.56" y="226.06" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="MAX_OUT_SPI1_SCK" class="0">
+<net name="CPLD_OUT_SPI1_SCK" class="0">
 <segment>
 <pinref part="U2" gate="U" pin="PA5"/>
 <wire x1="162.56" y1="193.04" x2="124.46" y2="193.04" width="0.1524" layer="91"/>
 <label x="124.46" y="193.04" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="MAX_OUT_SPI1_MOSI" class="0">
+<net name="CPLD_OUT_SPI1_MOSI" class="0">
 <segment>
 <pinref part="U2" gate="U" pin="PB5"/>
 <wire x1="162.56" y1="147.32" x2="123.19" y2="147.32" width="0.1524" layer="91"/>
 <label x="123.19" y="147.32" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="MAX_OUT_SPI1_NSS" class="0">
+<net name="CPLD_OUT_SPI1_NSS" class="0">
 <segment>
 <pinref part="U2" gate="U" pin="PA4"/>
 <wire x1="162.56" y1="195.58" x2="124.46" y2="195.58" width="0.1524" layer="91"/>
@@ -19237,11 +19405,62 @@ Programmer</text>
 <label x="123.19" y="134.62" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="MAX_OUT_SPI_CLK" class="2">
+<net name="CPLD_OUT_SPI_CLK" class="2">
 <segment>
 <pinref part="U2" gate="U" pin="PB14"/>
 <wire x1="162.56" y1="124.46" x2="121.92" y2="124.46" width="0.1524" layer="91"/>
 <label x="121.92" y="124.46" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="CPLD_DEBUG" class="0">
+<segment>
+<pinref part="U2" gate="U" pin="PD12"/>
+<wire x1="238.76" y1="129.54" x2="269.24" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="269.24" y1="129.54" x2="269.24" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="269.24" y1="106.68" x2="274.32" y2="106.68" width="0.1524" layer="91"/>
+<label x="274.32" y="106.68" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="N$50" class="0">
+<segment>
+<pinref part="U2" gate="U" pin="PD5"/>
+<pinref part="TP35" gate="G$1" pin="1"/>
+<wire x1="238.76" y1="147.32" x2="243.84" y2="147.32" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$55" class="0">
+<segment>
+<pinref part="U2" gate="U" pin="PD7"/>
+<pinref part="TP36" gate="G$1" pin="1"/>
+<wire x1="238.76" y1="142.24" x2="243.84" y2="142.24" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$56" class="0">
+<segment>
+<pinref part="U2" gate="U" pin="PD1"/>
+<pinref part="TP37" gate="G$1" pin="1"/>
+<wire x1="238.76" y1="157.48" x2="243.84" y2="157.48" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$59" class="0">
+<segment>
+<pinref part="U2" gate="U" pin="PB0"/>
+<wire x1="162.56" y1="160.02" x2="157.48" y2="160.02" width="0.1524" layer="91"/>
+<pinref part="TP38" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$60" class="0">
+<segment>
+<pinref part="U2" gate="U" pin="PE3"/>
+<pinref part="TP39" gate="G$1" pin="1"/>
+<wire x1="238.76" y1="106.68" x2="243.84" y2="106.68" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$61" class="0">
+<segment>
+<pinref part="U2" gate="U" pin="PE5"/>
+<pinref part="TP40" gate="G$1" pin="1"/>
+<wire x1="238.76" y1="101.6" x2="243.84" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
