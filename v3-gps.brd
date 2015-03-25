@@ -36,7 +36,7 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
@@ -5056,7 +5056,7 @@ einem neuen Namen ab.</description>
 <via x="60.325" y="26.035" extent="1-16" drill="0.254"/>
 <via x="57.785" y="26.035" extent="1-16" drill="0.254"/>
 <via x="53.213" y="27.178" extent="1-16" drill="0.254"/>
-<via x="50.165" y="26.035" extent="1-16" drill="0.254"/>
+<via x="50.165" y="26.162" extent="1-16" drill="0.254"/>
 <via x="47.625" y="26.035" extent="1-16" drill="0.254"/>
 <via x="60.325" y="25.019" extent="1-16" drill="0.254"/>
 <via x="57.785" y="25.019" extent="1-16" drill="0.254"/>
@@ -5176,6 +5176,8 @@ einem neuen Namen ab.</description>
 <contactref element="C83" pad="2"/>
 <contactref element="C84" pad="2"/>
 <contactref element="U5" pad="6"/>
+<via x="47.752" y="27.559" extent="1-16" drill="0.254"/>
+<via x="47.117" y="28.194" extent="1-16" drill="0.254"/>
 </signal>
 <signal name="SD-VDD">
 <contactref element="C20" pad="2"/>
