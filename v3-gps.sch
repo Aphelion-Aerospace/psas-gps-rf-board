@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="2" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="7" fill="1" visible="no" active="no"/>
@@ -13001,7 +13001,7 @@ Approx 12x12 mm</description>
 <rectangle x1="-2.682" y1="-0.915" x2="-0.182" y2="1.085" layer="41" rot="R180"/>
 <rectangle x1="-6.345" y1="-0.725" x2="-4.915" y2="0.975" layer="29"/>
 <smd name="G1" x="-7.782" y="10.035" dx="1.5" dy="1.5" layer="1" rot="R180"/>
-<smd name="G2" x="3.5934" y="10.035" dx="1.3" dy="1.5" layer="1" rot="R180" stop="no"/>
+<smd name="G2" x="3.5934" y="10.035" dx="1.3" dy="1.5" layer="1" rot="R180"/>
 <smd name="G3" x="3.818" y="2.435" dx="0.8" dy="1.5" layer="1" rot="R180"/>
 <smd name="G4" x="-8.132" y="1.785" dx="0.8" dy="1.4" layer="1" rot="R180"/>
 <smd name="P1" x="-5.332" y="10.16" dx="0.7" dy="1.75" layer="1" rot="R180"/>
@@ -14070,10 +14070,9 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <package name="SMA-CON-EMERSON">
 <smd name="GND" x="-4.318" y="0" dx="5.08" dy="2.413" layer="1" rot="R90"/>
 <smd name="GND@1" x="4.318" y="0" dx="5.08" dy="2.413" layer="1" rot="R90"/>
-<smd name="SIG" x="0" y="0" dx="5.08" dy="2.286" layer="1" rot="R90" stop="no"/>
+<smd name="SIG" x="0" y="0" dx="5.08" dy="2.286" layer="1" rot="R90"/>
 <smd name="GND@2" x="-4.318" y="0" dx="5.08" dy="2.413" layer="16" rot="R90"/>
 <smd name="GND@3" x="4.318" y="0" dx="5.08" dy="2.413" layer="16" rot="R90"/>
-<rectangle x1="-0.45" y1="-2.7" x2="0.45" y2="2.7" layer="29"/>
 <wire x1="-6.35" y1="2.54" x2="-4.7625" y2="2.54" width="0.127" layer="51"/>
 <wire x1="4.7625" y1="2.54" x2="6.35" y2="2.54" width="0.127" layer="51"/>
 <wire x1="7.62" y1="2.54" x2="8.89" y2="2.54" width="0.127" layer="51"/>
