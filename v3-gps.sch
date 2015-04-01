@@ -16115,7 +16115,9 @@ Front End</text>
 <wire x1="120.65" y1="140.97" x2="120.65" y2="133.35" width="0.1524" layer="97"/>
 <wire x1="120.65" y1="133.35" x2="110.49" y2="133.35" width="0.1524" layer="97"/>
 <wire x1="110.49" y1="133.35" x2="110.49" y2="140.97" width="0.1524" layer="97"/>
-<text x="113.03" y="140.97" size="1.778" layer="97">LNA</text>
+<text x="115.57" y="140.97" size="1.778" layer="97" align="center">SAW
++
+LNA</text>
 <wire x1="110.49" y1="140.97" x2="110.49" y2="148.59" width="0.1524" layer="97"/>
 <wire x1="120.65" y1="140.97" x2="123.19" y2="140.97" width="0.1524" layer="97"/>
 <wire x1="107.95" y1="140.97" x2="110.49" y2="140.97" width="0.1524" layer="97"/>
@@ -16185,7 +16187,7 @@ RocketNet Connector</text>
 <wire x1="219.71" y1="113.03" x2="331.47" y2="113.03" width="0.254" layer="97"/>
 <wire x1="331.47" y1="113.03" x2="331.47" y2="226.06" width="0.254" layer="97"/>
 <wire x1="331.47" y1="226.06" x2="219.71" y2="226.06" width="0.254" layer="97"/>
-<text x="107.95" y="160.02" size="1.778" layer="97">Fsw = 1 MHz</text>
+<text x="107.95" y="160.02" size="1.778" layer="97">Fsw = 410 kHz</text>
 <text x="327.66" y="26.67" size="5.08" layer="94">Power Supplies</text>
 </plain>
 <instances>
@@ -17110,18 +17112,18 @@ rocket aeroshell (-8 dBi typical).</text>
 <wire x1="276.86" y1="198.12" x2="190.5" y2="198.12" width="0.1524" layer="97" style="shortdash"/>
 <text x="76.2" y="165.1" size="1.778" layer="95">MAX2769 SPI 
 CONFIG port</text>
-<text x="219.71" y="158.75" size="1.778" layer="97">4 bits I/Q data @ 4.096 Msps</text>
+<text x="219.71" y="158.75" size="1.778" layer="97">4 bits I/Q data @ 4.092 Msps</text>
 <text x="231.14" y="86.36" size="1.778" layer="97" align="center">42 Mbps SPI 
 to STM32</text>
 <wire x1="241.3" y1="91.44" x2="238.76" y2="91.44" width="0.1524" layer="97"/>
 <wire x1="238.76" y1="91.44" x2="238.76" y2="81.28" width="0.1524" layer="97"/>
 <wire x1="238.76" y1="81.28" x2="241.3" y2="81.28" width="0.1524" layer="97"/>
-<text x="232.41" y="96.52" size="1.778" layer="97" align="center">SPI reference
+<text x="232.41" y="99.06" size="1.778" layer="97" align="center">SPI reference
 clock from STM32</text>
 <text x="361.95" y="125.73" size="1.778" layer="97" align="center">JTAG
 Programming
 header</text>
-<text x="90.17" y="127" size="1.778" layer="97" align="center">16.384 MHz 
+<text x="90.17" y="127" size="1.778" layer="97" align="center">16.368 MHz 
 TCXO</text>
 <wire x1="96.52" y1="172.72" x2="93.98" y2="172.72" width="0.1524" layer="97"/>
 <wire x1="93.98" y1="172.72" x2="93.98" y2="162.56" width="0.1524" layer="97"/>
@@ -17836,9 +17838,9 @@ TCXO</text>
 <net name="CPLD_OUT_SPI1_SCK" class="0">
 <segment>
 <wire x1="302.26" y1="139.7" x2="274.32" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="274.32" y1="139.7" x2="274.32" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="274.32" y1="96.52" x2="270.51" y2="96.52" width="0.1524" layer="91"/>
-<label x="270.51" y="96.52" size="1.27" layer="95" rot="MR0" xref="yes"/>
+<wire x1="274.32" y1="139.7" x2="274.32" y2="90.17" width="0.1524" layer="91"/>
+<wire x1="274.32" y1="90.17" x2="270.51" y2="90.17" width="0.1524" layer="91"/>
+<label x="270.51" y="90.17" size="1.27" layer="95" rot="MR0" xref="yes"/>
 <pinref part="U13" gate="G$1" pin="IO_11"/>
 </segment>
 </net>
@@ -17876,10 +17878,10 @@ TCXO</text>
 </net>
 <net name="CPLD_OUT_SPI_CLK_SRC" class="2">
 <segment>
-<wire x1="270.51" y1="88.9" x2="276.86" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="276.86" y1="88.9" x2="276.86" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="270.51" y1="100.33" x2="276.86" y2="100.33" width="0.1524" layer="91"/>
+<wire x1="276.86" y1="100.33" x2="276.86" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="276.86" y1="137.16" x2="302.26" y2="137.16" width="0.1524" layer="91"/>
-<label x="270.51" y="88.9" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="270.51" y="100.33" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="U13" gate="G$1" pin="IO_12"/>
 </segment>
 </net>
@@ -17892,7 +17894,7 @@ TCXO</text>
 <junction x="247.65" y="139.7"/>
 </segment>
 </net>
-<net name="N$45" class="0">
+<net name="MAX_CLK_OUT" class="0">
 <segment>
 <pinref part="U5" gate="A" pin="+IN"/>
 <wire x1="248.92" y1="144.78" x2="234.95" y2="144.78" width="0.1524" layer="91"/>
@@ -17936,9 +17938,9 @@ TCXO</text>
 <segment>
 <pinref part="U13" gate="G$1" pin="IO_15"/>
 <wire x1="302.26" y1="129.54" x2="284.48" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="284.48" y1="129.54" x2="284.48" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="284.48" y1="78.74" x2="270.51" y2="78.74" width="0.1524" layer="91"/>
-<label x="270.51" y="78.74" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="284.48" y1="129.54" x2="284.48" y2="74.93" width="0.1524" layer="91"/>
+<wire x1="284.48" y1="74.93" x2="270.51" y2="74.93" width="0.1524" layer="91"/>
+<label x="270.51" y="74.93" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="1.8V" class="0">
@@ -17950,6 +17952,15 @@ TCXO</text>
 <wire x1="320.04" y1="193.04" x2="320.04" y2="195.58" width="0.1524" layer="91"/>
 <junction x="320.04" y="193.04"/>
 <pinref part="SUPPLY7" gate="G$1" pin="1.8V"/>
+</segment>
+</net>
+<net name="CPLD_RESET" class="0">
+<segment>
+<pinref part="U13" gate="G$1" pin="IO_30"/>
+<wire x1="302.26" y1="86.36" x2="290.83" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="290.83" y1="86.36" x2="290.83" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="290.83" y1="71.12" x2="270.51" y2="71.12" width="0.1524" layer="91"/>
+<label x="270.51" y="71.12" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
@@ -18332,9 +18343,7 @@ Full Speed</text>
 Card</text>
 <text x="16.51" y="120.65" size="1.778" layer="97">SWD
 Programmer</text>
-<text x="87.63" y="166.37" size="1.27" layer="95" rot="R270">FROM MAX2769</text>
 <text x="288.29" y="81.28" size="1.27" layer="95" rot="R90">TO MAX2769</text>
-<text x="111.76" y="167.64" size="1.27" layer="97" rot="R180">Don't need MISO!</text>
 <text x="314.96" y="227.33" size="1.27" layer="97">TO SKYTRAQ GPS</text>
 <wire x1="311.15" y1="232.41" x2="313.69" y2="232.41" width="0.254" layer="97"/>
 <wire x1="313.69" y1="232.41" x2="313.69" y2="222.25" width="0.254" layer="97"/>
@@ -18499,17 +18508,45 @@ Programmer</text>
 <wire x1="129.54" y1="201.93" x2="129.54" y2="48.26" width="0.762" layer="92"/>
 <wire x1="129.54" y1="48.26" x2="261.62" y2="48.26" width="0.762" layer="92"/>
 <wire x1="261.62" y1="48.26" x2="261.62" y2="201.93" width="0.762" layer="92"/>
-<wire x1="261.62" y1="48.26" x2="274.32" y2="48.26" width="0.762" layer="92"/>
-<label x="275.844" y="47.625" size="1.27" layer="95"/>
+<wire x1="261.62" y1="48.26" x2="297.18" y2="48.26" width="0.762" layer="92"/>
+<label x="298.704" y="47.625" size="1.27" layer="95"/>
+<label x="128.27" y="80.01" size="1.27" layer="95" rot="R90"/>
 </segment>
 </bus>
 <bus name="B$2">
 <segment>
-<wire x1="274.574" y1="48.26" x2="275.844" y2="49.53" width="0.254" layer="92"/>
-<wire x1="274.574" y1="48.26" x2="275.844" y2="46.99" width="0.254" layer="92"/>
-<wire x1="275.844" y1="46.99" x2="291.338" y2="46.99" width="0.254" layer="92"/>
-<wire x1="291.338" y1="46.99" x2="291.338" y2="49.53" width="0.254" layer="92"/>
-<wire x1="291.338" y1="49.53" x2="275.844" y2="49.53" width="0.254" layer="92"/>
+<wire x1="297.434" y1="48.26" x2="298.704" y2="49.53" width="0.254" layer="92"/>
+<wire x1="297.434" y1="48.26" x2="298.704" y2="46.99" width="0.254" layer="92"/>
+<wire x1="298.704" y1="46.99" x2="314.198" y2="46.99" width="0.254" layer="92"/>
+<wire x1="314.198" y1="46.99" x2="314.198" y2="49.53" width="0.254" layer="92"/>
+<wire x1="314.198" y1="49.53" x2="298.704" y2="49.53" width="0.254" layer="92"/>
+</segment>
+</bus>
+<bus name="MAX_CONFIG:MAX_ANTFLAG,MAX_LD,MAX_CFG_SPI2_SCLK,MAX_CFG_SPI2_MOSI,MAX_!SHDN,MAX_!IDLE,MAX_CFG_!CS">
+<segment>
+<wire x1="274.32" y1="35.56" x2="116.84" y2="35.56" width="0.762" layer="92"/>
+<wire x1="116.84" y1="35.56" x2="116.84" y2="156.21" width="0.762" layer="92"/>
+<wire x1="274.32" y1="35.56" x2="274.32" y2="87.63" width="0.762" layer="92"/>
+<wire x1="274.32" y1="35.56" x2="297.18" y2="35.56" width="0.762" layer="92"/>
+<label x="298.196" y="34.798" size="1.27" layer="95"/>
+<wire x1="297.18" y1="35.56" x2="298.45" y2="36.83" width="0.254" layer="92"/>
+<wire x1="298.45" y1="36.83" x2="310.642" y2="36.83" width="0.254" layer="92"/>
+<wire x1="310.642" y1="36.83" x2="310.642" y2="34.29" width="0.254" layer="92"/>
+<wire x1="310.642" y1="34.29" x2="298.45" y2="34.29" width="0.254" layer="92"/>
+<wire x1="298.45" y1="34.29" x2="297.18" y2="35.56" width="0.254" layer="92"/>
+<label x="115.57" y="82.55" size="1.27" layer="95" rot="R90"/>
+</segment>
+</bus>
+<bus name="CPLD:CPLD_DEBUG,CPLD_OUT_SPI1_NSS,CPLD_OUT_SPI1_SCK,CPLD_OUT_SPI1_MOSI,CPLD_OUT_SPI_CLK_SRC,CPLD_RESET">
+<segment>
+<wire x1="104.14" y1="194.31" x2="104.14" y2="22.86" width="0.762" layer="92"/>
+<wire x1="104.14" y1="22.86" x2="297.18" y2="22.86" width="0.762" layer="92"/>
+<wire x1="297.18" y1="22.86" x2="298.45" y2="24.13" width="0.254" layer="92"/>
+<wire x1="298.45" y1="24.13" x2="304.038" y2="24.13" width="0.254" layer="92"/>
+<wire x1="304.038" y1="24.13" x2="304.038" y2="21.59" width="0.254" layer="92"/>
+<wire x1="304.038" y1="21.59" x2="298.45" y2="21.59" width="0.254" layer="92"/>
+<wire x1="298.45" y1="21.59" x2="297.18" y2="22.86" width="0.254" layer="92"/>
+<label x="298.45" y="22.098" size="1.27" layer="95"/>
 </segment>
 </bus>
 </busses>
@@ -18668,9 +18705,10 @@ Programmer</text>
 </net>
 <net name="MAX_LD" class="0">
 <segment>
-<label x="123.19" y="154.94" size="1.27" layer="95" rot="R180" xref="yes"/>
-<wire x1="123.19" y1="154.94" x2="162.56" y2="154.94" width="0.1524" layer="91"/>
+<label x="119.38" y="154.94" size="1.27" layer="95"/>
+<wire x1="118.11" y1="154.94" x2="162.56" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="U2" gate="U" pin="PB2"/>
+<wire x1="118.11" y1="154.94" x2="116.84" y2="153.67" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="3.3VD" class="0">
@@ -18903,7 +18941,7 @@ Programmer</text>
 <segment>
 <wire x1="162.56" y1="200.66" x2="130.81" y2="200.66" width="0.1524" layer="91"/>
 <wire x1="130.81" y1="200.66" x2="129.54" y2="199.39" width="0.1524" layer="91"/>
-<label x="133.35" y="200.66" size="1.27" layer="95"/>
+<label x="132.08" y="200.66" size="1.27" layer="95"/>
 <pinref part="U2" gate="U" pin="PA2"/>
 </segment>
 </net>
@@ -18911,7 +18949,7 @@ Programmer</text>
 <segment>
 <wire x1="129.54" y1="186.69" x2="130.81" y2="187.96" width="0.1524" layer="91"/>
 <wire x1="130.81" y1="187.96" x2="162.56" y2="187.96" width="0.1524" layer="91"/>
-<label x="133.35" y="187.96" size="1.27" layer="95"/>
+<label x="132.08" y="187.96" size="1.27" layer="95"/>
 <pinref part="U2" gate="U" pin="PA7"/>
 </segment>
 </net>
@@ -18919,7 +18957,7 @@ Programmer</text>
 <segment>
 <wire x1="162.56" y1="132.08" x2="130.81" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="130.81" y1="132.08" x2="129.54" y2="130.81" width="0.1524" layer="91"/>
-<label x="133.35" y="132.08" size="1.27" layer="95"/>
+<label x="132.08" y="132.08" size="1.27" layer="95"/>
 <pinref part="U2" gate="U" pin="PB11"/>
 </segment>
 </net>
@@ -18927,7 +18965,7 @@ Programmer</text>
 <segment>
 <wire x1="162.56" y1="129.54" x2="130.81" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="130.81" y1="129.54" x2="129.54" y2="128.27" width="0.1524" layer="91"/>
-<label x="133.35" y="129.54" size="1.27" layer="95"/>
+<label x="132.08" y="129.54" size="1.27" layer="95"/>
 <pinref part="U2" gate="U" pin="PB12"/>
 </segment>
 </net>
@@ -18935,7 +18973,7 @@ Programmer</text>
 <segment>
 <wire x1="162.56" y1="127" x2="130.81" y2="127" width="0.1524" layer="91"/>
 <wire x1="130.81" y1="127" x2="129.54" y2="125.73" width="0.1524" layer="91"/>
-<label x="133.35" y="127" size="1.27" layer="95"/>
+<label x="132.08" y="127" size="1.27" layer="95"/>
 <pinref part="U2" gate="U" pin="PB13"/>
 </segment>
 </net>
@@ -19025,7 +19063,7 @@ Programmer</text>
 <segment>
 <wire x1="162.56" y1="198.12" x2="130.81" y2="198.12" width="0.1524" layer="91"/>
 <wire x1="130.81" y1="198.12" x2="129.54" y2="196.85" width="0.1524" layer="91"/>
-<label x="133.35" y="198.12" size="1.27" layer="95"/>
+<label x="132.08" y="198.12" size="1.27" layer="95"/>
 <pinref part="U2" gate="U" pin="PA3"/>
 </segment>
 </net>
@@ -19047,29 +19085,33 @@ Programmer</text>
 <net name="MAX_CFG_SPI2_MOSI" class="0">
 <segment>
 <pinref part="U2" gate="U" pin="PB15"/>
-<wire x1="162.56" y1="121.92" x2="121.92" y2="121.92" width="0.1524" layer="91"/>
-<label x="121.92" y="121.92" size="1.27" layer="95" rot="MR0" xref="yes"/>
+<wire x1="162.56" y1="121.92" x2="118.11" y2="121.92" width="0.1524" layer="91"/>
+<label x="119.38" y="121.92" size="1.27" layer="95"/>
+<wire x1="118.11" y1="121.92" x2="116.84" y2="120.65" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MAX_CFG_!CS" class="0">
 <segment>
-<wire x1="266.7" y1="83.82" x2="238.76" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="273.05" y1="83.82" x2="238.76" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="U2" gate="U" pin="PE12"/>
-<label x="266.7" y="83.82" size="1.27" layer="95" xref="yes"/>
+<label x="242.57" y="83.82" size="1.27" layer="95"/>
+<wire x1="273.05" y1="83.82" x2="274.32" y2="82.55" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MAX_!SHDN" class="0">
 <segment>
-<wire x1="266.7" y1="88.9" x2="238.76" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="273.05" y1="88.9" x2="238.76" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="U2" gate="U" pin="PE10"/>
-<label x="266.7" y="88.9" size="1.27" layer="95" xref="yes"/>
+<label x="242.57" y="88.9" size="1.27" layer="95"/>
+<wire x1="273.05" y1="88.9" x2="274.32" y2="87.63" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MAX_ANTFLAG" class="0">
 <segment>
-<label x="123.19" y="157.48" size="1.27" layer="95" rot="R180" xref="yes"/>
-<wire x1="123.19" y1="157.48" x2="162.56" y2="157.48" width="0.1524" layer="91"/>
+<label x="119.38" y="157.48" size="1.27" layer="95"/>
+<wire x1="118.11" y1="157.48" x2="162.56" y2="157.48" width="0.1524" layer="91"/>
 <pinref part="U2" gate="U" pin="PB1"/>
+<wire x1="118.11" y1="157.48" x2="116.84" y2="156.21" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SDIO_PWR" class="0">
@@ -19125,9 +19167,10 @@ Programmer</text>
 </net>
 <net name="MAX_!IDLE" class="0">
 <segment>
-<wire x1="266.7" y1="86.36" x2="238.76" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="273.05" y1="86.36" x2="238.76" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="U2" gate="U" pin="PE11"/>
-<label x="266.7" y="86.36" size="1.27" layer="95" xref="yes"/>
+<label x="242.57" y="86.36" size="1.27" layer="95"/>
+<wire x1="273.05" y1="86.36" x2="274.32" y2="85.09" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RGB-B" class="0">
@@ -19166,7 +19209,7 @@ Programmer</text>
 <pinref part="U2" gate="U" pin="PA1"/>
 <wire x1="162.56" y1="203.2" x2="130.81" y2="203.2" width="0.1524" layer="91"/>
 <wire x1="130.81" y1="203.2" x2="129.54" y2="201.93" width="0.1524" layer="91"/>
-<label x="133.35" y="203.2" size="1.27" layer="95"/>
+<label x="132.08" y="203.2" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="N$42" class="0">
@@ -19237,22 +19280,25 @@ Programmer</text>
 <net name="CPLD_OUT_SPI1_SCK" class="0">
 <segment>
 <pinref part="U2" gate="U" pin="PA5"/>
-<wire x1="162.56" y1="193.04" x2="124.46" y2="193.04" width="0.1524" layer="91"/>
-<label x="124.46" y="193.04" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="162.56" y1="193.04" x2="105.41" y2="193.04" width="0.1524" layer="91"/>
+<label x="106.68" y="193.04" size="1.27" layer="95"/>
+<wire x1="105.41" y1="193.04" x2="104.14" y2="191.77" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="CPLD_OUT_SPI1_MOSI" class="0">
 <segment>
 <pinref part="U2" gate="U" pin="PB5"/>
-<wire x1="162.56" y1="147.32" x2="123.19" y2="147.32" width="0.1524" layer="91"/>
-<label x="123.19" y="147.32" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="162.56" y1="147.32" x2="105.41" y2="147.32" width="0.1524" layer="91"/>
+<label x="106.68" y="147.32" size="1.27" layer="95"/>
+<wire x1="105.41" y1="147.32" x2="104.14" y2="146.05" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="CPLD_OUT_SPI1_NSS" class="0">
 <segment>
 <pinref part="U2" gate="U" pin="PA4"/>
-<wire x1="162.56" y1="195.58" x2="124.46" y2="195.58" width="0.1524" layer="91"/>
-<label x="124.46" y="195.58" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="162.56" y1="195.58" x2="105.41" y2="195.58" width="0.1524" layer="91"/>
+<label x="106.68" y="195.58" size="1.27" layer="95"/>
+<wire x1="105.41" y1="195.58" x2="104.14" y2="194.31" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$18" class="0">
@@ -19306,7 +19352,7 @@ Programmer</text>
 <segment>
 <wire x1="162.56" y1="185.42" x2="130.81" y2="185.42" width="0.1524" layer="91"/>
 <wire x1="130.81" y1="185.42" x2="129.54" y2="184.15" width="0.1524" layer="91"/>
-<label x="133.35" y="185.42" size="1.27" layer="95"/>
+<label x="132.08" y="185.42" size="1.27" layer="95"/>
 <pinref part="U2" gate="U" pin="PA8"/>
 </segment>
 </net>
@@ -19322,24 +19368,27 @@ Programmer</text>
 <net name="MAX_CFG_SPI2_SCLK" class="0">
 <segment>
 <pinref part="U2" gate="U" pin="PB10"/>
-<wire x1="162.56" y1="134.62" x2="123.19" y2="134.62" width="0.1524" layer="91"/>
-<label x="123.19" y="134.62" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="162.56" y1="134.62" x2="118.11" y2="134.62" width="0.1524" layer="91"/>
+<label x="119.38" y="134.62" size="1.27" layer="95"/>
+<wire x1="118.11" y1="134.62" x2="116.84" y2="133.35" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="CPLD_OUT_SPI_CLK_SRC" class="2">
 <segment>
 <pinref part="U2" gate="U" pin="PB14"/>
-<wire x1="162.56" y1="124.46" x2="121.92" y2="124.46" width="0.1524" layer="91"/>
-<label x="121.92" y="124.46" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="162.56" y1="124.46" x2="105.41" y2="124.46" width="0.1524" layer="91"/>
+<label x="106.68" y="124.46" size="1.27" layer="95"/>
+<wire x1="105.41" y1="124.46" x2="104.14" y2="123.19" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="CPLD_DEBUG" class="0">
 <segment>
 <pinref part="U2" gate="U" pin="PD12"/>
-<wire x1="238.76" y1="129.54" x2="269.24" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="269.24" y1="129.54" x2="269.24" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="269.24" y1="106.68" x2="274.32" y2="106.68" width="0.1524" layer="91"/>
-<label x="274.32" y="106.68" size="1.27" layer="95" xref="yes"/>
+<wire x1="238.76" y1="129.54" x2="254" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="254" y1="129.54" x2="254" y2="24.13" width="0.1524" layer="91"/>
+<label x="241.3" y="129.54" size="1.27" layer="95"/>
+<wire x1="254" y1="24.13" x2="255.27" y2="22.86" width="0.1524" layer="91"/>
+<label x="252.73" y="25.4" size="1.27" layer="95" rot="MR90"/>
 </segment>
 </net>
 <net name="N$50" class="0">
@@ -19375,6 +19424,14 @@ Programmer</text>
 <pinref part="U2" gate="U" pin="PE5"/>
 <pinref part="TP40" gate="G$1" pin="1"/>
 <wire x1="238.76" y1="101.6" x2="243.84" y2="101.6" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="CPLD_RESET" class="0">
+<segment>
+<pinref part="U2" gate="U" pin="PA10"/>
+<wire x1="162.56" y1="180.34" x2="105.41" y2="180.34" width="0.1524" layer="91"/>
+<label x="106.68" y="180.34" size="1.27" layer="95"/>
+<wire x1="105.41" y1="180.34" x2="104.14" y2="179.07" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -19895,7 +19952,7 @@ Transformers</text>
 <wire x1="208.28" y1="106.68" x2="208.28" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="VDD_1.2_ETH_SUPP" class="0">
+<net name="VDD_1.2" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="VDD_1.2"/>
 <wire x1="195.58" y1="170.18" x2="195.58" y2="167.64" width="0.1524" layer="91"/>
@@ -20002,7 +20059,6 @@ Transformers</text>
 <approved hash="104,6,190.5,68.58,U2,VSS,GND,,,"/>
 <approved hash="104,6,193.04,68.58,U2,VSS,GND,,,"/>
 <approved hash="104,6,210.82,213.36,U2,VSSA,GND,,,"/>
-<approved hash="104,7,195.58,167.64,U3,VDD_1.2,VDD_1.2_ETH_SUPP,,,"/>
 <approved hash="104,7,205.74,167.64,U3,VDDIO,3.3VD,,,"/>
 <approved hash="104,7,200.66,106.68,U3,PAD_GND,GND,,,"/>
 <approved hash="104,4,142.24,83.82,L8,GND,AGND,,,"/>
