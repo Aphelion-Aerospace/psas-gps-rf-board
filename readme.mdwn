@@ -1,15 +1,14 @@
 Open Source GPS RF Front-end Board
 ==================================
 
-Current status: March 2014 - Ready to order v2 board and parts 
+Author: Jenner Hanni <wicker> and Andrew Greenberg
 
-Author: Jenner Hanni <wicker>
 Institution: Portland State University (http://www.pdx.edu/) and the Portland State Aerospace Society (http://psas.pdx.edu/)
 License: BSD "3 clause" license.
 
 ## What
 
-This is an GPS "RF front-end" board. It uses the MAX2769 GPS RF front-end that down-converts and then samples the GPS signals on 1.57542 GHz, and then sends that sampled stream to an STM32F407 microcontroller. The STM32 can then write the GPS raw data stream to a microSD card or out via 100 Mbps Ethernet.
+This is an GPS "RF front-end" or Software Defined Radio (SDR) board. It uses the Maxim MAX2769 GPS RF front-end that down-converts and then samples the GPS signals on 1.57542 GHz, and then sends that sampled stream to an STM32F407 microcontroller. The STM32 can then write the GPS raw data stream to a microSD card or out via 100 Mbps Ethernet. v3 now also has a commercial, off-the-shelf GPS module from SkyTraq so that we can have concurrent SDR samples and NMEA/binary GPS data.
 
 ## Why
 
@@ -17,16 +16,18 @@ Several GPS receiver boards exist on the market to receive GPS satellite signals
 
 Both of these projects are in-progress projects at Portland State, and are stalled on purchasing the very expensive RF front end. This project proposes to design, build, and release an open-source GPS receiver RF front-end board that would offer the GPS raw data over USB and serial outputs. Open source GPS receiver boards do exist, including in Andrew Greenberg’s GPL-GPS Master’s thesis, but all are based on very out dated and out-of-production GPS chipsets and are not easily acquired. 
 
-Cost is also a factor: commercial RF front end boards are hundreds to thousands of dollars. And while the proposed chip for this project, the MAX2769 Universal GPS Receiver, costs only $5, the development kit is $600 -- in other words, cost prohibitive for a small project and frustrating for embedded software developers who may not have the time or experience to design and build their own hardware.
+Cost is also a factor: commercial RF front end boards are hundreds to thousands of dollars. And while the proposed chip for this project, the MAX2769 Universal GPS Receiver, costs only $5, the development kit is $300 -- in other words, cost prohibitive for a small project and frustrating for embedded software developers who may not have the time or experience to design and build their own hardware.
 
 ## Other
 
-- Boards are designed in EAGLE 6.5 and are fabricated using OSH Park's 4 layer service.
+- Boards are designed in EAGLE 7.x and are fabricated using OSH Park's 4 layer service.
 - Thank you to Swift-Nav for providing an open source reference design for the MAX2769. Many of the ideas and components of this board borrowed heavily on the Piksi.
-- BOM available at <https://docs.google.com/spreadsheet/ccc?key=0Aj2ugLxWTS6bdDNQeDJjXzUxYTRNRFFiaVJvZ1Nmanc&usp=sharing>
+- BOM available as an XLSX file.
 
-Components
+Component Discussion for V1 GPS
 ==========
+
+NOT UPDATED YET FOR THE v3
 
 ------------------------------------------------------------
 
