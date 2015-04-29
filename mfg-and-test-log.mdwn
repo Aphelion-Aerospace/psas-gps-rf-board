@@ -2,16 +2,19 @@
 
 ### 2015/04/28: jGPS v3 Board #1
 
-- Brought up board 1
-- C77 should go from U14 MIC5319-1.8V BYP to GND, *****not**** Vout. I blame society.
-- C77 should be 100n, not 10n
-- C76 should be 2.2uF, not 1.0uF
-- Ground clip pads should be bigger, what about a ring around the whole board.
-- U13 should be a XC2C64A not a XC2C32A.
+- Brought up board #1!
+- BUG: C77 should go from U14 MIC5319-1.8V BYP to GND, ***not*** Vout. I blame society.
+- BUG: C77 should be 100n, not 10n
+- BUG: C76 should be 2.2uF, not 1.0uF
+- FUTURE: Ground clip pads should be bigger, what about a ring around the whole board.
+- BUG: U13 should be a **XC2C64A** not a XC2C32A.
+- FUTURE: FTDI cable or similar connector for COTS chip so we can program it directly from a PC.
+- FUTURE: jumper to hold the STM in reset.
+- FUTURE: zero ohm resistors (or cutable enable lines) in each power supply so we can shut them off if we want to.
 
 ### ~ 2014/06/05: Bring up
 
-- Initial bring up ~ 
+- Initial bring up
 - R38/R39/R40 TOTALLY WRONG - LED way to bright
 - MODWIRE: U2 (STM32) PE2 (pin 1, also TP1) to U3 (PHY chip) pin 23 (LED0) in order to engage PHY chip's debug features
 - FIXED: Misunderstood PHY error, so made Kenney reflow U3 (PHY) for no reason.
