@@ -1,5 +1,7 @@
 # Manufacturing and Test Log
 
+## Version 3:
+
 ### 2015/04/28: jGPS v3 Board #1
 
 - Brought up board 1
@@ -8,6 +10,10 @@
 - C76 should be 2.2uF, not 1.0uF
 - Ground clip pads should be bigger, what about a ring around the whole board.
 - U13 should be a XC2C64A not a XC2C32A.
+
+-----------------------------------------------------------------------------------------------------------
+
+## Version 2:
 
 ### ~ 2014/06/05: Bring up
 
