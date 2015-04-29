@@ -1,5 +1,13 @@
 # Manufacturing and Test Log
 
+### 2015/04/28: jGPS v3 Board #1
+
+- Brought up board 1
+- C77 should go from U14 MIC5319-1.8V BYP to GND, *****not**** Vout. I blame society.
+- C77 should be 100n, not 10n
+- C76 should be 2.2uF, not 1.0uF
+- Ground clip pads should be bigger, what about a ring around the whole board.
+
 ### ~ 2014/06/05: Bring up
 
 - Initial bring up ~ 
