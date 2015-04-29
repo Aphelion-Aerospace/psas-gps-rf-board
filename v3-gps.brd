@@ -3724,7 +3724,7 @@ einem neuen Namen ab.</description>
 <attribute name="VALUE" x="48.957" y="1.671" size="0.8" layer="27" font="vector" ratio="15"/>
 <attribute name="NAME" x="49.657" y="2.921" size="0.2" layer="33" ratio="15" align="center"/>
 </element>
-<element name="U12" library="ic-lna-ALM-GPxx-Avago" package="AVAGO+SAW+LNA" value="ALM-GP002" x="11.303" y="13.208" smashed="yes">
+<element name="U12" library="ic-lna-ALM-GPxx-Avago" package="AVAGO+SAW+LNA" value="ALM-GP003" x="11.303" y="13.208" smashed="yes">
 <attribute name="NAME" x="10.003" y="10.571" size="0.635" layer="21" font="vector" ratio="20"/>
 </element>
 <element name="C1" library="rcl_custom" package=".0402-C-NOSILK" value="330p" x="10.795" y="15.748" smashed="yes" rot="R270">
