@@ -7,6 +7,7 @@
 - C77 should be 100n, not 10n
 - C76 should be 2.2uF, not 1.0uF
 - Ground clip pads should be bigger, what about a ring around the whole board.
+- U13 should be a XC2C64A not a XC2C32A.
 
 ### ~ 2014/06/05: Bring up
 
