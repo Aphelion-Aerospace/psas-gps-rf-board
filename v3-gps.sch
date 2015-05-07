@@ -15954,7 +15954,7 @@ Typical height 0.6&amp;nbsp;mm.</description>
 <part name="SUPPLY6" library="2.85V-S" deviceset="2.85V-S" device=""/>
 <part name="GND49" library="supply" deviceset="GND" device=""/>
 <part name="GND50" library="supply" deviceset="GND" device=""/>
-<part name="U12" library="ic-lna-ALM-GPxx-Avago" deviceset="AVAGO-ALM-GPXX" device="" value="ALM-GP002"/>
+<part name="U12" library="ic-lna-ALM-GPxx-Avago" deviceset="AVAGO-ALM-GPXX" device="" value="ALM-GP003"/>
 <part name="C1" library="rcl_custom" deviceset="C-EU" device="0402-C-NOSILK" value="330p"/>
 <part name="AGND24" library="supply1" deviceset="AGND" device=""/>
 <part name="R25" library="rcl_custom" deviceset="R-US_" device="0402-C-NOSILK" value="4.7k"/>
