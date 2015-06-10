@@ -1,6 +1,8 @@
 # Manufacturing and Test Log
 
-## Version 3:
+-----------------------------------------------------------------------------------------------------------
+jGPS Version 3:
+-----------------------------------------------------------------------------------------------------------
 
 ### 2015/04/28: jGPS v3 Board #1
 
@@ -8,15 +10,22 @@
 - BUG: C77 should go from U14 MIC5319-1.8V BYP to GND, ***not*** Vout. I blame society.
 - BUG: C77 should be 100n, not 10n
 - BUG: C76 should be 2.2uF, not 1.0uF
-- FUTURE: Ground clip pads should be bigger, what about a ring around the whole board.
 - BUG: U13 should be a **XC2C64A** not a XC2C32A.
+- BUG: R24 should be 1k (or 390 ohm based on datasheet reference schematic)
+- BUG: R21 should be 33k
+
+- FUTURE: Ground clip pads should be bigger, what about a ring around the whole board.
 - FUTURE: FTDI cable or similar connector for COTS chip so we can program it directly from a PC.
 - FUTURE: jumper to hold the STM in reset.
 - FUTURE: zero ohm resistors (or cutable enable lines) in each power supply so we can shut them off if we want to.
+- FUTURE: STM should be able to reset the Venus IC.
+- FUTURE: STM or jumper should control Venus BOOT_SEL.
+- FUTURE: STM should be able to power down the Venus or Max.
+- 
 
 -----------------------------------------------------------------------------------------------------------
-
-## Version 2:
+jGPS Version 2
+-----------------------------------------------------------------------------------------------------------
 
 ### ~ 2014/06/05: Bring up
 

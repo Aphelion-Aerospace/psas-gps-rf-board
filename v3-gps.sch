@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.1.0">
+<eagle version="7.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -15861,14 +15861,14 @@ Typical height 0.6&amp;nbsp;mm.</description>
 <part name="TP18" library="Tova" deviceset="TEST-POINT" device="15MIL-TEST-POINT" value="TEST-POINT15MIL-TEST-POINT"/>
 <part name="TP19" library="Tova" deviceset="TEST-POINT" device="15MIL-TEST-POINT" value="TEST-POINT15MIL-TEST-POINT"/>
 <part name="TP20" library="Tova" deviceset="TEST-POINT" device="15MIL-TEST-POINT" value="TEST-POINT15MIL-TEST-POINT"/>
-<part name="U9" library="SparkFun-RF" deviceset="VENUS638FLPX-L" device=""/>
+<part name="U9" library="SparkFun-RF" deviceset="VENUS638FLPX-L" device="" value="VENUS838FLPX-L"/>
 <part name="U10" library="minicircuits-splitter" deviceset="MINICIRCUITS-BP2G" device="" value="BP2G+"/>
 <part name="AGND1" library="supply1" deviceset="AGND" device=""/>
 <part name="LED7" library="led" deviceset="LED" device="CHIPLED_0603" value="YLW"/>
 <part name="C19" library="rcl_custom" deviceset="C-EU" device="0603-C-NOSILK" value="1u"/>
 <part name="C22" library="rcl_custom" deviceset="C-EU" device="0402-C-NOSILK" value="100p"/>
 <part name="C24" library="rcl_custom" deviceset="C-EU" device="0402-C-NOSILK" value="100n"/>
-<part name="R21" library="rcl_custom" deviceset="R-US_" device="0402-C-NOSILK" value="10k"/>
+<part name="R21" library="rcl_custom" deviceset="R-US_" device="0402-C-NOSILK" value="33k"/>
 <part name="R22" library="rcl_custom" deviceset="R-US_" device="0402-C-NOSILK" value="10k"/>
 <part name="R23" library="rcl_custom" deviceset="R-US_" device="0402-C-NOSILK" value="1k"/>
 <part name="TP8" library="Tova" deviceset="TEST-POINT" device="15MIL-TEST-POINT" value="TEST-POINT15MIL-TEST-POINT"/>
@@ -15878,7 +15878,7 @@ Typical height 0.6&amp;nbsp;mm.</description>
 <part name="TP29" library="Tova" deviceset="TEST-POINT" device="15MIL-TEST-POINT" value="TEST-POINT15MIL-TEST-POINT"/>
 <part name="TP30" library="Tova" deviceset="TEST-POINT" device="15MIL-TEST-POINT" value="TEST-POINT15MIL-TEST-POINT"/>
 <part name="D1" library="diode-0603" deviceset="DIODE-0603" device=""/>
-<part name="R24" library="rcl_custom" deviceset="R-US_" device="0402-C-NOSILK" value="10k"/>
+<part name="R24" library="rcl_custom" deviceset="R-US_" device="0402-C-NOSILK" value="1k"/>
 <part name="TP1" library="Tova" deviceset="TEST-POINT" device="15MIL-TEST-POINT" value="TEST-POINT15MIL-TEST-POINT"/>
 <part name="U11" library="SparkFun-PowerIC" deviceset="V_REG_LDO" device="SMD2" value="MAX8510EXK29+T"/>
 <part name="C67" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="1u"/>
@@ -15912,7 +15912,7 @@ Typical height 0.6&amp;nbsp;mm.</description>
 <part name="AGND16" library="supply1" deviceset="AGND" device=""/>
 <part name="AGND17" library="supply1" deviceset="AGND" device=""/>
 <part name="AGND18" library="supply1" deviceset="AGND" device=""/>
-<part name="U13" library="dp_devices" deviceset="XC2C32A_VQ44_2" device=""/>
+<part name="U13" library="dp_devices" deviceset="XC2C32A_VQ44_2" device="" value="XC2C64A-5VQG44C"/>
 <part name="U$10" library="SparkFun-Aesthetics" deviceset="3.3VD" device=""/>
 <part name="C71" library="rcl_custom" deviceset="C-EU" device="0402-C-NOSILK" value="100n"/>
 <part name="C72" library="rcl_custom" deviceset="C-EU" device="0402-C-NOSILK" value="100n"/>
@@ -15933,8 +15933,8 @@ Typical height 0.6&amp;nbsp;mm.</description>
 <part name="GND40" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C75" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="1u"/>
 <part name="GND41" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="C76" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="1u"/>
-<part name="C77" library="rcl_custom" deviceset="C-EU" device="0402-C-NOSILK" value="10n"/>
+<part name="C76" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="2.2u"/>
+<part name="C77" library="rcl_custom" deviceset="C-EU" device="0402-C-NOSILK" value="100n"/>
 <part name="GND42" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C78" library="rcl_custom" deviceset="C-EU" device="0402-C-NOSILK" value="100n"/>
 <part name="GND43" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -16022,6 +16022,7 @@ Typical height 0.6&amp;nbsp;mm.</description>
 <part name="FRAME4" library="frames" deviceset="FRAME_B_L" device=""/>
 <part name="SUPPLY7" library="1.8V" deviceset="1.8V" device=""/>
 <part name="SUPPLY8" library="1.8V" deviceset="1.8V" device=""/>
+<part name="GND77" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -16188,6 +16189,10 @@ RocketNet Connector</text>
 <wire x1="331.47" y1="226.06" x2="219.71" y2="226.06" width="0.254" layer="97"/>
 <text x="107.95" y="160.02" size="1.778" layer="97">Fsw = 410 kHz</text>
 <text x="327.66" y="26.67" size="5.08" layer="94">Power Supplies</text>
+<wire x1="290.83" y1="82.55" x2="293.37" y2="82.55" width="0.1524" layer="102"/>
+<wire x1="293.37" y1="82.55" x2="293.37" y2="71.12" width="0.1524" layer="102"/>
+<wire x1="289.56" y1="83.82" x2="292.1" y2="82.55" width="0.1524" layer="102"/>
+<wire x1="292.1" y1="83.82" x2="289.56" y2="82.55" width="0.1524" layer="102"/>
 </plain>
 <instances>
 <instance part="U$2" gate="G$1" x="60.96" y="210.82" smashed="yes">
@@ -16466,6 +16471,9 @@ RocketNet Connector</text>
 <instance part="FRAME3" gate="G$1" x="0" y="0"/>
 <instance part="FRAME3" gate="G$2" x="325.12" y="0"/>
 <instance part="SUPPLY8" gate="G$1" x="320.04" y="86.36"/>
+<instance part="GND77" gate="1" x="293.37" y="68.58" smashed="yes">
+<attribute name="VALUE" x="290.83" y="66.04" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
