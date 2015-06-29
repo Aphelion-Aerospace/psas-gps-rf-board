@@ -1,0 +1,14 @@
+jGPSv3 board #1
+===============
+
+Buid date: Thursday, April 23, 2015
+Primary builders: Kenny and K
+
+## Issues
+* Venus 6 is not as cool as Venus 8
+* C24 - 1uF
+* Modification list is incomplete
+
+## Modifications
+* C77 - ns
+* Others?

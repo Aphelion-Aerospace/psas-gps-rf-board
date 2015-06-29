@@ -1,0 +1,22 @@
+jGPSv3 board #3
+===============
+
+Buid date: Friday, June 19, 2015
+Primary builders: Kenny and Andrew
+
+## Issues
+* 0 satellites in view (software-correlator)
+* Venus hot/warm start super-cap is draining too quickly
+* LED2,4,5,7 are way too dim
+* LED6 dim
+
+## Assumptions
+* The sky is broken
+
+## Modifications
+* C77 - ns
+* U9 - Venus 8 (support airborn mode and faster refresh)
+* R22 - pull-up after programming Venus 8 (to boot from flash)
+* C24 - 1uF (wait longer for stable power before Venus startup)
+* R24 - 100 ohm (charge supercap faster)
+* R18 - add 100nF to GND (stablize !RST on the STM32)
