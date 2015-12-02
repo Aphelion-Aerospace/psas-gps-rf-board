@@ -10,6 +10,8 @@ License: BSD "3 clause" license.
 
 This is an GPS "RF front-end" or Software Defined Radio (SDR) board. It uses the Maxim MAX2769 GPS RF front-end that down-converts and then samples the GPS signals on 1.57542 GHz, and then sends that sampled stream to an STM32F407 microcontroller. The STM32 can then write the GPS raw data stream to a microSD card or out via 100 Mbps Ethernet. v3 now also has a commercial, off-the-shelf GPS module from SkyTraq so that we can have concurrent SDR samples and NMEA/binary GPS data.
 
+![Pic of jGPS v3 board](media/gps-v3.jpg)
+
 ## Why
 
 Several GPS receiver boards exist on the market to receive GPS satellite signals and process it to provide location data but these GPS receivers only give the final location. Getting access to the raw data before they go into correlators means you have to purchase a “RF front end” for hundreds of dollars, at which point you can work on projects like building an FPGA receiver board or developing a software radio receiver. 
