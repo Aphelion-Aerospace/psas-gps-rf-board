@@ -24,6 +24,7 @@ Cost is also a factor: commercial RF front end boards are hundreds to thousands 
 
 - Boards are designed in EAGLE 7.x and are fabricated using OSH Park's 4 layer service.
 - Thank you to Swift-Nav for providing an open source reference design for the MAX2769. Many of the ideas and components of this board borrowed heavily on the Piksi.
+- Whoah man is the MAX2769 hard to configure. If you found this page because you're trying to understand how to configure the Max2769, there's helpful stuff here. It's a total pain. *Good luck!*
 - BOM available as an XLSX file.
 
 ### See also
@@ -31,4 +32,8 @@ Cost is also a factor: commercial RF front end boards are hundreds to thousands 
 - [[component-values]]
 - [[mfg-and-test-log]]
 - [[MAX2769-register-settings]]
+
+### Some History
+
+2015/07/19: We [launched it onboard LV2](https://github.com/psas/Launch-12) and [got some data](http://annex.psas.pdx.edu/Launch-12/flightcomputer.log)!
 
