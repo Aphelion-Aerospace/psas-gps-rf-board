@@ -36,6 +36,8 @@ Cost is also a factor: commercial RF front end boards are hundreds to thousands 
 
 ### History
 
-2016/01/05: More data analysis! We actually [got GPS satellites!](https://github.com/psas/Launch-12/blob/gh-pages/data/GPS/first-look.ipynb). There are a few data drop outs, but they're relatively short. Looks like the Flight Computer was timing out due to IO Wait states.
-2015/07/19: We [launched it onboard LV2](https://github.com/psas/Launch-12) and [got some data](http://annex.psas.pdx.edu/Launch-12/flightcomputer.log)!
+Some updates on what we've been doing:
+
+| 2016/01/05 | More data analysis! We actually [got GPS satellites!](https://github.com/psas/Launch-12/blob/gh-pages/data/GPS/first-look.ipynb). There are a few data drop outs, but they're relatively short. Looks like the Flight Computer was timing out due to IO Wait states. |
+| 2015/07/19 | We [launched it onboard LV2](https://github.com/psas/Launch-12) and [got some data](http://annex.psas.pdx.edu/Launch-12/flightcomputer.log)! |
 
