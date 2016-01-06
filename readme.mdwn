@@ -3,12 +3,19 @@ Open Source GPS RF Front-end Board
 
 Author: Jenner Hanni <wicker> and Andrew Greenberg
 
-Institution: Portland State University (http://www.pdx.edu/) and the Portland State Aerospace Society (http://psas.pdx.edu/)
+Institution: The Portland State Aerospace Society (http://psas.pdx.edu/) and Portland State University (http://www.pdx.edu/) 
+
 License: BSD "3 clause" license.
 
 ## What
 
-This is an GPS "RF front-end" or Software Defined Radio (SDR) board. It uses the Maxim MAX2769 GPS RF front-end that down-converts and then samples the GPS signals on 1.57542 GHz, and then sends that sampled stream to an STM32F407 microcontroller. The STM32 can then write the GPS raw data stream to a microSD card or out via 100 Mbps Ethernet. v3 now also has a commercial, off-the-shelf GPS module from SkyTraq so that we can have concurrent SDR samples and NMEA/binary GPS data.
+This is a bit of an odd GPS receiver board. It has a lot of weird features:
+
+1. It takes 4.5 - 20 V power in.
+1. It has a hopefully good RF front end which expects a passive GPS antenna. It has a SAW filter to reject noise, followed nice GPS LNA, followed by an IC splitter to split the signal into two ICs:  
+   1. IC 1 is a software defined radio (SDR) GPS receiver based on the Maxim MAX2769 GPS RF front-end. The MAX2769 downconverts the 1.57542 GHz carrier and then samples the GPS signals using 2 bit I and 2 bit Q sampling at ??? MHz. This data flows in parallel out to a CPLD which turns it into valid SPI data, which is eventually sent to the local STM32F4xx microcontroller.
+   1. IC 2 is a commercial off-the-shelf (COTS) GPS receiver IC SkyTraq called the Venus838. The Venus was supposed to have allowed us to get position updates via binary messages over UART to the STM32F4xx microcontroller. Unfortunately, the results were pretty much garbage (see data analysis below).
+1. The STM32F4xx grabs both of these data streams and writes them to the onboard uSD and/or streams them over Ethernet to the flight computer.
 
 ![Pic of jGPS v3 board](media/gps-v3.jpg)
 
@@ -27,13 +34,8 @@ Cost is also a factor: commercial RF front end boards are hundreds to thousands 
 - Whoah man is the MAX2769 hard to configure. If you found this page because you're trying to understand how to configure the Max2769, there's helpful stuff here. It's a total pain. *Good luck!*
 - BOM available as an XLSX file.
 
-### See also
+### History
 
-- [[component-values]]
-- [[mfg-and-test-log]]
-- [[MAX2769-register-settings]]
-
-### Some History
-
+2016/01/05: More data analysis! We actually [got GPS satellites!](https://github.com/psas/Launch-12/blob/gh-pages/data/GPS/first-look.ipynb). There are a few data drop outs, but they're relatively short. Looks like the Flight Computer was timing out due to IO Wait states.
 2015/07/19: We [launched it onboard LV2](https://github.com/psas/Launch-12) and [got some data](http://annex.psas.pdx.edu/Launch-12/flightcomputer.log)!
 
