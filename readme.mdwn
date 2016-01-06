@@ -17,7 +17,13 @@ This is a bit of an odd GPS receiver board. It has a lot of weird features:
    1. IC 2 is a commercial off-the-shelf (COTS) GPS receiver IC SkyTraq called the Venus838. The Venus was supposed to have allowed us to get position updates via binary messages over UART to the STM32F4xx microcontroller. Unfortunately, the results were pretty much garbage (see data analysis below).
 1. The STM32F4xx grabs both of these data streams and writes them to the onboard uSD and/or streams them over Ethernet to the flight computer.
 
-![Pic of jGPS v3 board](media/gps-v3.jpg)
+Here's a block diagram:
+
+![jGPS v3 Block Diagram](media/gps-v3-block-diagram.png)
+
+And here a picture of the completed (and now flown!) PCB:
+
+![Pic of jGPS v3 board](media/gps-v3-photo.jpg)
 
 ## Why
 
