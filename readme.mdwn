@@ -13,7 +13,7 @@ This is a bit of an odd GPS receiver board. It has a lot of weird features:
 
 1. It takes 4.5 - 20 V power in.
 1. It has a hopefully good RF front end which expects a passive GPS antenna. It has a SAW filter to reject noise, followed nice GPS LNA, followed by an IC splitter to split the signal into two ICs:  
-   1. IC 1 is a software defined radio (SDR) GPS receiver based on the Maxim MAX2769 GPS RF front-end. The MAX2769 downconverts the 1.57542 GHz carrier and then samples the GPS signals using 2 bit I and 2 bit Q sampling at ??? MHz. This data flows in parallel out to a CPLD which turns it into valid SPI data, which is eventually sent to the local STM32F4xx microcontroller.
+   1. IC 1 is a software defined radio (SDR) GPS receiver based on the Maxim MAX2769 GPS RF front-end. The MAX2769 downconverts the 1.57542 GHz carrier and then samples the GPS signals using 2 bit I and 2 bit Q sampling at4 Msps. This data flows in parallel out to a CPLD which turns it into valid SPI data, which is eventually sent to the local STM32F4xx microcontroller.
    1. IC 2 is a commercial off-the-shelf (COTS) GPS receiver IC SkyTraq called the Venus838. The Venus was supposed to have allowed us to get position updates via binary messages over UART to the STM32F4xx microcontroller. Unfortunately, the results were pretty much garbage (see data analysis below).
 1. The STM32F4xx grabs both of these data streams and writes them to the onboard uSD and/or streams them over Ethernet to the flight computer.
 
